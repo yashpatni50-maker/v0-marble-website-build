@@ -57,11 +57,11 @@ export function FloatingButtons() {
           </p>
           <div className="flex items-center gap-4">
             <Link
-              href="tel:+919828056070"
+              href="tel:+919950085300"
               className="flex items-center gap-2 text-white hover:text-[#c9a227] transition-colors"
             >
               <Phone className="h-4 w-4" />
-              <span className="font-medium">+91 98280 56070</span>
+              <span className="font-medium">+91 9950085300</span>
             </Link>
             <Link
               href="https://wa.me/919828056070?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection."
