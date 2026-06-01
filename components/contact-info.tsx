@@ -8,7 +8,7 @@ const contactMethods = [
   {
     icon: Phone,
     title: "Call Us",
-    details: ["+91 99500 85300", "+91 99500 85301"],
+    details: ["+91 99500 85300", "+91 98290 82911"],
     action: {
       label: "Call Now",
       href: "tel:+919950085300"
