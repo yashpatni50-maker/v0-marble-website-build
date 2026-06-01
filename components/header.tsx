@@ -8,9 +8,7 @@ import { Button } from "@/components/ui/button"
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  { name: "Our Products", href: "/products" },
-  { name: "IRS Stone Process", href: "/process" },
-  { name: "Clientele", href: "/clientele" },
+  { name: "Products", href: "/products" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -46,15 +44,15 @@ export function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex lg:items-center lg:gap-4">
-          <Link href="tel:+919950085300" className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-[oklch(0.55_0.12_70)]">
+          <Link href="tel:+919828056070" className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-[oklch(0.55_0.12_70)]">
             <Phone className="h-4 w-4" />
-            +91 99500 85300
+            +91 98280 56070
           </Link>
           <Button asChild className="bg-[oklch(0.55_0.12_70)] hover:bg-[oklch(0.45_0.12_70)] text-white">
-            <Link href="/brochure">
+            <a href="https://blobs.vusercontent.net/blob/Chandak%20Marble%20Colours%20of%20Your%20Imagination-SMMix9Zr6lGqmaC0vHA5zOluJ1Bw26.pdf" target="_blank" rel="noopener noreferrer">
               <Download className="h-4 w-4 mr-2" />
               Brochure
-            </Link>
+            </a>
           </Button>
         </div>
 
@@ -84,15 +82,15 @@ export function Header() {
               </Link>
             ))}
             <div className="pt-4 flex flex-col gap-3">
-              <Link href="tel:+919950085300" className="flex items-center gap-2 text-sm font-medium">
+              <Link href="tel:+919828056070" className="flex items-center gap-2 text-sm font-medium">
                 <Phone className="h-4 w-4" />
-                +91 99500 85300
+                +91 98280 56070
               </Link>
               <Button asChild className="bg-[oklch(0.55_0.12_70)] hover:bg-[oklch(0.45_0.12_70)] text-white w-full">
-                <Link href="/brochure">
+                <a href="https://blobs.vusercontent.net/blob/Chandak%20Marble%20Colours%20of%20Your%20Imagination-SMMix9Zr6lGqmaC0vHA5zOluJ1Bw26.pdf" target="_blank" rel="noopener noreferrer">
                   <Download className="h-4 w-4 mr-2" />
                   Download Brochure
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

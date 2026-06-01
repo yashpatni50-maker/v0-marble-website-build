@@ -4,6 +4,7 @@ import { MarbleCollections } from "@/components/marble-collections"
 import { WhyChooseUs } from "@/components/why-choose-us"
 import { AboutSection } from "@/components/about-section"
 import { ProcessSection } from "@/components/process-section"
+import { VideoShowcase } from "@/components/video-showcase"
 import { ClienteleSection } from "@/components/clientele-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
@@ -18,6 +19,7 @@ export default function HomePage() {
       <WhyChooseUs />
       <AboutSection />
       <ProcessSection />
+      <VideoShowcase />
       <ClienteleSection />
       <CTASection />
       <Footer />
