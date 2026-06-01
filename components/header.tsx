@@ -82,9 +82,9 @@ export function Header() {
               </Link>
             ))}
             <div className="pt-4 flex flex-col gap-3">
-              <Link href="tel:+919828056070" className="flex items-center gap-2 text-sm font-medium">
+              <Link href="tel:+919950085300" className="flex items-center gap-2 text-sm font-medium">
                 <Phone className="h-4 w-4" />
-                +91 98280 56070
+                +91 99500 85300
               </Link>
               <Button asChild className="bg-[oklch(0.55_0.12_70)] hover:bg-[oklch(0.45_0.12_70)] text-white w-full">
                 <a href="https://blobs.vusercontent.net/blob/Chandak%20Marble%20Colours%20of%20Your%20Imagination-SMMix9Zr6lGqmaC0vHA5zOluJ1Bw26.pdf" target="_blank" rel="noopener noreferrer">

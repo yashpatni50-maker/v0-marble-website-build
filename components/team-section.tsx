@@ -8,19 +8,19 @@ const team = [
     name: "Rajesh Chandak",
     role: "Managing Director",
     description: "Leading the company with 25+ years of experience in the marble industry.",
-    phone: "+91 98280 56070"
+    phone: "+91 99500 85300"
   },
   {
     name: "Amit Chandak",
     role: "Director - Operations",
     description: "Overseeing quality control and international sourcing operations.",
-    phone: "+91 98280 56070"
+    phone: "+91 99500 85300"
   },
   {
     name: "Priya Chandak",
     role: "Director - Design Consultation",
     description: "Helping clients visualize and select the perfect marble for their projects.",
-    phone: "+91 98280 56070"
+    phone: "+91 99500 85300"
   }
 ]
 

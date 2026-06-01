@@ -15,7 +15,7 @@ export function FloatingButtons() {
         className="fixed bottom-6 right-6 z-50"
       >
         <Link
-          href="https://wa.me/919828056070?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection.%20Please%20share%20more%20details."
+          href="https://wa.me/919950085300?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection.%20Please%20share%20more%20details."
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform hover:shadow-xl"
@@ -36,7 +36,7 @@ export function FloatingButtons() {
         className="fixed bottom-6 left-6 z-50 md:hidden"
       >
         <Link
-          href="tel:+919828056070"
+          href="tel:+919950085300"
           className="w-14 h-14 bg-[#c9a227] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform hover:shadow-xl"
           aria-label="Call Now"
         >
@@ -64,7 +64,7 @@ export function FloatingButtons() {
               <span className="font-medium">+91 9950085300</span>
             </Link>
             <Link
-              href="https://wa.me/919828056070?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection."
+              href="https://wa.me/919950085300?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#1fb855] transition-colors"

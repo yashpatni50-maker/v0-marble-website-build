@@ -8,19 +8,19 @@ const contactMethods = [
   {
     icon: Phone,
     title: "Call Us",
-    details: ["+91 98280 56070", "+91 98280 56071"],
+    details: ["+91 99500 85300", "+91 99500 85301"],
     action: {
       label: "Call Now",
-      href: "tel:+919828056070"
+      href: "tel:+919950085300"
     }
   },
   {
     icon: MessageCircle,
     title: "WhatsApp",
-    details: ["+91 98280 56070"],
+    details: ["+91 99500 85300"],
     action: {
       label: "Chat Now",
-      href: "https://wa.me/919828056070?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection.%20Please%20share%20more%20details."
+      href: "https://wa.me/919950085300?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection.%20Please%20share%20more%20details."
     }
   },
   {
