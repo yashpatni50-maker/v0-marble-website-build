@@ -80,10 +80,10 @@ export function ContactInfo() {
               <div>
                 <h3 className="font-serif text-xl text-foreground mb-2">Showroom Address</h3>
                 <p className="text-muted-foreground">
-                  Chandak Marble<br />
-                  NH-79A, Near Madanganj-Kishangarh Highway<br />
-                  Kishangarh, Ajmer District<br />
-                  Rajasthan 305801, India
+                  Chandak Marble International<br />
+                  Khasra No. 375, 361, Makrana Road<br />
+                  Madanganj, Kali Dungri<br />
+                  Kishangarh, Rajasthan 305801
                 </p>
               </div>
             </div>

@@ -16,7 +16,7 @@ export function LocationMap() {
             Our Location
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Located on NH-79A in Kishangarh, the marble capital of India. 
+            Located on Makrana Road in Kishangarh, the marble capital of India. 
             Easy access from Jaipur (90 km), Ajmer (30 km), and Jodhpur (185 km).
           </p>
         </div>
@@ -42,13 +42,13 @@ export function LocationMap() {
           <div className="absolute bottom-6 left-6 right-6 md:left-auto md:right-6 md:w-auto">
             <div className="bg-background/95 backdrop-blur-sm p-4 rounded-lg shadow-lg flex flex-col md:flex-row items-start md:items-center gap-4">
               <div>
-                <h3 className="font-serif text-lg text-foreground">Chandak Marble</h3>
-                <p className="text-sm text-muted-foreground">NH-79A, Kishangarh, Rajasthan</p>
+                <h3 className="font-serif text-lg text-foreground">Chandak Marble International</h3>
+                <p className="text-sm text-muted-foreground">Makrana Road, Kishangarh, Rajasthan</p>
               </div>
               <div className="flex gap-2">
                 <Button asChild size="sm" className="bg-[#c9a227] hover:bg-[#b8922a] text-white">
                   <a 
-                    href="https://maps.google.com/?q=Kishangarh,Rajasthan"
+                    href="https://share.google/qbRpLaPL6g616rTXy"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -58,7 +58,7 @@ export function LocationMap() {
                 </Button>
                 <Button asChild size="sm" variant="outline">
                   <a 
-                    href="https://maps.google.com/?q=Kishangarh,Rajasthan"
+                    href="https://share.google/qbRpLaPL6g616rTXy"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
