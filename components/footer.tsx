@@ -18,7 +18,7 @@ const navigation = {
     { name: "Clientele", href: "/clientele" },
     { name: "Download Brochure", <a href="https://blobs.vusercontent.net/blob/Chandak%20Marble%20Colours%20of%20Your%20Imagination-SMMix9Zr6lGqmaC0vHA5zOluJ1Bw26.pdf" target="_blank" rel="noopener noreferrer">
               <Download className="h-4 w-4 mr-2" />
-                                  /a>
+                                  </a>
               },
     { name: "Contact Us", href: "/contact" },
   ],
