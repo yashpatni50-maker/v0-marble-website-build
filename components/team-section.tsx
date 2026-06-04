@@ -12,13 +12,13 @@ const team = [
   },
   {
     name: "Yash Patni",
-    role: "Marketing Partner - Operations",
+    role: "Managing Partner - Operations",
     description: "Helping clients visualize and select the perfect marble for their projects.",
     phone: "+91 99500 85300"
   },
   {
     name: "Punit Chandak",
-    role: "Director - Design Consultation",
+    role: "Managing Director",
     description: "Overseeing quality control and international sourcing operations.",
     phone: "+91 98290 82911"
   }
