@@ -100,7 +100,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[oklch(0.80_0.12_70)] flex-shrink-0 mt-0.5" />
                 <span className="text-white/60 text-sm">
-                 Chandak Marble International<br />
+                  Chandak Marble International<br />
                   Khasra No. 375, 361, Makrana Road<br />
                   Madanganj, Kali Dungri<br />
                   Kishangarh, Rajasthan 305801
