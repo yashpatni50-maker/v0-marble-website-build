@@ -16,7 +16,7 @@ const navigation = {
     { name: "About Us", href: "/about" },
     { name: "Our Process", href: "/process" },
     { name: "Clientele", href: "/clientele" },
-    { name: "Download Brochure", href: "/brochure" },
+    { name: "Download Brochure", href: "https://blobs.vusercontent.net/blob/Chandak%20Marble%20Colours%20of%20Your%20Imagination-SMMix9Zr6lGqmaC0vHA5zOluJ1Bw26.pdf" target="_blank" rel="noopener noreferrer" },
     { name: "Contact Us", href: "/contact" },
   ],
   social: [
