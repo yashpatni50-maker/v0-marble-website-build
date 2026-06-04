@@ -16,7 +16,7 @@ const navigation = {
     { name: "About Us", href: "/about" },
     { name: "Our Process", href: "/process" },
     { name: "Clientele", href: "/clientele" },
-    { name: "Download Brochure", href="/brochure"> },
+    { name: "Download Brochure", href="/brochure" },
     { name: "Contact Us", href: "/contact" },
   ],
   social: [
@@ -100,8 +100,8 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[oklch(0.80_0.12_70)] flex-shrink-0 mt-0.5" />
                 <span className="text-white/60 text-sm">
-                  Khasra No. 375, 361,
-                  Makrana Road, Madanganj, 
+                  Khasra No. 375, 361,<br />
+                  Makrana Road, Madanganj,<br /> 
                   Kali Dungri, Kishangarh,<br />
                   Rajasthan 305801
                 </span>
