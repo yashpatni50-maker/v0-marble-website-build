@@ -50,7 +50,7 @@ export function CTASection() {
               variant="outline" 
               className="border-white/30 bg-transparent text-white hover:bg-white/10 px-8 py-6 text-lg font-medium"
             >
-              <Link href="/brochure">
+              <Link href="https://blobs.vusercontent.net/blob/Chandak%20Marble%20Colours%20of%20Your%20Imagination-SMMix9Zr6lGqmaC0vHA5zOluJ1Bw26.pdf" target="_blank" rel="noopener noreferrer">
                 <Download className="h-5 w-5 mr-2" />
                 Download Brochure
               </Link>
