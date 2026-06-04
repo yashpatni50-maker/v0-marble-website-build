@@ -100,6 +100,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[oklch(0.80_0.12_70)] flex-shrink-0 mt-0.5" />
                 <span className="text-white/60 text-sm">
+                  Khasra No. 375, 361
                   Makrana Road, Madanganj,<br />
                   Kishangarh, Rajasthan 305801
                 </span>
@@ -117,9 +118,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="mailto:info@chandakmarble.com" className="flex items-center gap-3 text-white/60 text-sm hover:text-[oklch(0.80_0.12_70)] transition-colors">
+                <Link href="mailto:chandakmarblesales@gmail.com" className="flex items-center gap-3 text-white/60 text-sm hover:text-[oklch(0.80_0.12_70)] transition-colors">
                   <Mail className="h-5 w-5 text-[oklch(0.80_0.12_70)]" />
-                  info@chandakmarble.com
+                  chandakmarblesales@gmail.com
                 </Link>
               </li>
             </ul>
