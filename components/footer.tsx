@@ -16,10 +16,7 @@ const navigation = {
     { name: "About Us", href: "/about" },
     { name: "Our Process", href: "/process" },
     { name: "Clientele", href: "/clientele" },
-    { name: "Download Brochure", <a href="https://blobs.vusercontent.net/blob/Chandak%20Marble%20Colours%20of%20Your%20Imagination-SMMix9Zr6lGqmaC0vHA5zOluJ1Bw26.pdf" target="_blank" rel="noopener noreferrer">
-              <Download className="h-4 w-4 mr-2" />
-                                  </a>
-              },
+    { name: "Download Brochure", href="/brochure"> },
     { name: "Contact Us", href: "/contact" },
   ],
   social: [
@@ -103,9 +100,10 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[oklch(0.80_0.12_70)] flex-shrink-0 mt-0.5" />
                 <span className="text-white/60 text-sm">
-                  Khasra No. 375, 361
-                  Makrana Road, Madanganj,<br />
-                  Kishangarh, Rajasthan 305801
+                  Khasra No. 375, 361,
+                  Makrana Road, Madanganj, 
+                  Kali Dungri, Kishangarh,<br />
+                  Rajasthan 305801
                 </span>
               </li>
               <li>
