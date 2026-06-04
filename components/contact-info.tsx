@@ -26,10 +26,10 @@ const contactMethods = [
   {
     icon: Mail,
     title: "Email Us",
-    details: ["info@chandakmarble.com", "sales@chandakmarble.com"],
+    details: ["chandakemarblesales@gmail.com"],
     action: {
       label: "Send Email",
-      href: "mailto:info@chandakmarble.com"
+      href: "mailto:chandakmarblesales@gmail.com"
     }
   }
 ]
