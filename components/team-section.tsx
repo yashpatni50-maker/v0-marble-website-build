@@ -5,22 +5,22 @@ import { Phone, Mail } from "lucide-react"
 
 const team = [
   {
-    name: "Rajesh Chandak",
+    name: "Rakesh Chandak",
     role: "Managing Director",
     description: "Leading the company with 25+ years of experience in the marble industry.",
-    phone: "+91 99500 85300"
+    phone: "+91 98290 70752 "
   },
   {
-    name: "Amit Chandak",
+    name: "Yash Patni",
     role: "Director - Operations",
     description: "Overseeing quality control and international sourcing operations.",
     phone: "+91 99500 85300"
   },
   {
-    name: "Priya Chandak",
+    name: "Punit Chandak",
     role: "Director - Design Consultation",
     description: "Helping clients visualize and select the perfect marble for their projects.",
-    phone: "+91 99500 85300"
+    phone: "+91 98290 82911"
   }
 ]
 
