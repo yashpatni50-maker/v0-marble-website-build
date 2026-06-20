@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable} bg-background`}>
+<html lang="en" className={`${playfair.variable} ${inter.variable} bg-background`}>
   <body className="font-sans antialiased">
 
     <Script id="meta-pixel" strategy="afterInteractive">
