@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { useRef, useEffect, useState } from "react"
 import { MessageCircle, Phone, Download } from "lucide-react"
