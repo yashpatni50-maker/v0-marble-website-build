@@ -15,7 +15,7 @@ export function HeroSection() {
           className="w-full h-full object-cover"
         >
           <source 
-            src="/hero-video.mp4" 
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Cinematic_luxury_website_hero-uugUZVoQFrmlEiBCGGMP4ayvBHy3yu.mp4" 
             type="video/mp4" 
           />
         </video>
