@@ -13,10 +13,9 @@ export function HeroSection() {
           loop
           playsInline
           className="w-full h-full object-cover"
-          poster="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/This%20breathtaking%20marble%20installation%20by%20Chandak%20Marble%20transforms%20grand%20spaces%20into%20timeless%20st-0igveQOMjq0xMBHdgJolm7yQpqKnz2.jpg"
         >
           <source 
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Video%202026-03-20%20at%206.21.17%20PM-EsjOJVfaTXJmf5WR3yozpLJ8iEpxty.mp4" 
+            src="/hero-video.mp4" 
             type="video/mp4" 
           />
         </video>

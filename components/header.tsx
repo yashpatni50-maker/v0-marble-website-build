@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { Menu, X, Phone, Download } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 const navigation = [
@@ -19,14 +20,14 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
-          <div className="flex flex-col">
-            <div className="flex items-center gap-1">
-              <span className="text-2xl font-serif font-bold tracking-tight text-[oklch(0.55_0.12_70)]">C</span>
-              <span className="text-2xl font-serif font-bold tracking-tight text-[oklch(0.55_0.12_70)]">M</span>
-            </div>
-            <span className="text-xs tracking-[0.2em] text-muted-foreground font-medium">CHANDAK MARBLE</span>
-          </div>
+        <Link href="/" className="flex items-center gap-2">
+          <Image 
+            src="/logo.png" 
+            alt="Chandak Marble" 
+            width={120} 
+            height={60}
+            className="h-12 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}
