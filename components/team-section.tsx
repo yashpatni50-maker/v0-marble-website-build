@@ -52,7 +52,7 @@ export function TeamSection() {
             >
               <div className="w-24 h-24 bg-gradient-to-br from-[#c9a227] to-[#8b7355] rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="font-serif text-3xl text-white">
-                  {member.name.split(' ').map(n => n[0]).join('')}
+                  {member.name.split(' ').map((n: string) => n[0]).join('')}
                 </span>
               </div>
               <h3 className="font-serif text-xl text-foreground mb-1">{member.name}</h3>

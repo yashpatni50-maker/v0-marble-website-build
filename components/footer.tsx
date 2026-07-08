@@ -16,7 +16,7 @@ const navigation = {
     { name: "About Us", href: "/about" },
     { name: "Our Process", href: "/process" },
     { name: "Clientele", href: "/clientele" },
-    { name: "Download Brochure", href="/brochure" },
+    { name: "Download Brochure", href: "/brochure" },
     { name: "Contact Us", href: "/contact" },
   ],
   social: [
