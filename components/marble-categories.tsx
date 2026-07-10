@@ -9,68 +9,58 @@ import { Button } from "@/components/ui/button"
 
 const categories = [
   {
-    id: "italian-marble",
-    name: "Italian Marble",
-    description: "World-renowned for its exceptional quality and timeless beauty. Our Italian marble collection features the finest selections from Carrara, Calacatta, and Statuario.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Luxury%20that%20reflects%20in%20every%20detail.With%20its%20soft%20veining%2C%20glossy%20finish%2C%20and%20timeless%20appeal%2C%20-E9GeIPcxmGBTauLJMAIiAjuH3nQNjH.jpg",
-    varieties: ["Carrara White", "Calacatta Gold", "Statuario", "Botticino", "Arabescato"],
-    origin: "Italy"
+    id: "gorgeous-grey",
+    name: "Gorgeous Grey",
+    description: "Contemporary sophistication meets natural beauty. Our Gorgeous Grey collection offers versatility for modern architectural designs.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/This%20breathtaking%20marble%20installation%20by%20Chandak%20Marble%20transforms%20grand%20spaces%20into%20timeless%20st-0igveQOMjq0xMBHdgJolm7yQpqKnz2.jpg",
+    link: "/products/collections/gorgeous-grey",
+    varieties: ["Burberry Grey", "Arctic Grey", "Waterfall Grey", "Silver River", "Riviera Grey"],
+    origin: "Premium Selection"
   },
   {
-    id: "turkish-marble",
-    name: "Turkish Marble",
-    description: "Known for its distinctive veining patterns and rich color palette. Turkish marble offers excellent durability with stunning aesthetics.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Let%20your%20floors%20reflect%20your%20finest%20taste.This%20elegant%20marble%20flooring%20by%20Chandak%20Marble%20enhance-6WrBsrn0MmihtzKQHikltXOAInmxwS.jpg",
-    varieties: ["Emperador", "Crema Marfil", "Afyon White", "Dino Beige", "Spider Grey"],
-    origin: "Turkey"
+    id: "beautiful-beige",
+    name: "Beautiful Beige",
+    description: "Warm, inviting tones that create welcoming spaces. Perfect for creating elegant, timeless interiors with a touch of warmth.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Transform%20your%20space%20into%20an%20oasis%20of%20tranquility%20with%20our%20unique%20marbles%2C%20where%20every%20vein%20and-R1gXedG9ij20lrJAp9N3SC0SRDdaCy.webp",
+    link: "/products/collections/beautiful-beige",
+    varieties: ["Crema Nova", "Crema Marfil", "D Martino", "Perlato Sicilia", "Oracle Beige"],
+    origin: "Premium Selection"
+  },
+  {
+    id: "wow-white",
+    name: "Wow White",
+    description: "Pure, pristine, and eternally elegant. Our white marble selection ranges from subtle veining to bold dramatic patterns.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sunlit%20spaces.%20Marble%20moods.%20Minimal%20magic.%20This%20luxe%20imported%20marble%20flooring%20brings%20that%20clean-1Pl37YavwQjco4pzDB4Imzta59XSax.jpg",
+    link: "/products/collections/wow-white",
+    varieties: ["Statuario White", "Calacatta Borghini", "Bianco Supremo", "Pure White", "Alpine White"],
+    origin: "Premium Selection"
+  },
+  {
+    id: "bold-black",
+    name: "Bold Black",
+    description: "Power and sophistication in every vein. Our Bold Black collection features striking patterns and exudes luxury in every application.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Luxury%20that%20reflects%20in%20every%20detail.With%20its%20soft%20veining%2C%20glossy%20finish%2C%20and%20timeless%20appeal%2C%20-E9GeIPcxmGBTauLJMAIiAjuH3nQNjH.jpg",
+    link: "/products/collections/bold-black",
+    varieties: ["Nero Saint Laurent", "Golden Galaxy", "Golden Portoro", "Black Marquina", "Cosmic Portoro"],
+    origin: "Premium Selection"
+  },
+  {
+    id: "aesthetic-brown",
+    name: "Aesthetic Brown",
+    description: "Warmth and artistic expression combined. These rich, earthy tones create spaces that feel both grounded and luxurious.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Experience%20the%20timeless%20beauty%20of%20Marble%20flooring%2C%20where%20loyalty%20meets%20luxury.%20Our%20expertly%20cra-ctszDVauiNX2ybohpYC4qsWul8lltA.webp",
+    link: "/products/collections/aesthetic-brown",
+    varieties: ["Golden Emperador", "Dark Emperador", "Viena Brown", "Bronze Armani", "African Gold"],
+    origin: "Premium Selection"
   },
   {
     id: "onyx-marble",
     name: "Onyx Marble",
     description: "Translucent beauty that creates breathtaking backlit features. Our Onyx collection brings dramatic elegance to any luxury space.",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Not%20just%20marble%E2%80%A6%20it%E2%80%99s%20a%20statement%20piece%20Bold%20textures%2C%20rich%20tones%2C%20and%20a%20design%20that%20instantly%20e-QbQVrm383xPXzZh6Q1pA2oqbjz1KXl.jpg",
-    varieties: ["Green Onyx", "Honey Onyx", "White Onyx", "Pink Onyx", "Blue Onyx"],
-    origin: "Pakistan & Iran"
-  },
-  {
-    id: "white-marble",
-    name: "White Marble",
-    description: "Pure, pristine, and eternally elegant. Our white marble selection ranges from subtle veining to bold dramatic patterns.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sunlit%20spaces.%20Marble%20moods.%20Minimal%20magic.%20This%20luxe%20imported%20marble%20flooring%20brings%20that%20clean-1Pl37YavwQjco4pzDB4Imzta59XSax.jpg",
-    varieties: ["Makrana White", "Vietnam White", "Thassos White", "Volakas White", "Ariston White"],
-    origin: "India, Greece, Vietnam"
-  },
-  {
-    id: "grey-marble",
-    name: "Grey Marble",
-    description: "Contemporary sophistication meets natural beauty. Grey marble offers versatility for modern architectural designs.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/This%20breathtaking%20marble%20installation%20by%20Chandak%20Marble%20transforms%20grand%20spaces%20into%20timeless%20st-0igveQOMjq0xMBHdgJolm7yQpqKnz2.jpg",
-    varieties: ["Pietra Grey", "Grey Emperador", "Bardiglio", "Silver Wave", "Grigio Carnico"],
-    origin: "Italy, Turkey, China"
-  },
-  {
-    id: "beige-marble",
-    name: "Beige & Cream Marble",
-    description: "Warm, inviting tones that create welcoming spaces. Perfect for creating elegant, timeless interiors with a touch of warmth.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Transform%20your%20space%20into%20an%20oasis%20of%20tranquility%20with%20our%20unique%20marbles%2C%20where%20every%20vein%20and-R1gXedG9ij20lrJAp9N3SC0SRDdaCy.webp",
-    varieties: ["Crema Marfil", "Botticino Classic", "Breccia Oniciata", "Jura Beige", "Moca Cream"],
-    origin: "Spain, Italy, Portugal"
-  },
-  {
-    id: "exotic-marble",
-    name: "Exotic & Rare Marble",
-    description: "Statement pieces for the most discerning clients. Our exotic collection features rare patterns and colors found nowhere else.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Experience%20the%20timeless%20beauty%20of%20Marble%20flooring%2C%20where%20loyalty%20meets%20luxury.%20Our%20expertly%20cra-ctszDVauiNX2ybohpYC4qsWul8lltA.webp",
-    varieties: ["Blue Bahia", "Patagonia", "Azul Macaubas", "Red Alicante", "Verde Guatemala"],
-    origin: "Brazil, Argentina, Guatemala"
-  },
-  {
-    id: "granite",
-    name: "Premium Granite",
-    description: "Unmatched durability and natural beauty. Our granite selection offers strength with stunning visual appeal.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/A%20Marble%20for%20Every%20VisionYour%20dream%20space%20begins%20with%20the%20right%20foundation%2C%20and%20at%20Chandak%20Marbl-zMRdq043J9wAQJ5s3K22xlu75XTFCN.jpg",
-    varieties: ["Black Galaxy", "Tan Brown", "Alaska White", "Kashmir White", "Absolute Black"],
-    origin: "India, Brazil, Norway"
+    link: "/products/collections/onyx-marble",
+    varieties: ["Honey Onyx", "Champagne Onyx", "White Onyx", "Golden Wave Onyx", "Ivory Onyx"],
+    origin: "Premium Selection"
   },
 ]
 
@@ -145,7 +135,7 @@ export function MarbleCategories() {
                   </div>
                   
                   <Link 
-                    href={`/products/${category.id}`}
+                    href={category.link}
                     className="inline-flex items-center text-white text-sm font-medium group/link"
                   >
                     View Collection
