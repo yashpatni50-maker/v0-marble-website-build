@@ -1,22 +1,21 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Facebook, Instagram, Youtube, Phone, Mail, MapPin } from "lucide-react"
 
 const navigation = {
   products: [
-    { name: "Italian Marble", href: "/products/italian-marble" },
-    { name: "Turkish Marble", href: "/products/turkish-marble" },
-    { name: "White Marble", href: "/products/white-marble" },
-    { name: "Grey Marble", href: "/products/grey-marble" },
-    { name: "Beige Marble", href: "/products/beige-marble" },
-    { name: "Black Marble", href: "/products/black-marble" },
-    { name: "Onyx Marble", href: "/products/onyx-marble" },
-    { name: "Exotic Marble", href: "/products/exotic-marble" },
+    { name: "Gorgeous Grey", href: "/products/collections/gorgeous-grey" },
+    { name: "Beautiful Beige", href: "/products/collections/beautiful-beige" },
+    { name: "Wow White", href: "/products/collections/wow-white" },
+    { name: "Bold Black", href: "/products/collections/bold-black" },
+    { name: "Aesthetic Brown", href: "/products/collections/aesthetic-brown" },
+    { name: "Onyx Marble", href: "/products/collections/onyx-marble" },
+    { name: "All Products", href: "/products" },
   ],
   company: [
-    { name: "About Us", href: "/about" },
-    { name: "Our Process", href: "/process" },
-    { name: "Clientele", href: "/clientele" },
-    { name: "Download Brochure", href: "/brochure" },
+    { name: "About Us", href: "/#about" },
+    { name: "Why Chandak", href: "/#why-chandak" },
+    { name: "Our Clientele", href: "/#clientele" },
     { name: "Contact Us", href: "/contact" },
   ],
   social: [
@@ -33,14 +32,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block">
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1">
-                  <span className="text-3xl font-serif font-bold tracking-tight text-[oklch(0.80_0.12_70)]">C</span>
-                  <span className="text-3xl font-serif font-bold tracking-tight text-[oklch(0.80_0.12_70)]">M</span>
-                </div>
-                <span className="text-xs tracking-[0.2em] text-white/60 font-medium">CHANDAK MARBLE</span>
-              </div>
+            <Link href="/" className="inline-block hover:scale-105 transition-transform duration-300">
+              <Image 
+                src="/logo.png" 
+                alt="Chandak Marble" 
+                width={140} 
+                height={70}
+                className="h-16 w-auto"
+                priority
+              />
             </Link>
             <p className="mt-4 text-white/60 text-sm leading-relaxed">
               Premium imported marble since 1981. Trusted by architects, builders, and homeowners across India.

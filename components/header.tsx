@@ -24,9 +24,10 @@ export function Header() {
           <Image 
             src="/logo.png" 
             alt="Chandak Marble" 
-            width={120} 
-            height={60}
-            className="h-12 w-auto"
+            width={160} 
+            height={80}
+            className="h-14 w-auto"
+            priority
           />
         </Link>
 
