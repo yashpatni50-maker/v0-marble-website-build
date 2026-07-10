@@ -15,7 +15,8 @@ interface Props {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const collection = getCollectionBySlug(params.slug)
+  const { slug } = await params
+  const collection = getCollectionBySlug(slug)
 
   if (!collection) {
     return {
@@ -37,8 +38,9 @@ export function generateStaticParams() {
   }))
 }
 
-export default function CollectionPage({ params }: Props) {
-  const collection = getCollectionBySlug(params.slug)
+export default async function CollectionPage({ params }: Props) {
+  const { slug } = await params
+  const collection = getCollectionBySlug(slug)
 
   if (!collection) {
     notFound()
