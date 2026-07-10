@@ -12,34 +12,34 @@ const clientTypes = [
 
 const projects = [
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/This%20breathtaking%20marble%20installation%20by%20Chandak%20Marble%20transforms%20grand%20spaces%20into%20timeless%20st-0igveQOMjq0xMBHdgJolm7yQpqKnz2.jpg",
-    title: "Grand Lobby",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Luxury%20Villa-xw9I0z9Eud4pPFsBNPjB1infGoSJvm.png",
+    title: "Luxury Villa",
     category: "Commercial",
   },
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sunlit%20spaces.%20Marble%20moods.%20Minimal%20magic.%20This%20luxe%20imported%20marble%20flooring%20brings%20that%20clean-1Pl37YavwQjco4pzDB4Imzta59XSax.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Modern%20Penthouse-Ks3N1koYgMU9QlVR8xwtnpCRQ8MPeM.png",
     title: "Modern Penthouse",
     category: "Residential",
   },
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Luxury%20that%20reflects%20in%20every%20detail.With%20its%20soft%20veining%2C%20glossy%20finish%2C%20and%20timeless%20appeal%2C%20-E9GeIPcxmGBTauLJMAIiAjuH3nQNjH.jpg",
-    title: "Luxury Villa",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Modern%20Interior-W7WxYmLWWgyP3TqLm0qBdZWTcAbn7a.png",
+    title: "Modern Interior",
     category: "Residential",
   },
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Let%20your%20floors%20reflect%20your%20finest%20taste.This%20elegant%20marble%20flooring%20by%20Chandak%20Marble%20enhance-6WrBsrn0MmihtzKQHikltXOAInmxwS.jpg",
-    title: "Premium Living Room",
-    category: "Residential",
-  },
-  {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Experience%20the%20timeless%20beauty%20of%20Marble%20flooring%2C%20where%20loyalty%20meets%20luxury.%20Our%20expertly%20cra-ctszDVauiNX2ybohpYC4qsWul8lltA.webp",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Contemporary%20Space-mxNoiBt01k1xCfgNWT9LHiUs2VSavL.png",
     title: "Contemporary Space",
     category: "Residential",
   },
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/A%20Marble%20for%20Every%20VisionYour%20dream%20space%20begins%20with%20the%20right%20foundation%2C%20and%20at%20Chandak%20Marbl-zMRdq043J9wAQJ5s3K22xlu75XTFCN.jpg",
-    title: "Modern Interior",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Premium%20Living%20Room-LtWsRYxRbHckM4pgQvoGPYsVDWt171.png",
+    title: "Premium Living Room",
     category: "Residential",
+  },
+  {
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Modern%20Penthouse-Ks3N1koYgMU9QlVR8xwtnpCRQ8MPeM.png",
+    title: "Grand Lobby",
+    category: "Commercial",
   },
 ]
 
