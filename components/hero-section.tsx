@@ -112,22 +112,6 @@ export function HeroSection() {
               for luxury homes, villas, hotels and architectural landmarks.
             </motion.p>
 
-            {/* Logo — shifted down 3-4 lines for video frame alignment */}
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={ready ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 1.0, ease, delay: 0.72 }}
-              className="mb-8 sm:mb-12 lg:mb-16"
-            >
-              <Image
-                src="/logo.png"
-                alt="Chandak Marble Premium Branding"
-                width={280}
-                height={140}
-                className="w-auto h-20 sm:h-24 lg:h-28 object-contain"
-              />
-            </motion.div>
-
             {/* CTAs */}
             <motion.div
               initial={{ opacity: 0, y: 24 }}

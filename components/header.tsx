@@ -56,7 +56,7 @@ export function Header() {
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 lg:px-8 h-auto lg:h-20 py-2 lg:py-0">
 
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0 group" aria-label="Chandak Marble — Home">
+          <Link href="/" className="flex-shrink-0 group pt-1" aria-label="Chandak Marble — Home">
             <Image
               src="/logo.png"
               alt="Chandak Marble"
