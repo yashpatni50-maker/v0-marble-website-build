@@ -46,22 +46,22 @@ export function Header() {
       ? "bg-transparent border-b border-transparent"
       : "bg-background/98 backdrop-blur-md border-b border-border/40"
 
-  const logoScale = scrolled ? "h-14 sm:h-16" : "h-16 sm:h-20 lg:h-24"
+  const logoScale = scrolled ? "h-12 sm:h-14 lg:h-16" : "h-20 sm:h-24 lg:h-28"
 
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${headerBg}`}
       >
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 lg:px-8 h-16 lg:h-20">
+        <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 lg:px-8 h-auto lg:h-20 py-2 lg:py-0">
 
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 group" aria-label="Chandak Marble — Home">
             <Image
               src="/logo.png"
               alt="Chandak Marble"
-              width={220}
-              height={110}
+              width={260}
+              height={130}
               className={`w-auto object-contain transition-all duration-500 ${logoScale}`}
               priority
             />

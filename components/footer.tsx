@@ -40,9 +40,9 @@ export function Footer() {
               <Image
                 src="/logo.png"
                 alt="Chandak Marble"
-                width={180}
-                height={90}
-                className="h-20 w-auto object-contain mb-6"
+                width={220}
+                height={110}
+                className="h-28 sm:h-32 w-auto object-contain mb-6"
               />
             </Link>
             <p className="text-white/45 text-sm leading-relaxed mb-4">
