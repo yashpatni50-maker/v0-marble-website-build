@@ -13,9 +13,9 @@ const navigation = {
     { name: "All Products", href: "/products" },
   ],
   company: [
-    { name: "About Us", href: "/#about" },
-    { name: "Why Chandak", href: "/#why-chandak" },
-    { name: "Our Clientele", href: "/#clientele" },
+    { name: "About Us", href: "/about" },
+    { name: "Why Chandak", href: "/why-chandak" },
+    { name: "Our Clientele", href: "/our-clientele" },
     { name: "Contact Us", href: "/contact" },
   ],
   social: [
