@@ -101,8 +101,8 @@ function CollectionCard({
           {collection.tagline}
         </p>
 
-        {/* Arrow — slides in on hover */}
-        <div className="flex items-center gap-2 text-[var(--gold)] text-xs font-medium tracking-wider uppercase opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-400">
+        {/* Arrow — always visible on mobile, slides in on hover on desktop */}
+        <div className="flex items-center gap-2 text-[var(--gold)] text-xs font-medium tracking-wider uppercase opacity-100 translate-y-0 sm:opacity-0 sm:translate-y-2 sm:group-hover:opacity-100 sm:group-hover:translate-y-0 transition-all duration-400">
           Explore Collection
           <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
         </div>

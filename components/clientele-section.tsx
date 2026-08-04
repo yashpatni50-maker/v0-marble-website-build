@@ -77,7 +77,7 @@ export function ClienteleSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative aspect-[4/3] rounded-lg overflow-hidden"
+              className="group relative aspect-[4/3] rounded-lg overflow-hidden cursor-pointer"
             >
               <Image
                 src={project.image}
@@ -85,10 +85,26 @@ export function ClienteleSection() {
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform">
-                <span className="text-[oklch(0.80_0.12_70)] text-xs font-medium uppercase tracking-wider">{project.category}</span>
-                <h3 className="text-white font-serif text-lg font-semibold mt-1">{project.title}</h3>
+              
+              {/* Desktop hover overlay — only on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:block" />
+              
+              {/* Mobile/tablet gradient — always visible for text readability */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent sm:opacity-0 sm:group-hover:opacity-0" />
+              
+              {/* Title content — positioned at bottom */}
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                {/* Desktop: hidden until hover */}
+                <div className="hidden sm:block opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-[oklch(0.80_0.12_70)] text-xs font-medium uppercase tracking-wider">{project.category}</span>
+                  <h3 className="text-white font-serif text-lg font-semibold mt-1">{project.title}</h3>
+                </div>
+                
+                {/* Mobile/tablet: always visible */}
+                <div className="sm:hidden">
+                  <span className="text-[oklch(0.80_0.12_70)] text-xs font-medium uppercase tracking-wider">{project.category}</span>
+                  <h3 className="text-white font-serif text-lg font-semibold mt-1">{project.title}</h3>
+                </div>
               </div>
             </div>
           ))}
