@@ -20,12 +20,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Chandak Marble | Premium Imported Italian Marble in Kishangarh Since 1981',
-  description: 'Chandak Marble - Leading importer and supplier of premium Italian marble, Turkish marble, Onyx marble in Kishangarh, Rajasthan. Trusted by architects, builders, and homeowners since 1981. Direct factory pricing.',
-  keywords: 'Italian marble Kishangarh, imported marble India, marble supplier Rajasthan, luxury marble, premium marble, Chandak Marble, Italian marble price, white marble, grey marble, onyx marble',
+  title: 'Imported Marble Flooring & Cladding | Chandak Marble Since 1981 | Kishangarh',
+  description: 'Chandak Marble - India\'s premier importer of luxury Italian marble flooring, architectural stone, and premium natural marble. Direct quarry imports from Italy, Turkey, Greece. 40+ years trusted by architects, builders, luxury homes. Direct factory pricing.',
+  keywords: 'imported marble, Italian marble, marble flooring, architectural stone, luxury marble, Italian marble Kishangarh, marble supplier, premium marble, natural stone, marble cladding, imported marble India, marble for villas, marble for hotels',
   openGraph: {
-    title: 'Chandak Marble | Premium Imported Italian Marble Since 1981',
-    description: 'Premium imported natural marble for luxury homes, villas, hotels, and commercial projects. Trusted by architects, builders, and homeowners since 1981.',
+    title: 'Luxury Imported Marble Flooring & Cladding | Chandak Marble',
+    description: 'Discover premium imported marble flooring and architectural stone from Italy, Turkey, and Greece. Direct from quarry for luxury homes, villas, hotels, and landmark projects.',
     type: 'website',
     locale: 'en_IN',
   },

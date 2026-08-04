@@ -9,8 +9,12 @@ import { TeamSection } from "@/components/team-section"
 import { CTASection } from "@/components/cta-section"
 
 export const metadata = {
-  title: 'About Us | Chandak Marble - Legacy of Excellence Since 1981',
-  description: 'Learn about Chandak Marble\'s 40+ year journey as India\'s leading importer of premium Italian marble. Family-owned, quality-driven, customer-focused.',
+  title: 'About Chandak Marble | Premium Italian Marble Importer Since 1981 | Kishangarh',
+  description: 'Discover Chandak Marble\'s 40+ year heritage as India\'s leading importer of luxury Italian marble and architectural stone. Direct quarry sourcing, quality processing, trusted by architects for premium marble flooring, villas, hotels.',
+  openGraph: {
+    title: 'Chandak Marble - India\'s Premium Italian Marble Supplier',
+    description: 'Since 1981, we\'ve been importing and supplying the world\'s finest marble for luxury homes, hotels, and architectural projects across India.',
+  },
 }
 
 export default function AboutPage() {

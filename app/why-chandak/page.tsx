@@ -6,8 +6,12 @@ import { WhyChooseUs } from "@/components/why-choose-us"
 import { CTASection } from "@/components/cta-section"
 
 export const metadata = {
-  title: 'Why Chandak Marble | 40+ Years of Premium Quality',
-  description: "Discover why Chandak Marble is India's trusted choice for premium imported marble. Direct factory pricing, global sourcing, and expert guidance.",
+  title: 'Why Choose Chandak Marble | Direct Italian Marble Importer | 40+ Years Excellence',
+  description: 'Discover why Chandak Marble is India\'s trusted importer of premium Italian marble, architectural stone, and luxury flooring. Direct quarry sourcing, quality control, pan-India delivery, expert guidance for architects and builders.',
+  openGraph: {
+    title: 'Why Chandak Marble - Direct Importer of Premium Italian Marble',
+    description: 'Uncompromising quality, direct factory pricing, and 40+ years of expertise in imported marble flooring for luxury homes and commercial projects.',
+  },
 }
 
 export default function WhyChandakPage() {
