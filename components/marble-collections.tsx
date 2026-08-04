@@ -142,9 +142,9 @@ export function MarbleCollections() {
               transition={{ duration: 0.9, ease, delay: 0.1 }}
               className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance"
             >
-              Premium Marble
+              Imported Marble
               <br />
-              <span className="text-[var(--gold)]">Collections</span>
+              <span className="text-[var(--gold)]">Flooring & Cladding</span>
             </motion.h2>
           </div>
           <motion.p
@@ -153,8 +153,8 @@ export function MarbleCollections() {
             transition={{ duration: 0.9, ease, delay: 0.2 }}
             className="text-muted-foreground text-base leading-relaxed max-w-sm lg:text-right"
           >
-            Hand-selected from the world&apos;s finest quarries in Italy, Turkey, Greece,
-            Portugal, and Iran. Every slab a singular work of nature.
+            Carefully curated Italian marble flooring and architectural stone, hand-selected from the world&apos;s finest quarries 
+            in Italy, Turkey, Greece, Portugal, and Iran. Each slab a masterpiece for luxury interiors.
           </motion.p>
         </div>
 

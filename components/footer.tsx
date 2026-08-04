@@ -46,11 +46,11 @@ export function Footer() {
               />
             </Link>
             <p className="text-white/45 text-sm leading-relaxed mb-4">
-              Premium imported natural marble since 1981. Trusted by architects,
-              builders, and homeowners across India.
+              Luxury imported marble supplier since 1981. Direct Italian marble, Turkish stone, and architectural imports 
+              for premium homes, hotels, and commercial spaces. Trusted by architects across India.
             </p>
             <p className="text-overline text-[var(--gold-dim)]">
-              Stone &middot; Style &middot; Statement
+              Luxury Marble &middot; Architectural Stone &middot; Premium Flooring
             </p>
 
             {/* Social */}

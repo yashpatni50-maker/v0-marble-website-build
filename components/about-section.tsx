@@ -75,19 +75,19 @@ export function AboutSection() {
 
             <div className="space-y-4 text-muted-foreground leading-relaxed text-base">
               <p>
-                Chandak Marble is one of India&apos;s foremost importers and suppliers of premium
-                natural marble, based in the marble capital of Kishangarh, Rajasthan. For more
-                than four decades we have delivered world-class stone for residential and
-                commercial projects throughout the country.
+                Since 1981, Chandak Marble has been India&apos;s premier importer and supplier of luxury imported marble 
+                and architectural stone. Based in Kishangarh, the marble capital of Rajasthan, we deliver premium Italian marble 
+                flooring, wall cladding, and natural stone for 5000+ residential, hospitality, and commercial projects across 20+ states.
               </p>
               <p>
-                We source directly from quarries in Italy, Turkey, Greece, Portugal, Iran, and
-                beyond — ensuring authenticity, superior quality, and exclusive varieties that
-                are unavailable elsewhere.
+                We source directly from prestigious quarries in Italy, Turkey, Greece, Portugal, Iran, and beyond — ensuring 
+                authentic Italian marble, guaranteed quality, and exclusive stone varieties unavailable through conventional suppliers. 
+                Our direct quarry relationships eliminate middlemen and deliver competitive imported marble pricing.
               </p>
               <p>
-                Our commitment to craftsmanship, transparency, and customer experience has built
-                a reputation that architects, builders, and design-led homeowners trust.
+                Our heritage of craftsmanship, transparent sourcing, and dedicated customer service has made us the trusted choice 
+                of leading architects, interior designers, luxury builders, and discerning homeowners who demand uncompromising quality 
+                in their premium marble installations.
               </p>
             </div>
 

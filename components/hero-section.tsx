@@ -108,8 +108,9 @@ export function HeroSection() {
               transition={{ duration: 1.0, ease, delay: 0.6 }}
               className="text-white/65 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed mb-6 sm:mb-8 lg:mb-12"
             >
-              Premium imported natural marble from Italy, Turkey and Greece — 
-              for luxury homes, villas, hotels and architectural landmarks.
+              Discover exceptional imported marble flooring and architectural stone from Italy, Turkey, and Greece. 
+              Direct from quarry to your luxury home, villa, hotel, or landmark project — forty years of heritage 
+              ensuring uncompromising quality and authentic natural beauty.
             </motion.p>
 
             {/* CTAs */}

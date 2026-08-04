@@ -7,50 +7,50 @@ const features = [
   {
     icon: Award,
     number: "01",
-    title: "40+ Years Experience",
-    description: "Trusted expertise since 1981 in premium marble sourcing and supply.",
+    title: "Four Decades of Expertise",
+    description: "Since 1981, we've been India's trusted importer of premium Italian marble, Turkish stone, and international luxury materials.",
   },
   {
     icon: Factory,
     number: "02",
-    title: "Direct Importer & Factory",
-    description: "Own processing units ensuring quality control at every stage.",
+    title: "Direct Importer & Processor",
+    description: "Our own processing units in Kishangarh ensure authentic stone quality, precision cutting, and complete control from quarry to delivery.",
   },
   {
     icon: Globe,
     number: "03",
-    title: "Global Sourcing",
-    description: "Imported from Italy, Turkey, Greece, Portugal, Iran and beyond.",
+    title: "International Stone Sourcing",
+    description: "Direct imports from Italy, Turkey, Greece, Portugal, Iran and exclusive sources — authentic Italian marble and rare architectural stones.",
   },
   {
     icon: Gem,
     number: "04",
-    title: "Premium Selection",
-    description: "Hand-picked marble slabs meeting the highest quality standards.",
+    title: "Curated Premium Collections",
+    description: "Hand-selected marble slabs and natural stone, rigorously inspected for color consistency, pattern, and architectural integrity.",
   },
   {
     icon: Truck,
     number: "05",
-    title: "Pan India Supply",
-    description: "Reliable delivery across all states with safe transportation.",
+    title: "Pan-India Marble Supply",
+    description: "Reliable nationwide delivery to 20+ states. Safe, secure transportation for marble flooring, wall cladding, and architectural projects.",
   },
   {
     icon: Shield,
     number: "06",
-    title: "Factory Pricing",
-    description: "Direct factory rates without middlemen markups.",
+    title: "Direct Quarry Pricing",
+    description: "Factory-direct rates eliminate middlemen. Competitive Italian marble prices with guaranteed authenticity and quality.",
   },
   {
     icon: Users,
     number: "07",
-    title: "Industry Trusted",
-    description: "Preferred choice of builders, architects and homeowners.",
+    title: "Architect & Builder Preferred",
+    description: "Trusted by leading architects, interior designers, and builders for luxury villas, hotels, and landmark commercial projects.",
   },
   {
     icon: HeadphonesIcon,
     number: "08",
-    title: "Expert Guidance",
-    description: "Professional consultation for material selection and application.",
+    title: "Expert Material Consultation",
+    description: "Professional guidance on marble selection, flooring applications, wall design, interior styling, and maintenance for lasting luxury.",
   },
 ]
 
@@ -93,9 +93,9 @@ export function WhyChooseUs() {
             transition={{ duration: 0.9, ease, delay: 0.15 }}
             className="text-muted-foreground text-base leading-relaxed"
           >
-            We combine tradition with innovation to deliver the finest natural stone
-            for the spaces that matter most — luxury homes, five-star hospitality,
-            and landmark architectural projects.
+            We source the world's finest imported marble and architectural stone, combining heritage 
+            craftsmanship with modern processing to deliver exceptional quality for luxury homes, 
+            five-star hotels, and iconic architectural landmarks across India.
           </motion.p>
         </div>
 
