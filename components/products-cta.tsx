@@ -54,9 +54,12 @@ export function ProductsCTA() {
             </Button>
           </div>
 
-          <div className="flex items-center justify-center text-gray-400">
-            <MapPin className="h-5 w-5 mr-2 text-[#c9a227]" />
-            <span>Khasra No. 375 & 361, Makrana Road, Kishangarh, Rajasthan 305801</span>
+          <div className="flex flex-col items-center justify-center text-gray-400 gap-2">
+            <p className="text-sm font-medium text-white/80">Chandak Marble International</p>
+            <div className="flex items-center justify-center text-gray-400">
+              <MapPin className="h-5 w-5 mr-2 text-[#c9a227]" />
+              <span>Khasra No. 375 & 361, Makrana Road, Kishangarh, Rajasthan 305801</span>
+            </div>
           </div>
         </motion.div>
       </div>

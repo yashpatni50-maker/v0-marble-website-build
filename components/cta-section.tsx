@@ -94,12 +94,15 @@ export function CTASection() {
                   <span className="w-2 h-2 bg-white rounded-full animate-pulse-gold" />
                   Main Showroom
                 </h3>
-                <p className="text-white/70 text-sm">
+                <p className="text-white/80 text-xs font-medium mb-2 opacity-90">
+                  Chandak Marble International
+                </p>
+                <p className="text-white/70 text-sm mb-3">
                   Khasra No. 375 & 361, Makrana Road,<br />
                   Madanganj, Kali Dungri,<br />
                   Kishangarh, Rajasthan 305801
                 </p>
-                <Link href="tel:+919500853000" className="text-white font-medium text-sm mt-2 inline-block hover:underline luxury-text-hover">
+                <Link href="tel:+919500853000" className="text-white font-medium text-sm inline-block hover:underline luxury-text-hover">
                   +91 95008 53000
                 </Link>
               </div>
@@ -108,12 +111,15 @@ export function CTASection() {
                   <span className="w-2 h-2 bg-white rounded-full animate-pulse-gold" />
                   Processing Unit
                 </h3>
-                <p className="text-white/70 text-sm">
+                <p className="text-white/80 text-xs font-medium mb-2 opacity-90">
+                  CHANDAK MARBLES PVT. LTD.
+                </p>
+                <p className="text-white/70 text-sm mb-3">
                   E-47, RIICO Industrial Area,<br />
                   3rd Phase, Harmada Road,<br />
                   Kishangarh, Rajasthan 305801
                 </p>
-                <Link href="tel:+919829082911" className="text-white font-medium text-sm mt-2 inline-block hover:underline luxury-text-hover">
+                <Link href="tel:+919829082911" className="text-white font-medium text-sm inline-block hover:underline luxury-text-hover">
                   +91 98290 82911
                 </Link>
               </div>
