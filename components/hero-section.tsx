@@ -62,8 +62,8 @@ export function HeroSection() {
       </div>
 
       {/* ── Content Container ────────────────────────────────────── */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pt-20 sm:pt-24">
-        <div className="w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
+      <div className="absolute inset-0 flex flex-col items-center justify-end z-10">
+        <div className="w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 lg:pb-28 flex flex-col items-center">
           <div className="max-w-3xl text-center">
 
             {/* Badge */}
@@ -117,7 +117,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 24 }}
               animate={ready ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1.0, ease, delay: 0.75 }}
-              className="flex flex-wrap gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 lg:mb-16"
+              className="flex flex-wrap gap-3 sm:gap-4 justify-center"
             >
               <Link
                 href="https://wa.me/919950085300?text=Hello%2C%20I%20am%20interested%20in%20imported%20marble.%20Please%20share%20catalogue%20and%20pricing."
@@ -148,24 +148,24 @@ export function HeroSection() {
                 <span className="sm:hidden">PDF</span>
               </a>
             </motion.div>
-
-            {/* Stats row — displayed below CTAs on all screen sizes */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={ready ? { opacity: 1 } : {}}
-              transition={{ duration: 1.2, ease, delay: 1.0 }}
-              className="w-full flex flex-wrap justify-center gap-8 sm:gap-10 lg:gap-16 mt-4 sm:mt-6 lg:mt-8 pt-8 sm:pt-12 lg:pt-16 border-t border-white/10"
-            >
-              {STATS.map((s) => (
-                <div key={s.label} className="text-center">
-                  <div className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--gold)]">
-                    {s.value}
-                  </div>
-                  <div className="text-overline text-white/50 mt-1 sm:mt-2 text-xs">{s.label}</div>
-                </div>
-              ))}
-            </motion.div>
           </div>
+
+          {/* Stats row — hidden on mobile, shown on larger screens */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={ready ? { opacity: 1 } : {}}
+            transition={{ duration: 1.2, ease, delay: 1.0 }}
+            className="mt-8 sm:mt-0 sm:absolute sm:right-8 sm:bottom-12 lg:bottom-28 flex gap-6 sm:gap-10"
+          >
+            {STATS.map((s) => (
+              <div key={s.label} className="text-left sm:text-right">
+                <div className="font-serif text-lg sm:text-2xl lg:text-3xl font-bold text-[var(--gold)]">
+                  {s.value}
+                </div>
+                <div className="text-overline text-white/50 mt-0.5 sm:mt-1 text-xs">{s.label}</div>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </div>
 
