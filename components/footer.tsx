@@ -38,7 +38,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" aria-label="Chandak Marble — Home">
               <Image
-                src="/logo.png"
+                src="/logo-footer.png"
                 alt="Chandak Marble"
                 width={220}
                 height={110}
