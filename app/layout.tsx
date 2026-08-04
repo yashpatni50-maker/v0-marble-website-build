@@ -3,6 +3,8 @@ import { Playfair_Display, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
 import { SchemaMarkup } from '@/components/schema-markup'
+import { SmoothScrollProvider } from '@/components/smooth-scroll-provider'
+import { LuxuryCursor } from '@/components/luxury-cursor'
 import './globals.css'
 
 const playfair = Playfair_Display({ 
@@ -71,7 +73,10 @@ export default function RootLayout({
             alt=""
           />
         </noscript>
-        {children}
+        <SmoothScrollProvider>
+          {children}
+        </SmoothScrollProvider>
+        <LuxuryCursor />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

@@ -1,132 +1,146 @@
 "use client"
 
 import Link from "next/link"
-import { useRef, useEffect, useState } from "react"
-import { MessageCircle, Phone, Download } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Image from "next/image"
+import { motion } from "framer-motion"
+import { MessageCircle, Phone, Download, MapPin } from "lucide-react"
+
+const ease: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
 export function CTASection() {
-  const sectionRef = useRef<HTMLElement>(null)
-  const [isVisible, setIsVisible] = useState(false)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      },
-      { threshold: 0.2 }
-    )
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
-    }
-
-    return () => observer.disconnect()
-  }, [])
-
   return (
-    <section ref={sectionRef} className="py-20 lg:py-32 bg-[oklch(0.55_0.12_70)] relative overflow-hidden">
-      {/* Background Pattern with animation */}
-      <div className="absolute inset-0 opacity-10">
-        <div 
-          className="absolute inset-0 animate-float" 
-          style={{
-            backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-          }}
+    <section
+      className="relative py-24 lg:py-36 overflow-hidden"
+      aria-labelledby="cta-heading"
+    >
+      {/* Background — luxury villa image with overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/hero-marble-interior.png"
+          alt=""
+          fill
+          className="object-cover"
+          aria-hidden="true"
         />
+        <div className="absolute inset-0 bg-[oklch(0.07_0.005_60)/88]" />
+        {/* Champagne gradient vignette */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[oklch(0.07_0.005_60)/60]" />
       </div>
 
-      {/* Glow effect backdrop */}
-      <div className="absolute -top-20 -right-20 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
+      {/* Top champagne line */}
+      <div className="divider-gold-full absolute top-0 left-0 right-0" />
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className={`font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 text-balance transition-all duration-700 ${isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-6'}`}>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 32 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 1.0, ease }}
+          className="max-w-3xl mx-auto text-center mb-14"
+        >
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="divider-gold" />
+            <span className="text-overline text-[var(--gold)]">Begin Your Project</span>
+            <div className="divider-gold" />
+          </div>
+
+          <h2
+            id="cta-heading"
+            className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white text-balance leading-tight mb-6"
+          >
             Looking for Premium Marble?
           </h2>
-          <p className={`text-white/90 text-lg leading-relaxed mb-10 transition-all duration-700 ${isVisible ? 'animate-fade-in-up animation-delay-100' : 'opacity-0 translate-y-6'}`}>
-            Contact us today for the latest marble designs, availability, pricing, and expert guidance. 
-            Our team is ready to help you find the perfect marble for your project.
+          <p className="text-white/60 text-base sm:text-lg leading-relaxed">
+            Contact us for the latest designs, availability, and expert guidance.
+            Our team is ready to help bring your vision to life.
           </p>
+        </motion.div>
 
-          <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 ${isVisible ? 'animate-fade-in-up animation-delay-200' : 'opacity-0 translate-y-6'}`}>
-            <Button 
-              asChild 
-              size="lg" 
-              className="bg-white text-[oklch(0.55_0.12_70)] hover:bg-white/90 px-8 py-6 text-lg font-medium shadow-lg luxury-button-hover"
-            >
-              <Link href="https://wa.me/919500853000?text=Hello%2C%20I%20am%20interested%20in%20imported%20marble.%20Please%20share%20catalogue%20and%20pricing." target="_blank">
-                <MessageCircle className="h-5 w-5 mr-2" />
-                Chat on WhatsApp
-              </Link>
-            </Button>
-            <Button 
-              asChild 
-              size="lg" 
-              variant="outline" 
-              className="border-white/30 bg-transparent text-white hover:bg-white/10 px-8 py-6 text-lg font-medium luxury-button-hover"
-            >
-              <Link href="tel:+919500853000">
-                <Phone className="h-5 w-5 mr-2" />
-                Call Now
-              </Link>
-            </Button>
-            <Button 
-              asChild 
-              size="lg" 
-              variant="outline" 
-              className="border-white/30 bg-transparent text-white hover:bg-white/10 px-8 py-6 text-lg font-medium luxury-button-hover"
-            >
-              <Link href="https://blobs.vusercontent.net/blob/Chandak%20Marble%20Colours%20of%20Your%20Imagination-SMMix9Zr6lGqmaC0vHA5zOluJ1Bw26.pdf" target="_blank" rel="noopener noreferrer">
-                <Download className="h-5 w-5 mr-2" />
-                Download Brochure
-              </Link>
-            </Button>
-          </div>
+        {/* CTAs */}
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.9, ease, delay: 0.15 }}
+          className="flex flex-wrap items-center justify-center gap-4 mb-20"
+        >
+          <Link
+            href="https://wa.me/919500853000?text=Hello%2C%20I%20am%20interested%20in%20imported%20marble.%20Please%20share%20catalogue%20and%20pricing."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-7 py-3.5 bg-[var(--gold)] text-background text-xs font-semibold tracking-widest uppercase btn-luxury"
+          >
+            <MessageCircle className="h-4 w-4" />
+            Chat on WhatsApp
+          </Link>
+          <Link
+            href="tel:+919500853000"
+            className="inline-flex items-center gap-3 px-7 py-3.5 border border-white/30 text-white text-xs font-semibold tracking-widest uppercase btn-luxury hover:border-white/60 transition-colors"
+          >
+            <Phone className="h-4 w-4" />
+            Call Now
+          </Link>
+          <a
+            href="https://blobs.vusercontent.net/blob/Chandak%20Marble%20Colours%20of%20Your%20Imagination-SMMix9Zr6lGqmaC0vHA5zOluJ1Bw26.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-7 py-3.5 border border-white/20 text-white/70 text-xs font-semibold tracking-widest uppercase btn-luxury hover:border-white/40 hover:text-white transition-colors"
+          >
+            <Download className="h-4 w-4" />
+            Download Brochure
+          </a>
+        </motion.div>
 
-          {/* Contact Info */}
-          <div className={`mt-12 pt-12 border-t border-white/20 transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-            <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto text-left">
-              <div className={`transition-all duration-700 ${isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-6'}`} style={{ animationDelay: isVisible ? '300ms' : undefined }}>
-                <h3 className="text-white font-semibold mb-2 flex items-center gap-2">
-                  <span className="w-2 h-2 bg-white rounded-full animate-pulse-gold" />
-                  Main Showroom
-                </h3>
-                <p className="text-white/80 text-xs font-medium mb-2 opacity-90">
-                  Chandak Marble International
-                </p>
-                <p className="text-white/70 text-sm mb-3">
-                  Khasra No. 375 & 361, Makrana Road,<br />
-                  Madanganj, Kali Dungri,<br />
-                  Kishangarh, Rajasthan 305801
-                </p>
-                <Link href="tel:+919500853000" className="text-white font-medium text-sm inline-block hover:underline luxury-text-hover">
-                  +91 95008 53000
-                </Link>
+        {/* Locations — champagne divider above */}
+        <div className="divider-gold-full mb-14" />
+
+        <div className="grid sm:grid-cols-2 gap-10 max-w-3xl mx-auto">
+          {[
+            {
+              label: "Main Showroom",
+              company: "Chandak Marble International",
+              address: "Khasra No. 375 & 361, Makrana Road,\nMadanganj, Kali Dungri,\nKishangarh, Rajasthan 305801",
+              phone: "+91 95008 53000",
+              tel: "+919500853000",
+            },
+            {
+              label: "Processing Unit",
+              company: "Chandak Marbles Pvt. Ltd.",
+              address: "E-47, RIICO Industrial Area,\n3rd Phase, Harmada Road,\nKishangarh, Rajasthan 305801",
+              phone: "+91 98290 82911",
+              tel: "+919829082911",
+            },
+          ].map((loc, i) => (
+            <motion.div
+              key={loc.label}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, ease, delay: i * 0.1 }}
+              className="group"
+            >
+              <div className="flex items-center gap-2 mb-3">
+                <MapPin className="h-3.5 w-3.5 text-[var(--gold)]" strokeWidth={1.5} />
+                <span className="text-overline text-[var(--gold)]">{loc.label}</span>
               </div>
-              <div className={`transition-all duration-700 ${isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-6'}`} style={{ animationDelay: isVisible ? '400ms' : undefined }}>
-                <h3 className="text-white font-semibold mb-2 flex items-center gap-2">
-                  <span className="w-2 h-2 bg-white rounded-full animate-pulse-gold" />
-                  Processing Unit
-                </h3>
-                <p className="text-white/80 text-xs font-medium mb-2 opacity-90">
-                  CHANDAK MARBLES PVT. LTD.
-                </p>
-                <p className="text-white/70 text-sm mb-3">
-                  E-47, RIICO Industrial Area,<br />
-                  3rd Phase, Harmada Road,<br />
-                  Kishangarh, Rajasthan 305801
-                </p>
-                <Link href="tel:+919829082911" className="text-white font-medium text-sm inline-block hover:underline luxury-text-hover">
-                  +91 98290 82911
-                </Link>
-              </div>
-            </div>
-          </div>
+              <p className="text-white/90 text-sm font-medium mb-1">{loc.company}</p>
+              <p className="text-white/50 text-sm leading-relaxed whitespace-pre-line mb-3">
+                {loc.address}
+              </p>
+              <Link
+                href={`tel:${loc.tel}`}
+                className="text-white/70 text-sm font-medium hover:text-[var(--gold)] transition-colors duration-300"
+              >
+                {loc.phone}
+              </Link>
+            </motion.div>
+          ))}
         </div>
       </div>
+
+      {/* Bottom champagne line */}
+      <div className="divider-gold-full absolute bottom-0 left-0 right-0" />
     </section>
   )
 }
