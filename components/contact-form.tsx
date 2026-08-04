@@ -2,23 +2,49 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Send, CheckCircle } from "lucide-react"
+import { Send, CheckCircle, AlertCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xrpzzegl"
 
 export function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsLoading(true)
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    
-    setIsLoading(false)
-    setIsSubmitted(true)
+    setError(null)
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+
+      if (response.ok) {
+        form.reset()
+        setIsSubmitted(true)
+      } else {
+        const data = await response.json().catch(() => null)
+        const message =
+          data?.errors?.map((err: { message: string }) => err.message).join(", ") ||
+          "Something went wrong. Please try again or call us directly."
+        setError(message)
+      }
+    } catch {
+      setError("Unable to send your inquiry. Please check your connection and try again.")
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -70,6 +96,11 @@ export function ContactForm() {
               onSubmit={handleSubmit}
               className="bg-background p-8 rounded-lg shadow-sm"
             >
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Marble Enquiry from Website"
+              />
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
@@ -160,6 +191,16 @@ export function ContactForm() {
                   className="w-full px-3 py-2 border border-input bg-background rounded-md text-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
                 />
               </div>
+
+              {error && (
+                <div
+                  role="alert"
+                  className="mb-6 flex items-start gap-3 rounded-md border border-destructive/30 bg-destructive/10 p-4 text-sm text-destructive"
+                >
+                  <AlertCircle className="h-5 w-5 shrink-0 mt-0.5" />
+                  <span>{error}</span>
+                </div>
+              )}
 
               <Button 
                 type="submit" 
