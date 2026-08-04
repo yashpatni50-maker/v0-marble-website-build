@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { MessageCircle, Phone, ArrowDown, Download } from "lucide-react"
 
@@ -16,7 +16,6 @@ const STATS = [
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
 export function HeroSection() {
-  const videoRef   = useRef<HTMLVideoElement>(null)
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
@@ -32,23 +31,7 @@ export function HeroSection() {
     >
       {/* ── Background ─────────────────────────────────── */}
       <div className="absolute inset-0 z-0">
-        {/* Video layer */}
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover animate-slow-zoom"
-          aria-hidden="true"
-        >
-          <source
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Marble_brand_logo_carved_from_202607081634-n8raiXsOrZjVMZKaSFo74VpQZv5roA.mp4"
-            type="video/mp4"
-          />
-        </video>
-
-        {/* Fallback image for browsers without video */}
+        {/* Fallback image — behind video, shown before video loads */}
         <Image
           src="/images/hero-luxury-villa.png"
           alt=""
@@ -57,6 +40,19 @@ export function HeroSection() {
           priority
           aria-hidden="true"
         />
+
+        {/* Video — on top of the fallback image */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/hero-luxury-villa.png"
+          className="absolute inset-0 w-full h-full object-cover"
+          aria-hidden="true"
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+        </video>
 
         {/* Multi-layer overlay — bottom-heavy for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-[oklch(0.07_0.005_60)] via-[oklch(0.07_0.005_60)/50] to-transparent" />
