@@ -62,16 +62,16 @@ export function HeroSection() {
       </div>
 
       {/* ── Content Container ────────────────────────────────────── */}
-      <div className="absolute inset-0 flex flex-col items-start justify-end z-10">
-        <div className="w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 lg:pb-28">
-          <div className="max-w-3xl">
+      <div className="absolute inset-0 flex flex-col items-center justify-end z-10">
+        <div className="w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 lg:pb-28 flex flex-col items-center">
+          <div className="max-w-3xl text-center">
 
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={ready ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.9, ease, delay: 0.1 }}
-              className="mb-6 sm:mb-8"
+              className="mb-6 sm:mb-8 flex justify-center"
             >
               <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-2.5 border border-white/20 rounded-full bg-white/5 backdrop-blur-sm">
                 <span className="text-overline text-white/70 text-xs sm:text-sm">
@@ -117,7 +117,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 24 }}
               animate={ready ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1.0, ease, delay: 0.75 }}
-              className="flex flex-wrap gap-3 sm:gap-4"
+              className="flex flex-wrap gap-3 sm:gap-4 justify-center"
             >
               <Link
                 href="https://wa.me/919950085300?text=Hello%2C%20I%20am%20interested%20in%20imported%20marble.%20Please%20share%20catalogue%20and%20pricing."
