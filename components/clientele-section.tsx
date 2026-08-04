@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image"
+import { motion } from "framer-motion"
 import { Building2, Home, Hotel, Landmark, PencilRuler, HardHat } from "lucide-react"
 
 const clientTypes = [
@@ -60,23 +63,46 @@ export function ClienteleSection() {
         </div>
 
         {/* Client Types */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
+        <motion.div
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.06,
+                delayChildren: 0,
+              },
+            },
+          }}
+        >
           {clientTypes.map((client) => (
-            <div
+            <motion.div
               key={client.name}
+              variants={{
+                hidden: { opacity: 0, y: 12 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+              }}
               className="flex flex-col items-center p-6 rounded-lg bg-secondary hover:bg-[oklch(0.55_0.12_70)/10] transition-colors"
             >
               <client.icon className="h-8 w-8 text-[oklch(0.55_0.12_70)] mb-3" />
               <span className="text-sm font-medium text-foreground text-center">{client.name}</span>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Project Gallery */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.7, delay: index * 0.05, ease: "easeOut" }}
               className="group relative aspect-[4/3] rounded-lg overflow-hidden cursor-pointer"
             >
               <Image
@@ -106,7 +132,7 @@ export function ClienteleSection() {
                   <h3 className="text-white font-serif text-lg font-semibold mt-1">{project.title}</h3>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
