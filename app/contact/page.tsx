@@ -7,8 +7,8 @@ import { ContactForm } from "@/components/contact-form"
 import { LocationMap } from "@/components/location-map"
 
 export const metadata = {
-  title: 'Contact Us | Chandak Marble - Visit Our Showroom in Kishangarh',
-  description: 'Get in touch with Chandak Marble. Visit our showroom in Kishangarh, Rajasthan or contact us via phone, WhatsApp, or email for premium marble inquiries.',
+  title: 'Contact Us | Chandak Marble - Kishangarh, Rajasthan',
+  description: 'Visit Chandak Marble International in Kishangarh, Rajasthan. Main Showroom: +91 95008 53000, Processing Unit: +91 98290 82911. Premium imported marble & exotic stones.',
 }
 
 export default function ContactPage() {

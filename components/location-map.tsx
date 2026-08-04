@@ -40,15 +40,13 @@ export function LocationMap() {
           />
           
           <div className="absolute bottom-6 left-6 right-6 md:left-auto md:right-6 md:w-auto">
-            <div className="bg-background/95 backdrop-blur-sm p-4 rounded-lg shadow-lg flex flex-col md:flex-row items-start md:items-center gap-4">
-              <div>
-                <h3 className="font-serif text-lg text-foreground">Chandak Marble International</h3>
-                <p className="text-sm text-muted-foreground">Makrana Road, Kishangarh, Rajasthan</p>
-              </div>
-              <div className="flex gap-2">
+            <div className="bg-background/95 backdrop-blur-sm p-4 rounded-lg shadow-lg">
+              <h3 className="font-serif text-lg text-foreground mb-1">Chandak Marble International</h3>
+              <p className="text-sm text-muted-foreground mb-3">Khasra No. 375 & 361, Makrana Road, Kishangarh, Rajasthan 305801</p>
+              <div className="flex flex-col sm:flex-row gap-2">
                 <Button asChild size="sm" className="bg-[#c9a227] hover:bg-[#b8922a] text-white">
                   <a 
-                    href="https://share.google/qbRpLaPL6g616rTXy"
+                    href="https://maps.google.com/?q=26.1848,74.8600"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -58,12 +56,10 @@ export function LocationMap() {
                 </Button>
                 <Button asChild size="sm" variant="outline">
                   <a 
-                    href="https://share.google/qbRpLaPL6g616rTXy"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="tel:+919500853000"
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
-                    View Larger
+                    Call Now
                   </a>
                 </Button>
               </div>

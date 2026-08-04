@@ -98,25 +98,29 @@ export function Footer() {
             <h3 className="font-semibold text-white mb-4">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
+                <Phone className="h-5 w-5 text-[oklch(0.80_0.12_70)] flex-shrink-0 mt-0.5" />
+                <div className="text-sm">
+                  <a href="tel:+919500853000" className="text-white/60 hover:text-[oklch(0.80_0.12_70)] transition-colors block">
+                    +91 95008 53000
+                  </a>
+                  <span className="text-white/40 text-xs">(Main Showroom)</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="h-5 w-5 text-[oklch(0.80_0.12_70)] flex-shrink-0 mt-0.5" />
+                <div className="text-sm">
+                  <a href="tel:+919829082911" className="text-white/60 hover:text-[oklch(0.80_0.12_70)] transition-colors block">
+                    +91 98290 82911
+                  </a>
+                  <span className="text-white/40 text-xs">(Processing Unit)</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[oklch(0.80_0.12_70)] flex-shrink-0 mt-0.5" />
-                <span className="text-white/60 text-sm">
-                  Chandak Marble International<br />
-                  Khasra No. 375, 361, Makrana Road<br />
-                  Madanganj, Kali Dungri<br />
-                  Kishangarh, Rajasthan 305801
-                </span>
-              </li>
-              <li>
-                <Link href="tel:+919950085300" className="flex items-center gap-3 text-white/60 text-sm hover:text-[oklch(0.80_0.12_70)] transition-colors">
-                  <Phone className="h-5 w-5 text-[oklch(0.80_0.12_70)]" />
-                  +91 99500 85300
-                </Link>
-              </li>
-              <li>
-                <Link href="tel:+919829082911" className="flex items-center gap-3 text-white/60 text-sm hover:text-[oklch(0.80_0.12_70)] transition-colors">
-                  <Phone className="h-5 w-5 text-[oklch(0.80_0.12_70)]" />
-                  +91 98290 82911
-                </Link>
+                <div className="text-white/60 text-xs leading-relaxed">
+                  <p className="font-medium text-white/80 mb-1">Kishangarh, Rajasthan</p>
+                  <p>305801, India</p>
+                </div>
               </li>
               <li>
                 <Link href="mailto:chandakmarblesales@gmail.com" className="flex items-center gap-3 text-white/60 text-sm hover:text-[oklch(0.80_0.12_70)] transition-colors">
