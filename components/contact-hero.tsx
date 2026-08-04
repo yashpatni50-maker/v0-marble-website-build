@@ -8,7 +8,7 @@ export function ContactHero() {
       <div 
         className="absolute inset-0 opacity-30"
         style={{
-          backgroundImage: `url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Transform%20your%20space%20into%20an%20oasis%20of%20tranquility%20with%20our%20unique%20marbles%2C%20where%20every%20vein%20and-R1gXedG9ij20lrJAp9N3SC0SRDdaCy.webp")`,
+          backgroundImage: `url("/images/contact-hero.png")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

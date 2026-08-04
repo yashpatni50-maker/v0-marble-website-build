@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -40,14 +41,16 @@ const locations = [
     company: "Chandak Marble International",
     address: "Khasra No. 375 & 361,\nMakrana Road,\nMadanganj, Kali Dungri,\nKishangarh,\nRajasthan – 305801, India",
     phone: "+91 95008 53000",
-    phoneHref: "tel:+919500853000"
+    phoneHref: "tel:+919500853000",
+    image: "/images/contact-showroom.png"
   },
   {
     name: "Processing Unit",
     company: "CHANDAK MARBLES PVT. LTD.",
     address: "E-47,\nRIICO Industrial Area,\n3rd Phase,\nHarmada Road,\nMadanganj,\nKishangarh,\nRajasthan – 305801, India",
     phone: "+91 98290 82911",
-    phoneHref: "tel:+919829082911"
+    phoneHref: "tel:+919829082911",
+    image: "/images/contact-processing.png"
   }
 ]
 
@@ -91,32 +94,46 @@ export function ContactInfo() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-muted/50 p-8 rounded-lg border border-border"
+              className="bg-muted/50 rounded-lg border border-border overflow-hidden"
             >
-              <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-[#c9a227]/10 rounded-lg flex items-center justify-center shrink-0">
-                  <MapPin className="h-6 w-6 text-[#c9a227]" />
-                </div>
-                <div>
-                  <h3 className="font-serif text-lg text-[#c9a227] mb-1">{location.name}</h3>
-                  <p className="text-sm font-medium text-foreground">{location.company}</p>
-                </div>
+              {/* Image */}
+              <div className="relative w-full h-48 md:h-64">
+                <Image
+                  src={location.image}
+                  alt={location.name}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
+              
+              {/* Content */}
+              <div className="p-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-[#c9a227]/10 rounded-lg flex items-center justify-center shrink-0">
+                    <MapPin className="h-6 w-6 text-[#c9a227]" />
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-lg text-[#c9a227] mb-1">{location.name}</h3>
+                    <p className="text-sm font-medium text-foreground">{location.company}</p>
+                  </div>
+                </div>
 
-              <div className="mb-6 pl-16">
-                <p className="text-sm text-muted-foreground whitespace-pre-line leading-relaxed">
-                  {location.address}
-                </p>
-              </div>
+                <div className="mb-6 pl-16">
+                  <p className="text-sm text-muted-foreground whitespace-pre-line leading-relaxed">
+                    {location.address}
+                  </p>
+                </div>
 
-              <div className="flex items-center gap-3 pl-16">
-                <Phone className="h-5 w-5 text-[#c9a227]" />
-                <a 
-                  href={location.phoneHref}
-                  className="text-sm font-medium text-foreground hover:text-[#c9a227] transition-colors"
-                >
-                  {location.phone}
-                </a>
+                <div className="flex items-center gap-3 pl-16">
+                  <Phone className="h-5 w-5 text-[#c9a227]" />
+                  <a 
+                    href={location.phoneHref}
+                    className="text-sm font-medium text-foreground hover:text-[#c9a227] transition-colors"
+                  >
+                    {location.phone}
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}
