@@ -18,21 +18,21 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border animate-fade-in-up">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:py-4 lg:px-8 lg:py-5">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 hover:scale-105 transition-transform duration-300">
+        <Link href="/" className="flex items-center gap-2 hover:scale-105 transition-transform duration-300 flex-shrink-0">
           <Image 
             src="/logo.png" 
             alt="Chandak Marble" 
-            width={160} 
-            height={80}
-            className="h-14 w-auto"
+            width={280} 
+            height={140}
+            className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto object-contain"
             priority
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex lg:gap-x-8">
+        <div className="hidden lg:flex lg:gap-x-10 lg:flex-1 lg:justify-center">
           {navigation.map((item, index) => (
             <Link
               key={item.name}
@@ -47,7 +47,7 @@ export function Header() {
         </div>
 
         {/* Desktop CTA */}
-        <div className="hidden lg:flex lg:items-center lg:gap-4">
+        <div className="hidden lg:flex lg:items-center lg:gap-6 lg:ml-auto">
           <Link href="tel:+919950085300" className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-[oklch(0.55_0.12_70)] transition-colors duration-300 luxury-text-hover animate-fade-in-up animation-delay-300">
             <Phone className="h-4 w-4" />
             +91 99500 85300
