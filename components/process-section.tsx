@@ -20,7 +20,7 @@ const steps = [
     icon: Search,
     number: "03",
     title: "Quality Inspection",
-    description: "Every slab undergoes rigorous quality inspection using advanced IRS technology at our state-of-the-art processing facility.",
+    description: "Every slab undergoes rigorous quality inspection at our state-of-the-art processing facility, ensuring consistency, finish, and structural integrity.",
   },
   {
     icon: Scissors,
@@ -59,12 +59,12 @@ export function ProcessSection() {
               id="process-heading"
               className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance leading-tight mb-6"
             >
-              IRS Stone Process —{" "}
-              <span className="text-[var(--gold)]">Quarry to Delivery</span>
+              How We Deliver —{" "}
+              <span className="text-[var(--gold)]">Quarry to Your Door</span>
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
-              Our International Refined Stone process ensures every piece meets the
-              highest standards from origin quarry to final installation.
+              Every slab at Chandak Marble travels a carefully managed journey —
+              from hand-selected quarries worldwide to flawless delivery at your site.
             </p>
           </motion.div>
         </div>

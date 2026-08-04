@@ -30,8 +30,8 @@ export function AboutSection() {
             <div className="grid grid-cols-2 gap-3">
               <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Luxury%20that%20reflects%20in%20every%20detail.With%20its%20soft%20veining%2C%20glossy%20finish%2C%20and%20timeless%20appeal%2C%20-E9GeIPcxmGBTauLJMAIiAjuH3nQNjH.jpg"
-                  alt="Luxury Chandak Marble interior — soft veining and glossy finish"
+                  src="/images/about-marble-interior.png"
+                  alt="Luxury marble interior — Chandak Marble premium installation"
                   fill
                   className="object-cover"
                 />
