@@ -8,7 +8,7 @@ const contactMethods = [
   {
     icon: Phone,
     title: "Call Us",
-    details: ["+91 95008 53000", "+91 98290 82911"],
+    details: ["+91 95008 53000"],
     action: {
       label: "Call Now",
       href: "tel:+919500853000"
@@ -41,13 +41,6 @@ const locations = [
     address: "Khasra No. 375 & 361,\nMakrana Road,\nMadanganj, Kali Dungri,\nKishangarh,\nRajasthan – 305801, India",
     phone: "+91 95008 53000",
     phoneHref: "tel:+919500853000"
-  },
-  {
-    name: "Processing Unit",
-    company: "CHANDAK MARBLES PVT. LTD.",
-    address: "E-47,\nRIICO Industrial Area,\n3rd Phase,\nHarmada Road,\nMadanganj,\nKishangarh,\nRajasthan – 305801, India",
-    phone: "+91 98290 82911",
-    phoneHref: "tel:+919829082911"
   }
 ]
 
@@ -83,7 +76,7 @@ export function ContactInfo() {
           ))}
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid lg:grid-cols-1 gap-8 mb-12 max-w-2xl mx-auto">
           {locations.map((location, index) => (
             <motion.div
               key={location.name}
