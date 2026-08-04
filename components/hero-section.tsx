@@ -62,8 +62,8 @@ export function HeroSection() {
       </div>
 
       {/* ── Content Container ────────────────────────────────────── */}
-      <div className="absolute inset-0 flex flex-col items-center justify-end z-10">
-        <div className="w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 lg:pb-28 flex flex-col items-center">
+      <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
+        <div className="w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center">
           <div className="max-w-3xl text-center">
 
             {/* Badge */}
@@ -107,7 +107,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 24 }}
               animate={ready ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1.0, ease, delay: 0.6 }}
-              className="text-white/65 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed mb-6 sm:mb-8 lg:mb-12"
+              className="text-white/65 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed mb-8 sm:mb-10 lg:mb-16"
             >
               Premium imported natural marble for luxury homes, villas, hotels, and commercial projects. Trusted by architects, builders, and homeowners across India.
             </motion.p>
@@ -150,15 +150,15 @@ export function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Stats row — hidden on mobile, shown on larger screens */}
+          {/* Stats row — below CTAs with proper spacing */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={ready ? { opacity: 1 } : {}}
             transition={{ duration: 1.2, ease, delay: 1.0 }}
-            className="mt-8 sm:mt-0 sm:absolute sm:right-8 sm:bottom-12 lg:bottom-28 flex gap-6 sm:gap-10"
+            className="hidden sm:flex gap-6 sm:gap-8 lg:gap-10 mt-12 sm:mt-16 lg:mt-20 justify-center"
           >
             {STATS.map((s) => (
-              <div key={s.label} className="text-left sm:text-right">
+              <div key={s.label} className="text-center">
                 <div className="font-serif text-lg sm:text-2xl lg:text-3xl font-bold text-[var(--gold)]">
                   {s.value}
                 </div>
