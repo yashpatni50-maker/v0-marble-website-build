@@ -88,7 +88,7 @@ export function CTASection() {
 
           {/* Contact Info */}
           <div className={`mt-12 pt-12 border-t border-white/20 transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-            <div className="max-w-2xl mx-auto text-left">
+            <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto text-left">
               <div className={`transition-all duration-700 ${isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-6'}`} style={{ animationDelay: isVisible ? '300ms' : undefined }}>
                 <h3 className="text-white font-semibold mb-2 flex items-center gap-2">
                   <span className="w-2 h-2 bg-white rounded-full animate-pulse-gold" />
@@ -104,6 +104,23 @@ export function CTASection() {
                 </p>
                 <Link href="tel:+919500853000" className="text-white font-medium text-sm inline-block hover:underline luxury-text-hover">
                   +91 95008 53000
+                </Link>
+              </div>
+              <div className={`transition-all duration-700 ${isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-6'}`} style={{ animationDelay: isVisible ? '400ms' : undefined }}>
+                <h3 className="text-white font-semibold mb-2 flex items-center gap-2">
+                  <span className="w-2 h-2 bg-white rounded-full animate-pulse-gold" />
+                  Processing Unit
+                </h3>
+                <p className="text-white/80 text-xs font-medium mb-2 opacity-90">
+                  CHANDAK MARBLES PVT. LTD.
+                </p>
+                <p className="text-white/70 text-sm mb-3">
+                  E-47, RIICO Industrial Area,<br />
+                  3rd Phase, Harmada Road,<br />
+                  Kishangarh, Rajasthan 305801
+                </p>
+                <Link href="tel:+919829082911" className="text-white font-medium text-sm inline-block hover:underline luxury-text-hover">
+                  +91 98290 82911
                 </Link>
               </div>
             </div>

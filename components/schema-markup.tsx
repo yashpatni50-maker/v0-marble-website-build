@@ -40,9 +40,10 @@ export function SchemaMarkup() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "26.1848",
-      "longitude": "74.8600"
+      "latitude": "26.6454857",
+      "longitude": "74.8541434"
     },
+    "hasMap": "https://www.google.com/maps/place/Chandak+Marble+International/@26.6454857,74.8541434,17z",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
