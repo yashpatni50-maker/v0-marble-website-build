@@ -18,7 +18,7 @@ export const marbleCollections: Record<string, MarbleCollection> = {
     id: 'gorgeous-grey',
     name: 'Gorgeous Grey',
     tagline: 'The Feeling of an Elegant Space',
-    description: 'Our Gorgeous Grey collection embodies sophistication and timeless elegance. Each variety features unique veining patterns that range from subtle whispers to dramatic contrasts, making it perfect for contemporary and classical designs alike.',
+    description: 'Gorgeous Grey marble flooring brings timeless sophistication to luxury homes and commercial spaces. Our hand-selected Italian and Turkish marble varieties feature stunning veining patterns ideal for contemporary architecture, hotel lobbies, and upscale villa interiors. Perfect for statement flooring and wall cladding in modern luxury design projects.',
     feeling: 'Elegant',
     color: 'Grey',
     varieties: [
@@ -40,7 +40,7 @@ export const marbleCollections: Record<string, MarbleCollection> = {
     id: 'beautiful-beige',
     name: 'Beautiful Beige',
     tagline: 'The Feeling of a Beautiful Space',
-    description: 'The Beautiful Beige series brings warmth and natural beauty to any environment. With a range of creamy tones and subtle patterns, these marbles add elegance and comfort, perfect for creating inviting luxury spaces.',
+    description: 'Beautiful Beige marble flooring creates warm, inviting luxury interiors with natural elegance. Premium imported Italian marble varieties featuring creamy tones and subtle patterns—ideal for residential marble flooring, wall cladding in luxury villas, high-end restaurants, and upscale hotel suites. Architects love beige marble for its versatility and timeless appeal.',
     feeling: 'Beautiful',
     color: 'Beige',
     varieties: [
@@ -62,7 +62,7 @@ export const marbleCollections: Record<string, MarbleCollection> = {
     id: 'wow-white',
     name: 'Wow White',
     tagline: 'The Feeling of a Pure Space',
-    description: 'Wow White collection showcases the pristine beauty of white marble with stunning natural patterns. These varieties bring brightness, clarity, and luxury to any space, perfect for minimalist and contemporary designs.',
+    description: 'Wow White Italian marble flooring epitomizes pure luxury and architectural sophistication. Sourced from premium quarries in Italy, these pristine white marble varieties with natural veining are ideal for luxury home marble flooring, minimalist architecture, high-end wall cladding, and exclusive hotel installations. Perfect for contemporary and classical architectural design projects.',
     feeling: 'Pure',
     color: 'White',
     varieties: [
@@ -84,7 +84,7 @@ export const marbleCollections: Record<string, MarbleCollection> = {
     id: 'bold-black',
     name: 'Bold Black',
     tagline: 'The Feeling of a Classy Space',
-    description: 'The Bold Black collection represents power and sophistication. With striking veining patterns in gold, white, and silver, these marbles create dramatic focal points and exude luxury in every application.',
+    description: 'Bold Black premium marble flooring represents architectural power and luxury sophistication. With striking gold and silver veining, these imported Italian marbles create dramatic feature walls and luxurious flooring in high-end villas, luxury hotels, commercial buildings, and prestigious office spaces. Ideal for bold architectural statements and premium interior cladding.',
     feeling: 'Classy',
     color: 'Black',
     varieties: [
@@ -106,7 +106,7 @@ export const marbleCollections: Record<string, MarbleCollection> = {
     id: 'aesthetic-brown',
     name: 'Aesthetic Brown',
     tagline: 'The Feeling of an Artistic Space',
-    description: 'The Aesthetic Brown collection brings warmth and artistic expression. These rich, earthy tones with gold and copper veining create spaces that feel both grounded and luxurious, perfect for classic and contemporary interiors.',
+    description: 'Aesthetic Brown imported marble flooring brings artistic expression and warmth to luxury interiors. These rich Italian and Turkish marble varieties with gold and copper veining are perfect for upscale villa flooring, luxury hotel design, fine dining restaurants, and architectural projects requiring sophisticated natural stone cladding. A classic choice for premium residential and commercial spaces.',
     feeling: 'Artistic',
     color: 'Brown',
     varieties: [
@@ -128,7 +128,7 @@ export const marbleCollections: Record<string, MarbleCollection> = {
     id: 'onyx-marble',
     name: 'Onyx Marble',
     tagline: 'The Feeling of a Stunning Space',
-    description: 'The Onyx Marble collection showcases translucent beauty with dramatic banding and warm hues. Perfect for creating stunning feature walls and luxurious installations, onyx marbles create truly unique and eye-catching designs.',
+    description: 'Onyx marble represents the pinnacle of luxury architectural stone, with translucent beauty and dramatic banding. Perfect for exclusive feature walls, luxury villa interior cladding, high-end hotel installations, and signature design elements. These premium imported onyx varieties create truly unique, eye-catching architectural statements that showcase sophistication and timeless elegance.',
     feeling: 'Stunning',
     color: 'Onyx',
     varieties: [
