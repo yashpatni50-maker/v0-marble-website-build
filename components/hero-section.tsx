@@ -7,10 +7,10 @@ import { motion } from "framer-motion"
 import { MessageCircle, Phone, ArrowDown, Download } from "lucide-react"
 
 const STATS = [
-  { value: "1981",   label: "Est." },
-  { value: "40+",    label: "Years" },
-  { value: "5000+",  label: "Projects" },
-  { value: "20+",    label: "States" },
+  { value: "40+",    label: "Years Experience" },
+  { value: "5000+",  label: "Projects Delivered" },
+  { value: "20+",    label: "States Served" },
+  { value: "100%",   label: "Quality Assurance" },
 ]
 
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1]
@@ -66,17 +66,18 @@ export function HeroSection() {
         <div className="w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 lg:pb-28">
           <div className="max-w-3xl">
 
-            {/* Overline */}
+            {/* Badge */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={ready ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.9, ease, delay: 0.1 }}
-              className="flex items-center gap-4 mb-6 sm:mb-8"
+              className="mb-6 sm:mb-8"
             >
-              <div className="divider-gold" />
-              <span className="text-overline text-[var(--gold)] text-xs sm:text-sm">
-                Since 1981 &nbsp;·&nbsp; Kishangarh, Rajasthan
-              </span>
+              <div className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-2.5 border border-white/20 rounded-full bg-white/5 backdrop-blur-sm">
+                <span className="text-overline text-white/70 text-xs sm:text-sm">
+                  Since 1981 &nbsp; 40+ Years Excellence
+                </span>
+              </div>
             </motion.div>
 
             {/* Headline — line by line */}
@@ -87,7 +88,7 @@ export function HeroSection() {
                 transition={{ duration: 1.1, ease, delay: 0.25 }}
                 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight tracking-tight"
               >
-                Crafted by Nature.
+                Imported Italian Marble
               </motion.h1>
             </div>
             <div className="overflow-hidden mb-6 sm:mb-8 lg:mb-10">
@@ -97,7 +98,7 @@ export function HeroSection() {
                 transition={{ duration: 1.1, ease, delay: 0.4 }}
                 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight text-[var(--gold)]"
               >
-                Refined by Chandak.
+                in Kishangarh
               </motion.h1>
             </div>
 
@@ -108,9 +109,7 @@ export function HeroSection() {
               transition={{ duration: 1.0, ease, delay: 0.6 }}
               className="text-white/65 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed mb-6 sm:mb-8 lg:mb-12"
             >
-              Discover exceptional imported marble flooring and architectural stone from Italy, Turkey, and Greece. 
-              Direct from quarry to your luxury home, villa, hotel, or landmark project — forty years of heritage 
-              ensuring uncompromising quality and authentic natural beauty.
+              Premium imported natural marble for luxury homes, villas, hotels, and commercial projects. Trusted by architects, builders, and homeowners across India.
             </motion.p>
 
             {/* CTAs */}
