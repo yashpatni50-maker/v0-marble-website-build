@@ -20,7 +20,7 @@ const projects = [
     category: "Commercial",
   },
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Modern%20Penthouse-Ks3N1koYgMU9QlVR8xwtnpCRQ8MPeM.png",
+    image: "/images/modern-penthouse-luxury.png",
     title: "Modern Penthouse",
     category: "Residential",
   },
@@ -40,7 +40,7 @@ const projects = [
     category: "Residential",
   },
   {
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Modern%20Penthouse-Ks3N1koYgMU9QlVR8xwtnpCRQ8MPeM.png",
+    image: "/images/grand-lobby-luxury.png",
     title: "Grand Lobby",
     category: "Commercial",
   },
