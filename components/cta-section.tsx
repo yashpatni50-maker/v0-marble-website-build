@@ -57,7 +57,7 @@ export function CTASection() {
               size="lg" 
               className="bg-white text-[oklch(0.55_0.12_70)] hover:bg-white/90 px-8 py-6 text-lg font-medium shadow-lg luxury-button-hover"
             >
-              <Link href="https://wa.me/919950085300?text=Hello%2C%20I%20am%20interested%20in%20imported%20marble.%20Please%20share%20catalogue%20and%20pricing." target="_blank">
+              <Link href="https://wa.me/919500853000?text=Hello%2C%20I%20am%20interested%20in%20imported%20marble.%20Please%20share%20catalogue%20and%20pricing." target="_blank">
                 <MessageCircle className="h-5 w-5 mr-2" />
                 Chat on WhatsApp
               </Link>
@@ -68,7 +68,7 @@ export function CTASection() {
               variant="outline" 
               className="border-white/30 bg-transparent text-white hover:bg-white/10 px-8 py-6 text-lg font-medium luxury-button-hover"
             >
-              <Link href="tel:+919950085300">
+              <Link href="tel:+919500853000">
                 <Phone className="h-5 w-5 mr-2" />
                 Call Now
               </Link>
@@ -95,12 +95,12 @@ export function CTASection() {
                   Main Showroom
                 </h3>
                 <p className="text-white/70 text-sm">
-                  Makrana Road, Madanganj,<br />
-                  Kali Dungri, Kishangarh,<br />
-                  Rajasthan 305801
+                  Khasra No. 375 & 361, Makrana Road,<br />
+                  Madanganj, Kali Dungri,<br />
+                  Kishangarh, Rajasthan 305801
                 </p>
-                <Link href="tel:+919950085300" className="text-white font-medium text-sm mt-2 inline-block hover:underline luxury-text-hover">
-                  +91 99500 85300
+                <Link href="tel:+919500853000" className="text-white font-medium text-sm mt-2 inline-block hover:underline luxury-text-hover">
+                  +91 95008 53000
                 </Link>
               </div>
               <div className={`transition-all duration-700 ${isVisible ? 'animate-fade-in-up' : 'opacity-0 translate-y-6'}`} style={{ animationDelay: isVisible ? '400ms' : undefined }}>
@@ -109,8 +109,8 @@ export function CTASection() {
                   Processing Unit
                 </h3>
                 <p className="text-white/70 text-sm">
-                  Harmara Road,<br />
-                  RICCO Industrial Area,<br />
+                  E-47, RIICO Industrial Area,<br />
+                  3rd Phase, Harmada Road,<br />
                   Kishangarh, Rajasthan 305801
                 </p>
                 <Link href="tel:+919829082911" className="text-white font-medium text-sm mt-2 inline-block hover:underline luxury-text-hover">
