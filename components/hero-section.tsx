@@ -48,7 +48,7 @@ export function HeroSection() {
           loop
           playsInline
           poster="/images/hero-luxury-villa.png"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-contain sm:object-cover object-center bg-[#0a0a0a]"
           aria-hidden="true"
         >
           <source src="/hero-video.mp4" type="video/mp4" />
