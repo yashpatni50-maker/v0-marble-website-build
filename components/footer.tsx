@@ -36,13 +36,13 @@ export function Footer() {
               <Image 
                 src="/logo.png" 
                 alt="Chandak Marble" 
-                width={140} 
-                height={70}
-                className="h-16 w-auto"
+                width={200} 
+                height={100}
+                className="h-24 w-auto object-contain"
                 priority
               />
             </Link>
-            <p className="mt-4 text-white/60 text-sm leading-relaxed">
+            <p className="mt-6 text-white/60 text-sm leading-relaxed">
               Premium imported marble since 1981. Trusted by architects, builders, and homeowners across India.
             </p>
             <p className="mt-4 text-[oklch(0.80_0.12_70)] text-sm font-medium">
