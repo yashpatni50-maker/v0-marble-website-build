@@ -46,7 +46,7 @@ export function Header() {
       ? "bg-transparent border-b border-transparent"
       : "bg-background/98 backdrop-blur-md border-b border-border/40"
 
-  const logoScale = scrolled ? "h-12 sm:h-14 lg:h-16" : "h-20 sm:h-24 lg:h-28"
+  const logoScale = scrolled ? "h-14 sm:h-16 lg:h-18" : "h-24 sm:h-28 lg:h-32"
 
   return (
     <>

@@ -3,8 +3,10 @@ import { Footer } from "@/components/footer"
 import { FloatingButtons } from "@/components/floating-buttons"
 import { CollectionHero } from "@/components/collection-hero"
 import { VarietiesGrid } from "@/components/varieties-grid"
+import { BeigeProductGrid } from "@/components/beige-product-grid"
 import { CollectionCTA } from "@/components/collection-cta"
 import { getCollectionBySlug, getAllCollectionSlugs } from "@/lib/marble-collections-data"
+import { beigeProducts } from "@/lib/beige-products-data"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 
@@ -50,7 +52,11 @@ export default async function CollectionPage({ params }: Props) {
     <main className="min-h-screen">
       <Header />
       <CollectionHero collection={collection} />
-      <VarietiesGrid varieties={collection.varieties} />
+      {collection.id === "beautiful-beige" ? (
+        <BeigeProductGrid products={beigeProducts} />
+      ) : (
+        <VarietiesGrid varieties={collection.varieties} />
+      )}
       <CollectionCTA collectionName={collection.name} />
       <Footer />
       <FloatingButtons />

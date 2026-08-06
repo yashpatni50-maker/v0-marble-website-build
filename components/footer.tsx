@@ -3,6 +3,8 @@ import Image from "next/image"
 import { Facebook, Instagram, Youtube, Phone, Mail, MapPin } from "lucide-react"
 
 const products = [
+  { name: "Italian Marble",   href: "/products" },
+  { name: "Turkish Marble",   href: "/products" },
   { name: "Gorgeous Grey",    href: "/products/collections/gorgeous-grey" },
   { name: "Beautiful Beige",  href: "/products/collections/beautiful-beige" },
   { name: "Wow White",        href: "/products/collections/wow-white" },

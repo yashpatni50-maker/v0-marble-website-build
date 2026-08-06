@@ -17,7 +17,7 @@ const collectionImages: Record<string, string> = {
   "wow-white":        "/images/collection-wow-white.png",
   "bold-black":       "/images/collection-bold-black.png",
   "aesthetic-brown":  "/images/marble-aesthetic-brown.png",
-  "onyx":             "/images/marble-onyx.png",
+  "onyx-marble":       "/images/marble-onyx.png",
 }
 
 export function CollectionHero({ collection }: Props) {
