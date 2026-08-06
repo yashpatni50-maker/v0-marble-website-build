@@ -1,3 +1,5 @@
+import type { Metadata } from "next"
+import { notFound } from "next/navigation"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { FloatingButtons } from "@/components/floating-buttons"
@@ -7,24 +9,21 @@ import { EmptyCollectionProducts } from "@/components/empty-collection-products"
 import { CollectionCTA } from "@/components/collection-cta"
 import { getCollectionBySlug, getAllCollectionSlugs } from "@/lib/marble-collections-data"
 import { beigeProducts } from "@/lib/beige-products-data"
-import { notFound } from "next/navigation"
-import type { Metadata } from "next"
 
 interface Props {
-  params: {
-    slug: string
-  }
+  params: Promise<{ slug: string }>
+}
+
+function resolveSlug(slug: string) {
+  return slug === "onyx" ? "onyx-marble" : slug
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const collection = getCollectionBySlug(slug)
+  const collection = getCollectionBySlug(resolveSlug(slug))
 
   if (!collection) {
-    return {
-      title: "Collection Not Found",
-      description: "The marble collection you're looking for doesn't exist.",
-    }
+    return { title: "Collection Not Found" }
   }
 
   return {
@@ -35,18 +34,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export function generateStaticParams() {
-  return getAllCollectionSlugs().map((slug) => ({
-    slug,
-  }))
+  return [...getAllCollectionSlugs(), "onyx"].map((slug) => ({ slug }))
 }
 
-export default async function CollectionPage({ params }: Props) {
+export default async function CollectionAliasPage({ params }: Props) {
   const { slug } = await params
-  const collection = getCollectionBySlug(slug)
+  const collection = getCollectionBySlug(resolveSlug(slug))
 
-  if (!collection) {
-    notFound()
-  }
+  if (!collection) notFound()
 
   return (
     <main className="min-h-screen">
