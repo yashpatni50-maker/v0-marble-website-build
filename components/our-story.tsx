@@ -64,8 +64,8 @@ export function OurStory() {
           >
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/A%20Marble%20for%20Every%20VisionYour%20dream%20space%20begins%20with%20the%20right%20foundation%2C%20and%20at%20Chandak%20Marbl-zMRdq043J9wAQJ5s3K22xlu75XTFCN.jpg"
-                alt="Chandak Marble showroom showcasing premium marble"
+                src="/images/about-legacy-quality.png"
+                alt="Luxury living space showcasing premium marble craftsmanship"
                 fill
                 className="object-cover"
               />

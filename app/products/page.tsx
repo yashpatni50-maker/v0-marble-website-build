@@ -6,8 +6,12 @@ import { MarbleCategories } from "@/components/marble-categories"
 import { ProductsCTA } from "@/components/products-cta"
 
 export const metadata = {
-  title: 'Our Marble Collections | Chandak Marble - Premium Italian & Imported Marble',
-  description: 'Explore our extensive collection of premium imported marble - Italian marble, Turkish marble, Onyx, Granite, and more. Available in various finishes and sizes.',
+  title: 'Imported Marble Collections | Italian & Turkish Marble Flooring | Chandak Marble',
+  description: 'Browse Chandak Marble\'s curated collections of premium imported marble flooring, architectural stone, and natural stone. Italian marble, Turkish marble, Onyx, and exclusive varieties for luxury homes, villas, and commercial spaces.',
+  openGraph: {
+    title: 'Premium Imported Marble Collections | Chandak Marble',
+    description: 'Explore hand-selected marble collections from Italy, Turkey, Greece, and Portugal. Perfect for flooring, wall cladding, and architectural installations.',
+  },
 }
 
 export default function ProductsPage() {

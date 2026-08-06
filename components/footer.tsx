@@ -2,64 +2,71 @@ import Link from "next/link"
 import Image from "next/image"
 import { Facebook, Instagram, Youtube, Phone, Mail, MapPin } from "lucide-react"
 
-const navigation = {
-  products: [
-    { name: "Gorgeous Grey", href: "/products/collections/gorgeous-grey" },
-    { name: "Beautiful Beige", href: "/products/collections/beautiful-beige" },
-    { name: "Wow White", href: "/products/collections/wow-white" },
-    { name: "Bold Black", href: "/products/collections/bold-black" },
-    { name: "Aesthetic Brown", href: "/products/collections/aesthetic-brown" },
-    { name: "Onyx Marble", href: "/products/collections/onyx-marble" },
-    { name: "All Products", href: "/products" },
-  ],
-  company: [
-    { name: "About Us", href: "/#about" },
-    { name: "Why Chandak", href: "/#why-chandak" },
-    { name: "Our Clientele", href: "/#clientele" },
-    { name: "Contact Us", href: "/contact" },
-  ],
-  social: [
-    { name: "Instagram", href: "https://instagram.com/chandakmarbles", icon: Instagram },
-    { name: "Facebook", href: "https://facebook.com/chandakmarbles", icon: Facebook },
-    { name: "YouTube", href: "https://www.youtube.com/@ChandakMarble", icon: Youtube },
-  ],
-}
+const products = [
+  { name: "Italian Marble",   href: "/products" },
+  { name: "Turkish Marble",   href: "/products" },
+  { name: "Gorgeous Grey",    href: "/products/collections/gorgeous-grey" },
+  { name: "Beautiful Beige",  href: "/products/collections/beautiful-beige" },
+  { name: "Wow White",        href: "/products/collections/wow-white" },
+  { name: "Bold Black",       href: "/products/collections/bold-black" },
+  { name: "Aesthetic Brown",  href: "/products/collections/aesthetic-brown" },
+  { name: "Onyx Marble",      href: "/products/collections/onyx-marble" },
+  { name: "All Collections",  href: "/products" },
+]
+
+const company = [
+  { name: "About Us",       href: "/about" },
+  { name: "Why Chandak",    href: "/why-chandak" },
+  { name: "Our Clientele",  href: "/our-clientele" },
+  { name: "Contact Us",     href: "/contact" },
+]
+
+const social = [
+  { name: "Instagram", href: "https://instagram.com/chandakmarbles",           Icon: Instagram },
+  { name: "Facebook",  href: "https://facebook.com/chandakmarbles",            Icon: Facebook },
+  { name: "YouTube",   href: "https://www.youtube.com/@ChandakMarble",         Icon: Youtube },
+]
 
 export function Footer() {
   return (
-    <footer className="bg-[oklch(0.12_0.02_60)] text-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+    <footer className="bg-[oklch(0.08_0.005_60)] text-white" role="contentinfo">
+      {/* Top champagne line */}
+      <div className="divider-gold-full" />
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block hover:scale-105 transition-transform duration-300">
-              <Image 
-                src="/logo.png" 
-                alt="Chandak Marble" 
-                width={140} 
-                height={70}
-                className="h-16 w-auto"
-                priority
+            <Link href="/" aria-label="Chandak Marble — Home">
+              <Image
+                src="/logo-footer.png"
+                alt="Chandak Marble"
+                width={220}
+                height={110}
+                className="h-28 sm:h-32 w-auto object-contain mb-6"
               />
             </Link>
-            <p className="mt-4 text-white/60 text-sm leading-relaxed">
-              Premium imported marble since 1981. Trusted by architects, builders, and homeowners across India.
+            <p className="text-white/45 text-sm leading-relaxed mb-4">
+              Luxury imported marble supplier since 1981. Direct Italian marble, Turkish stone, and architectural imports 
+              for premium homes, hotels, and commercial spaces. Trusted by architects across India.
             </p>
-            <p className="mt-4 text-[oklch(0.80_0.12_70)] text-sm font-medium">
-              Stone &middot; Style &middot; Statement
+            <p className="text-overline text-[var(--gold-dim)]">
+              Luxury Marble &middot; Architectural Stone &middot; Premium Flooring
             </p>
-            
-            {/* Social Links */}
-            <div className="flex items-center gap-4 mt-6">
-              {navigation.social.map((item) => (
+
+            {/* Social */}
+            <div className="flex items-center gap-3 mt-8">
+              {social.map(({ name, href, Icon }) => (
                 <Link
-                  key={item.name}
-                  href={item.href}
+                  key={name}
+                  href={href}
                   target="_blank"
-                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[oklch(0.55_0.12_70)] transition-colors"
+                  rel="noopener noreferrer"
+                  aria-label={name}
+                  className="w-9 h-9 flex items-center justify-center border border-white/10 text-white/40 hover:border-[var(--gold)/40] hover:text-[var(--gold)] transition-all duration-300"
                 >
-                  <item.icon className="h-5 w-5" />
-                  <span className="sr-only">{item.name}</span>
+                  <Icon className="h-4 w-4" />
                 </Link>
               ))}
             </div>
@@ -67,11 +74,14 @@ export function Footer() {
 
           {/* Products */}
           <div>
-            <h3 className="font-semibold text-white mb-4">Our Products</h3>
+            <h3 className="text-overline text-white/40 mb-6">Collections</h3>
             <ul className="space-y-3">
-              {navigation.products.map((item) => (
+              {products.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.href} className="text-white/60 text-sm hover:text-[oklch(0.80_0.12_70)] transition-colors">
+                  <Link
+                    href={item.href}
+                    className="text-white/50 text-sm hover:text-[var(--gold)] transition-colors duration-300 link-luxury"
+                  >
                     {item.name}
                   </Link>
                 </li>
@@ -81,11 +91,14 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="font-semibold text-white mb-4">Company</h3>
+            <h3 className="text-overline text-white/40 mb-6">Company</h3>
             <ul className="space-y-3">
-              {navigation.company.map((item) => (
+              {company.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.href} className="text-white/60 text-sm hover:text-[oklch(0.80_0.12_70)] transition-colors">
+                  <Link
+                    href={item.href}
+                    className="text-white/50 text-sm hover:text-[var(--gold)] transition-colors duration-300 link-luxury"
+                  >
                     {item.name}
                   </Link>
                 </li>
@@ -95,49 +108,57 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-white mb-4">Contact Us</h3>
-            <ul className="space-y-4">
+            <h3 className="text-overline text-white/40 mb-6">Contact</h3>
+            <ul className="space-y-5">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-[oklch(0.80_0.12_70)] flex-shrink-0 mt-0.5" />
-                <span className="text-white/60 text-sm">
-                  Chandak Marble International<br />
-                  Khasra No. 375, 361, Makrana Road<br />
-                  Madanganj, Kali Dungri<br />
-                  Kishangarh, Rajasthan 305801
-                </span>
+                <Phone className="h-4 w-4 text-[var(--gold)] flex-shrink-0 mt-0.5" strokeWidth={1.5} />
+                <div>
+                  <Link href="tel:+919500853000" className="text-white/55 text-sm hover:text-[var(--gold)] transition-colors block">
+                    +91 95008 53000
+                  </Link>
+                  <span className="text-white/25 text-xs">Main Showroom</span>
+                </div>
               </li>
-              <li>
-                <Link href="tel:+919950085300" className="flex items-center gap-3 text-white/60 text-sm hover:text-[oklch(0.80_0.12_70)] transition-colors">
-                  <Phone className="h-5 w-5 text-[oklch(0.80_0.12_70)]" />
-                  +91 99500 85300
-                </Link>
+              <li className="flex items-start gap-3">
+                <Phone className="h-4 w-4 text-[var(--gold)] flex-shrink-0 mt-0.5" strokeWidth={1.5} />
+                <div>
+                  <Link href="tel:+919829082911" className="text-white/55 text-sm hover:text-[var(--gold)] transition-colors block">
+                    +91 98290 82911
+                  </Link>
+                  <span className="text-white/25 text-xs">Processing Unit</span>
+                </div>
               </li>
-              <li>
-                <Link href="tel:+919829082911" className="flex items-center gap-3 text-white/60 text-sm hover:text-[oklch(0.80_0.12_70)] transition-colors">
-                  <Phone className="h-5 w-5 text-[oklch(0.80_0.12_70)]" />
-                  +91 98290 82911
-                </Link>
+              <li className="flex items-start gap-3">
+                <MapPin className="h-4 w-4 text-[var(--gold)] flex-shrink-0 mt-0.5" strokeWidth={1.5} />
+                <div className="text-white/45 text-xs leading-relaxed">
+                  <span className="text-white/65 text-sm block mb-0.5">Kishangarh, Rajasthan</span>
+                  305801, India
+                </div>
               </li>
-              <li>
-                <Link href="mailto:chandakmarblesales@gmail.com" className="flex items-center gap-3 text-white/60 text-sm hover:text-[oklch(0.80_0.12_70)] transition-colors">
-                  <Mail className="h-5 w-5 text-[oklch(0.80_0.12_70)]" />
+              <li className="flex items-start gap-3">
+                <Mail className="h-4 w-4 text-[var(--gold)] flex-shrink-0 mt-0.5" strokeWidth={1.5} />
+                <Link
+                  href="mailto:chandakmarblesales@gmail.com"
+                  className="text-white/55 text-sm hover:text-[var(--gold)] transition-colors break-all"
+                >
                   chandakmarblesales@gmail.com
                 </Link>
               </li>
             </ul>
           </div>
         </div>
+      </div>
 
-        {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-white/10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/40 text-sm">
-              &copy; {new Date().getFullYear()} Chandak Marble. All rights reserved.
-            </p>
-            <p className="text-white/40 text-sm">
-              Premium Imported Marble Since 1981
-            </p>
-          </div>
+      {/* Bottom bar */}
+      <div className="divider-gold-full" />
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-white/25 text-xs">
+            &copy; {new Date().getFullYear()} Chandak Marble. All rights reserved.
+          </p>
+          <p className="text-white/25 text-xs text-overline">
+            Premium Imported Marble Since 1981
+          </p>
         </div>
       </div>
     </footer>

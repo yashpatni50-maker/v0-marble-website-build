@@ -1,61 +1,86 @@
+"use client"
+
+import Image from "next/image"
+import { motion } from "framer-motion"
 import type { MarbleCollection } from "@/lib/marble-collections-data"
 
 interface Props {
   collection: MarbleCollection
 }
 
-export function CollectionHero({ collection }: Props) {
-  const colorMap: Record<string, string> = {
-    Grey: "from-slate-900 to-slate-700",
-    Beige: "from-amber-900 to-amber-700",
-    White: "from-slate-100 to-slate-50",
-    Black: "from-slate-950 to-slate-800",
-    Brown: "from-amber-950 to-amber-800",
-    Onyx: "from-purple-950 to-purple-800",
-  }
+const ease: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
-  const bgClass = colorMap[collection.color] || "from-slate-900 to-slate-700"
+// Each collection gets its own hero image from the already-generated collection images
+const collectionImages: Record<string, string> = {
+  "gorgeous-grey":    "/images/collection-gorgeous-grey.png",
+  "beautiful-beige":  "/images/collection-beautiful-beige.png",
+  "wow-white":        "/images/collection-wow-white.png",
+  "bold-black":       "/images/collection-bold-black.png",
+  "aesthetic-brown":  "/images/marble-aesthetic-brown.png",
+  "onyx-marble":       "/images/marble-onyx.png",
+}
+
+export function CollectionHero({ collection }: Props) {
+  const heroImage = collectionImages[collection.id] ?? "/images/hero-collection.png"
 
   return (
-    <section className={`relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br ${bgClass} pt-32 overflow-hidden`}>
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[oklch(0.80_0.12_70)] rounded-full blur-3xl opacity-10 animate-float" />
-        <div className="absolute bottom-1/4 left-1/4 w-72 h-72 bg-[oklch(0.80_0.12_70)] rounded-full blur-3xl opacity-5 animate-float" style={{ animationDelay: '1s' }} />
+    <section className="relative min-h-[75vh] flex items-end overflow-hidden">
+      {/* Full-bleed background */}
+      <div className="absolute inset-0">
+        <Image
+          src={heroImage}
+          alt={`${collection.name} marble collection — Chandak Marble`}
+          fill
+          className="object-cover object-center scale-[1.03]"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/65 to-[#0a0a0a]/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/50 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* Breadcrumb */}
-        <div className="mb-8 flex items-center justify-center gap-2 text-sm">
-          <a href="/products" className="text-white/70 hover:text-white transition-colors">
-            Collections
-          </a>
-          <span className="text-white/50">/</span>
-          <span className="text-[oklch(0.80_0.12_70)]">{collection.name}</span>
+      {/* Content */}
+      <div className="relative z-10 w-full pb-20 pt-44 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease }}
+          >
+            {/* Breadcrumb */}
+            <div className="flex items-center gap-2 text-sm mb-5">
+              <a href="/products" className="text-white/50 hover:text-white/80 transition-colors">
+                Collections
+              </a>
+              <span className="text-white/30">/</span>
+              <span className="text-[var(--gold)]">{collection.name}</span>
+            </div>
+
+            <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-white text-balance leading-[1.05] mb-4 max-w-3xl">
+              {collection.name}
+            </h1>
+
+            <p className="text-[var(--gold)] text-lg italic mb-5">
+              {collection.tagline}
+            </p>
+
+            <p className="text-white/65 text-base leading-relaxed max-w-2xl mb-8">
+              {collection.description}
+            </p>
+
+            <div className="flex items-center gap-6">
+              <div className="h-px w-24 bg-[var(--gold)]/60" />
+              <a
+                href={`https://wa.me/919500853000?text=Hello%2C%20I%20am%20interested%20in%20the%20${encodeURIComponent(collection.name)}%20collection`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-luxury inline-flex items-center gap-2 px-7 py-3 bg-[var(--gold)] text-black text-sm font-semibold tracking-wide uppercase rounded-none hover:bg-white transition-colors duration-300"
+              >
+                Enquire Now
+                <span>→</span>
+              </a>
+            </div>
+          </motion.div>
         </div>
-
-        {/* Main heading */}
-        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 animate-fade-in-up">
-          {collection.name}
-        </h1>
-
-        {/* Tagline */}
-        <p className="text-lg sm:text-xl text-white/80 mb-6 animate-fade-in-up animation-delay-100">
-          {collection.tagline}
-        </p>
-
-        {/* Description */}
-        <p className="text-base sm:text-lg text-white/70 max-w-2xl mx-auto mb-8 leading-relaxed animate-fade-in-up animation-delay-200">
-          {collection.description}
-        </p>
-
-        {/* CTA Button */}
-        <button className="inline-block px-8 py-4 bg-[oklch(0.55_0.12_70)] hover:bg-[oklch(0.45_0.12_70)] text-white font-medium rounded transition-all duration-300 hover:shadow-lg animate-fade-in-up animation-delay-300 group">
-          <a href="https://wa.me/919950085300?text=Hello%2C%20I%20am%20interested%20in%20your%20marble%20collections%20especially%20the%20" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-            <span>Explore Varieties</span>
-            <span className="group-hover:translate-x-1 transition-transform">→</span>
-          </a>
-        </button>
       </div>
     </section>
   )

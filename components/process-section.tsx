@@ -1,89 +1,110 @@
+"use client"
+
 import { Globe, Ship, Search, Scissors, Truck } from "lucide-react"
+import { motion } from "framer-motion"
 
 const steps = [
   {
     icon: Globe,
     number: "01",
     title: "Global Stone Selection",
-    description: "We personally visit quarries worldwide to select the finest marble slabs from Italy, Turkey, Greece, Portugal, Iran, and other premium sources.",
+    description: "We personally visit quarries worldwide to select the finest marble slabs from Italy, Turkey, Greece, Portugal, Iran, and other premium origins.",
   },
   {
     icon: Ship,
     number: "02",
-    title: "International Sourcing & Import",
-    description: "Direct import from quarries ensures authenticity, competitive pricing, and access to exclusive marble varieties.",
+    title: "Direct Import",
+    description: "Direct import from quarries ensures authenticity, competitive pricing, and access to exclusive varieties unavailable through intermediaries.",
   },
   {
     icon: Search,
     number: "03",
-    title: "Processing & Quality Inspection",
-    description: "Every slab undergoes rigorous quality inspection using advanced IRS technology at our processing units.",
+    title: "Quality Inspection",
+    description: "Every slab undergoes rigorous quality inspection at our state-of-the-art processing facility, ensuring consistency, finish, and structural integrity.",
   },
   {
     icon: Scissors,
     number: "04",
-    title: "Precision Cutting & Finishing",
-    description: "State-of-the-art gangsaw and cutting technology ensures precision cuts and flawless finishing.",
+    title: "Precision Finishing",
+    description: "Gangsaw and precision cutting technology delivers immaculate cuts and flawless finishes to exacting specifications.",
   },
   {
     icon: Truck,
     number: "05",
-    title: "Dispatch & Delivery",
-    description: "Safe packaging and reliable logistics ensure your marble reaches you in perfect condition across India.",
+    title: "Safe Delivery",
+    description: "Premium packaging and a reliable logistics network ensure your marble arrives in perfect condition, anywhere in India.",
   },
 ]
 
+const ease: [number, number, number, number] = [0.22, 1, 0.36, 1]
+
 export function ProcessSection() {
   return (
-    <section className="py-20 lg:py-32 bg-secondary">
+    <section className="py-24 lg:py-36 bg-[var(--surface-1)]" aria-labelledby="process-heading">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-[oklch(0.55_0.12_70)] text-sm font-medium tracking-wider uppercase">Our Process</span>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance">
-            IRS Stone Process
-          </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            Our International Refined Stone process ensures every marble piece meets the highest 
-            standards of quality from quarry to your doorstep.
-          </p>
+
+        {/* Header */}
+        <div className="max-w-2xl mb-20">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.9, ease }}
+          >
+            <div className="flex items-center gap-3 mb-5">
+              <div className="divider-gold" />
+              <span className="text-overline text-[var(--gold)]">Our Process</span>
+            </div>
+            <h2
+              id="process-heading"
+              className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance leading-tight mb-6"
+            >
+              How We Deliver —{" "}
+              <span className="text-[var(--gold)]">Quarry to Your Door</span>
+            </h2>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              Every slab at Chandak Marble travels a carefully managed journey —
+              from hand-selected quarries worldwide to flawless delivery at your site.
+            </p>
+          </motion.div>
         </div>
 
-        {/* Process Steps */}
-        <div className="relative">
-          {/* Connection Line - Desktop */}
-          <div className="hidden lg:block absolute top-24 left-0 right-0 h-0.5 bg-border" />
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
-            {steps.map((step, index) => (
-              <div key={step.number} className="relative">
-                {/* Mobile Connection Line */}
-                {index < steps.length - 1 && (
-                  <div className="lg:hidden absolute left-6 top-12 bottom-0 w-0.5 bg-border -mb-8" />
-                )}
-                
-                <div className="relative bg-background rounded-lg p-6 shadow-sm border border-border hover:border-[oklch(0.55_0.12_70)/30] hover:shadow-md transition-all">
-                  {/* Icon */}
-                  <div className="relative z-10 w-12 h-12 rounded-full bg-[oklch(0.55_0.12_70)] flex items-center justify-center mb-4">
-                    <step.icon className="h-6 w-6 text-white" />
-                  </div>
-                  
-                  {/* Number */}
-                  <span className="text-[oklch(0.55_0.12_70)] text-sm font-bold">{step.number}</span>
-                  
-                  {/* Title */}
-                  <h3 className="font-serif text-lg font-semibold text-foreground mt-2 mb-3">
-                    {step.title}
-                  </h3>
-                  
-                  {/* Description */}
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
+        {/* Steps — horizontal scroll on mobile, 5-column on desktop */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-px bg-border/20">
+          {steps.map((step, i) => (
+            <motion.div
+              key={step.number}
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.8, ease, delay: i * 0.08 }}
+              className="group relative bg-[var(--surface-1)] hover:bg-[var(--surface-2)] p-8 transition-colors duration-400"
+            >
+              {/* Number */}
+              <span className="text-overline text-foreground/15 group-hover:text-foreground/30 transition-colors duration-300 block mb-6">
+                {step.number}
+              </span>
+
+              {/* Icon */}
+              <div className="mb-6 w-10 h-10 flex items-center justify-center border border-[var(--gold)/20] group-hover:border-[var(--gold)/50] transition-colors duration-400">
+                <step.icon className="h-5 w-5 text-[var(--gold)]" strokeWidth={1.5} />
               </div>
-            ))}
-          </div>
+
+              <h3 className="font-serif text-base font-semibold text-foreground mb-3">
+                {step.title}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {step.description}
+              </p>
+
+              {/* Connecting arrow (not on last) */}
+              {i < steps.length - 1 && (
+                <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 text-border/40 z-10 text-xs">
+                  ›
+                </div>
+              )}
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

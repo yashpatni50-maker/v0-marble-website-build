@@ -28,27 +28,25 @@ export function LocationMap() {
           className="relative rounded-lg overflow-hidden h-[400px] bg-muted"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3567.4!2d74.86!3d26.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKishangarh%2C%20Rajasthan%20305801!5e0!3m2!1sen!2sin!4v1234567890"
+            src="https://www.google.com/maps?q=Chandak+Marble+International,+Khasra+No.+375,+361,+Makrana+Road,+Madanganj,+Kali+Dungri,+Kishangarh,+Rajasthan+305801&ll=26.6454857,74.8541434&z=16&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Chandak Marble Location - Kishangarh, Rajasthan"
+            title="Chandak Marble International - Main Showroom, Makrana Road, Kishangarh, Rajasthan"
             className="grayscale hover:grayscale-0 transition-all duration-500"
           />
           
           <div className="absolute bottom-6 left-6 right-6 md:left-auto md:right-6 md:w-auto">
-            <div className="bg-background/95 backdrop-blur-sm p-4 rounded-lg shadow-lg flex flex-col md:flex-row items-start md:items-center gap-4">
-              <div>
-                <h3 className="font-serif text-lg text-foreground">Chandak Marble International</h3>
-                <p className="text-sm text-muted-foreground">Makrana Road, Kishangarh, Rajasthan</p>
-              </div>
-              <div className="flex gap-2">
+            <div className="bg-background/95 backdrop-blur-sm p-4 rounded-lg shadow-lg">
+              <h3 className="font-serif text-lg text-foreground mb-1">Chandak Marble International</h3>
+              <p className="text-sm text-muted-foreground mb-3">Khasra No. 375 & 361, Makrana Road, Kishangarh, Rajasthan 305801</p>
+              <div className="flex flex-col sm:flex-row gap-2">
                 <Button asChild size="sm" className="bg-[#c9a227] hover:bg-[#b8922a] text-white">
                   <a 
-                    href="https://share.google/qbRpLaPL6g616rTXy"
+                    href="https://www.google.com/maps/dir/?api=1&destination=Chandak%20Marble%20International%2C%20Khasra%20No.%20375%2C%20361%2C%20Makrana%20Road%2C%20Madanganj%2C%20Kali%20Dungri%2C%20Kishangarh%2C%20Rajasthan%20305801"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -58,12 +56,10 @@ export function LocationMap() {
                 </Button>
                 <Button asChild size="sm" variant="outline">
                   <a 
-                    href="https://share.google/qbRpLaPL6g616rTXy"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="tel:+919500853000"
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
-                    View Larger
+                    Call Now
                   </a>
                 </Button>
               </div>

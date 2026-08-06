@@ -7,8 +7,12 @@ import { ContactForm } from "@/components/contact-form"
 import { LocationMap } from "@/components/location-map"
 
 export const metadata = {
-  title: 'Contact Us | Chandak Marble - Visit Our Showroom in Kishangarh',
-  description: 'Get in touch with Chandak Marble. Visit our showroom in Kishangarh, Rajasthan or contact us via phone, WhatsApp, or email for premium marble inquiries.',
+  title: 'Contact Chandak Marble | Imported Marble Showroom in Kishangarh | +91 95008 53000',
+  description: 'Contact Chandak Marble for premium imported marble, Italian marble flooring, and architectural stone in Kishangarh, Rajasthan. Showroom: +91 95008 53000. Processing Unit: +91 98290 82911. Architects, builders, designers welcome.',
+  openGraph: {
+    title: 'Contact Chandak Marble - Imported Marble & Architectural Stone',
+    description: 'Get in touch with our marble experts for imported marble flooring, cladding, and custom stone solutions. Available in Kishangarh showroom.',
+  },
 }
 
 export default function ContactPage() {

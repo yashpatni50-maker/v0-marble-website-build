@@ -37,14 +37,14 @@ export function ProductsCTA() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button asChild size="lg" className="bg-[#c9a227] hover:bg-[#b8922a] text-white">
-              <a href="tel:+919950085300">
+              <a href="tel:+919500853000">
                 <Phone className="mr-2 h-5 w-5" />
-                +91 99500 85300
+                +91 95008 53000
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#1a1a1a]">
               <a 
-                href="https://wa.me/919950085300?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection.%20Please%20share%20more%20details."
+                href="https://wa.me/919500853000?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection.%20Please%20share%20more%20details."
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -54,9 +54,12 @@ export function ProductsCTA() {
             </Button>
           </div>
 
-          <div className="flex items-center justify-center text-gray-400">
-            <MapPin className="h-5 w-5 mr-2 text-[#c9a227]" />
-            <span>Chandak Marble, NH-79A, Kishangarh, Rajasthan 305801</span>
+          <div className="flex flex-col items-center justify-center text-gray-400 gap-2">
+            <p className="text-sm font-medium text-white/80">Chandak Marble International</p>
+            <div className="flex items-center justify-center text-gray-400">
+              <MapPin className="h-5 w-5 mr-2 text-[#c9a227]" />
+              <span>Khasra No. 375 & 361, Makrana Road, Kishangarh, Rajasthan 305801</span>
+            </div>
           </div>
         </motion.div>
       </div>

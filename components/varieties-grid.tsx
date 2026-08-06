@@ -43,8 +43,8 @@ export function VarietiesGrid({ varieties }: Props) {
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                {/* Overlay — always visible on mobile for readability, hover-only on desktop */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300" />
               </div>
 
               {/* Variety name */}
@@ -54,8 +54,8 @@ export function VarietiesGrid({ varieties }: Props) {
                 </h3>
               </div>
 
-              {/* Hover effect line */}
-              <div className="absolute bottom-0 left-0 h-0.5 bg-[oklch(0.80_0.12_70)] w-0 group-hover:w-full transition-all duration-300" />
+              {/* Hover effect line — always visible on mobile, hover-only on desktop */}
+              <div className="absolute bottom-0 left-0 h-0.5 bg-[oklch(0.80_0.12_70)] w-full sm:w-0 sm:group-hover:w-full transition-all duration-300" />
             </div>
           ))}
         </div>
