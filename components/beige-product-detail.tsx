@@ -24,11 +24,11 @@ export function BeigeProductDetail({ product }: Props) {
           <div className="grid items-start gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
             <div className="relative aspect-[4/3] overflow-hidden bg-muted">
               <Image
-                src={product.originalImage}
+                src={product.landscapeImage}
                 alt={`${product.name} marble slab in the Beautiful Beige collection`}
                 fill
                 priority
-                className="object-contain"
+                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 60vw"
               />
             </div>
@@ -81,8 +81,8 @@ export function BeigeProductDetail({ product }: Props) {
             <p className="text-overline text-[var(--gold)]">Material study</p>
             <h2 className="mt-3 font-serif text-3xl text-foreground sm:text-4xl">See the stone in its full rhythm</h2>
           </div>
-          <div className="relative aspect-[16/7] overflow-hidden bg-muted">
-            <Image src={product.originalImage} alt={`${product.name} natural marble texture`} fill className="object-contain" sizes="(max-width: 1024px) 100vw, 70vw" />
+          <div className="relative aspect-[3/4] overflow-hidden bg-muted sm:aspect-[4/5] lg:aspect-[3/4]">
+            <Image src={product.originalImage} alt={`${product.name} full lot view`} fill className="object-contain" sizes="(max-width: 1024px) 100vw, 520px" />
           </div>
         </div>
       </section>
