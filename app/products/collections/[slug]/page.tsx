@@ -3,10 +3,12 @@ import { Footer } from "@/components/footer"
 import { FloatingButtons } from "@/components/floating-buttons"
 import { CollectionHero } from "@/components/collection-hero"
 import { BeigeProductGrid } from "@/components/beige-product-grid"
+import { GorgeousGreyProductGrid } from "@/components/gorgeous-grey-product-grid"
 import { EmptyCollectionProducts } from "@/components/empty-collection-products"
 import { CollectionCTA } from "@/components/collection-cta"
 import { getCollectionBySlug, getAllCollectionSlugs } from "@/lib/marble-collections-data"
 import { beigeProducts } from "@/lib/beige-products-data"
+import { greyProducts } from "@/lib/gorgeous-grey-products-data"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 
@@ -54,6 +56,8 @@ export default async function CollectionPage({ params }: Props) {
       <CollectionHero collection={collection} />
       {collection.id === "beautiful-beige" ? (
         <BeigeProductGrid products={beigeProducts} />
+      ) : collection.id === "gorgeous-grey" ? (
+        <GorgeousGreyProductGrid products={greyProducts} />
       ) : (
         <EmptyCollectionProducts collectionName={collection.name} />
       )}
