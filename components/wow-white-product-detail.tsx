@@ -16,7 +16,7 @@ export function WowWhiteProductDetail({ product }: { product: WhiteProduct }) {
             <ArrowLeft className="h-4 w-4" />Back to Wow White
           </Link>
           <div className="grid items-start gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
-            <div className="relative aspect-[3/2] overflow-hidden bg-muted"><Image src={product.landscapeImage} alt={`${product.name} white marble texture`} fill priority className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" /></div>
+            <div className="relative aspect-[3/2] overflow-hidden bg-muted"><Image src={product.originalImage} alt={`Full lot of ${product.name} white marble`} fill priority className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" /></div>
             <div className="lg:pt-8">
               <p className="text-overline text-[var(--gold)]">Wow White Collection</p>
               <h1 className="mt-4 font-serif text-5xl font-bold leading-[1.05] text-foreground sm:text-6xl">{product.name}</h1>
@@ -29,7 +29,7 @@ export function WowWhiteProductDetail({ product }: { product: WhiteProduct }) {
           </div>
         </div>
       </section>
-      <section className="mx-auto max-w-7xl px-4 pb-24 sm:px-6 lg:px-8"><div className="mb-6 flex items-center justify-between"><p className="text-overline text-[var(--gold)]">Material study</p><p className="text-xs uppercase tracking-[0.16em] text-muted-foreground">Full rhythm · Surface detail · Original lot</p></div><div className="grid gap-6 lg:grid-cols-[1.35fr_0.65fr]"><div className="relative aspect-[3/2] overflow-hidden bg-muted"><Image src={product.landscapeImage} alt={`${product.name} 3:2 landscape marble texture`} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 70vw" /></div><div className="relative aspect-square overflow-hidden bg-muted"><Image src={product.image} alt={`${product.name} square marble texture`} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 30vw" /></div></div><div className="relative mt-6 aspect-[16/9] overflow-hidden bg-muted"><Image src={product.originalImage} alt={`Full lot of ${product.name} marble`} fill className="object-cover" sizes="100vw" /></div></section>
+
     </main>
   )
 }
