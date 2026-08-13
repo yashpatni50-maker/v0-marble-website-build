@@ -4,11 +4,13 @@ import { FloatingButtons } from "@/components/floating-buttons"
 import { CollectionHero } from "@/components/collection-hero"
 import { BeigeProductGrid } from "@/components/beige-product-grid"
 import { GorgeousGreyProductGrid } from "@/components/gorgeous-grey-product-grid"
+import { WowWhiteProductGrid } from "@/components/wow-white-product-grid"
 import { EmptyCollectionProducts } from "@/components/empty-collection-products"
 import { CollectionCTA } from "@/components/collection-cta"
 import { getCollectionBySlug, getAllCollectionSlugs } from "@/lib/marble-collections-data"
 import { beigeProducts } from "@/lib/beige-products-data"
 import { greyProducts } from "@/lib/gorgeous-grey-products-data"
+import { whiteProducts } from "@/lib/wow-white-products-data"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 
@@ -58,6 +60,8 @@ export default async function CollectionPage({ params }: Props) {
         <BeigeProductGrid products={beigeProducts} />
       ) : collection.id === "gorgeous-grey" ? (
         <GorgeousGreyProductGrid products={greyProducts} />
+      ) : collection.id === "wow-white" ? (
+        <WowWhiteProductGrid products={whiteProducts} />
       ) : (
         <EmptyCollectionProducts collectionName={collection.name} />
       )}
