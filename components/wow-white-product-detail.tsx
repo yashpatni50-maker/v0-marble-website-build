@@ -16,7 +16,12 @@ export function WowWhiteProductDetail({ product }: { product: WhiteProduct }) {
             <ArrowLeft className="h-4 w-4" />Back to Wow White
           </Link>
           <div className="grid items-start gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
-            <div className="relative aspect-[3/2] overflow-hidden bg-muted"><Image src={product.originalImage} alt={`Full lot of ${product.name} white marble`} fill priority className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" /></div>
+            <div>
+              <p className="mb-3 text-overline text-muted-foreground">01 · 3:2 landscape texture</p>
+              <div className="relative aspect-[3/2] overflow-hidden bg-muted"><Image src={product.landscapeImage} alt={`${product.name} 3:2 landscape texture`} fill priority className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" /></div>
+              <p className="mt-8 mb-3 text-overline text-muted-foreground">02 · Full lot rhythm</p>
+              <div className="relative aspect-[3/2] overflow-hidden bg-muted"><Image src={product.originalImage} alt={`Full lot rhythm of ${product.name} white marble`} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" /></div>
+            </div>
             <div className="lg:pt-8">
               <p className="text-overline text-[var(--gold)]">Wow White Collection</p>
               <h1 className="mt-4 font-serif text-5xl font-bold leading-[1.05] text-foreground sm:text-6xl">{product.name}</h1>
