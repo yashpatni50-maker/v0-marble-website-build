@@ -56,7 +56,7 @@ export function LocationMap() {
                 </Button>
                 <Button asChild size="sm" variant="outline">
                   <a 
-                    href="tel:+919500853000"
+                    href="tel:+919950085300"
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Call Now

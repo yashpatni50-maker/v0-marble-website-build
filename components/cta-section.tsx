@@ -66,7 +66,7 @@ export function CTASection() {
           className="flex flex-wrap items-center justify-center gap-4 mb-20"
         >
           <Link
-            href="https://wa.me/919500853000?text=Hello%2C%20I%20am%20interested%20in%20imported%20marble.%20Please%20share%20catalogue%20and%20pricing."
+            href="https://wa.me/919950085300?text=Hello%2C%20I%20am%20interested%20in%20imported%20marble.%20Please%20share%20catalogue%20and%20pricing."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-7 py-3.5 bg-[var(--gold)] text-background text-xs font-semibold tracking-widest uppercase btn-luxury"
@@ -75,7 +75,7 @@ export function CTASection() {
             Chat on WhatsApp
           </Link>
           <Link
-            href="tel:+919500853000"
+            href="tel:+919950085300"
             className="inline-flex items-center gap-3 px-7 py-3.5 border border-white/30 text-white text-xs font-semibold tracking-widest uppercase btn-luxury hover:border-white/60 transition-colors"
           >
             <Phone className="h-4 w-4" />
@@ -101,8 +101,8 @@ export function CTASection() {
               label: "Main Showroom",
               company: "Chandak Marble International",
               address: "Khasra No. 375 & 361, Makrana Road,\nMadanganj, Kali Dungri,\nKishangarh, Rajasthan 305801",
-              phone: "+91 95008 53000",
-              tel: "+919500853000",
+              phone: "+91 9950085300",
+              tel: "+919950085300",
             },
             {
               label: "Processing Unit",

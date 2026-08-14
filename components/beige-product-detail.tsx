@@ -61,11 +61,11 @@ export function BeigeProductDetail({ product }: Props) {
               </div>
 
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                <a href={`https://wa.me/919500853000?text=${whatsappMessage}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[var(--gold)] px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-background transition-colors hover:bg-[var(--gold-bright)]">
+                <a href={`https://wa.me/919950085300?text=${whatsappMessage}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[var(--gold)] px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-background transition-colors hover:bg-[var(--gold-bright)]">
                   <MessageCircle className="h-4 w-4" />
                   Request a sample
                 </a>
-                <a href="tel:+919500853000" className="inline-flex items-center justify-center gap-2 border border-border px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-foreground transition-colors hover:border-[var(--gold)] hover:text-[var(--gold)]">
+                <a href="tel:+919950085300" className="inline-flex items-center justify-center gap-2 border border-border px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-foreground transition-colors hover:border-[var(--gold)] hover:text-[var(--gold)]">
                   <Phone className="h-4 w-4" />
                   Speak to a specialist
                 </a>

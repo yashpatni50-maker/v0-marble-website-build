@@ -9,19 +9,19 @@ const contactMethods = [
   {
     icon: Phone,
     title: "Call Us",
-    details: ["+91 95008 53000", "+91 98290 82911"],
+    details: ["+91 9950085300", "+91 98290 82911"],
     action: {
       label: "Call Now",
-      href: "tel:+919500853000"
+      href: "tel:+919950085300"
     }
   },
   {
     icon: MessageCircle,
     title: "WhatsApp",
-    details: ["+91 95008 53000"],
+    details: ["+91 9950085300"],
     action: {
       label: "Chat Now",
-      href: "https://wa.me/919500853000?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection.%20Please%20share%20more%20details."
+      href: "https://wa.me/919950085300?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection.%20Please%20share%20more%20details."
     }
   },
   {
@@ -40,8 +40,8 @@ const locations = [
     name: "Main Showroom",
     company: "Chandak Marble International",
     address: "Khasra No. 375 & 361,\nMakrana Road,\nMadanganj, Kali Dungri,\nKishangarh,\nRajasthan – 305801, India",
-    phone: "+91 95008 53000",
-    phoneHref: "tel:+919500853000",
+    phone: "+91 9950085300",
+    phoneHref: "tel:+919950085300",
     image: "/images/contact-showroom.png"
   },
   {

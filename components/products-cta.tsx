@@ -37,14 +37,14 @@ export function ProductsCTA() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button asChild size="lg" className="bg-[#c9a227] hover:bg-[#b8922a] text-white">
-              <a href="tel:+919500853000">
+              <a href="tel:+919950085300">
                 <Phone className="mr-2 h-5 w-5" />
-                +91 95008 53000
+                +91 9950085300
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#1a1a1a]">
               <a 
-                href="https://wa.me/919500853000?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection.%20Please%20share%20more%20details."
+                href="https://wa.me/919950085300?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection.%20Please%20share%20more%20details."
                 target="_blank"
                 rel="noopener noreferrer"
               >

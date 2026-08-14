@@ -16,7 +16,7 @@ export function SchemaMarkup() {
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "Customer Service",
-      "telephone": "+91-95008-53000"
+      "telephone": "+91-99500-85300"
     }
   }
 
@@ -27,7 +27,7 @@ export function SchemaMarkup() {
     "image": "https://chandakmarble.com/logo.png",
     "description": "Premium imported marble supplier and showroom in Kishangarh, Rajasthan",
     "url": "https://chandakmarble.com",
-    "telephone": "+91-95008-53000",
+    "telephone": "+91-99500-85300",
     "priceRange": "$$",
     "areaServed": ["IN"],
     "address": {

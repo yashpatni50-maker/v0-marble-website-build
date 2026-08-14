@@ -70,7 +70,7 @@ export function CollectionHero({ collection }: Props) {
             <div className="flex items-center gap-6">
               <div className="h-px w-24 bg-[var(--gold)]/60" />
               <a
-                href={`https://wa.me/919500853000?text=Hello%2C%20I%20am%20interested%20in%20the%20${encodeURIComponent(collection.name)}%20collection`}
+                href={`https://wa.me/919950085300?text=Hello%2C%20I%20am%20interested%20in%20the%20${encodeURIComponent(collection.name)}%20collection`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-luxury inline-flex items-center gap-2 px-7 py-3 bg-[var(--gold)] text-black text-sm font-semibold tracking-wide uppercase rounded-none hover:bg-white transition-colors duration-300"
