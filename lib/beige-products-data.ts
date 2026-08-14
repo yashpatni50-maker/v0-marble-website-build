@@ -357,7 +357,7 @@ const products: BeigeProduct[] = [
     name: "Odeon Spider",
     collection: "beautiful-beige",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Odeon%20Spider-xwF1gbAsvSmQ8HY5trpDdcFOcYW0Wc.jpg",
-    landscapeImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Odeon%20Spider-rJxebmU2gIv5glrReiMAYyfk2cXr9M.jpg",
+    landscapeImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Odeon%20Spider-UjMedctTN654ra9nzW67Knrvj4hai4.jpg",
     originalImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Odeon%20Spider-chXvQKMvSkgHYhSetl1SnEthBxBtTt.jpg",
     origin: "Imported selection",
     finish: "Polished",
