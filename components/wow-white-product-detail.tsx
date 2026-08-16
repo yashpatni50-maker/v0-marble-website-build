@@ -18,8 +18,8 @@ export function WowWhiteProductDetail({ product }: { product: WhiteProduct }) {
           </Link>
 
           <div className="grid items-start gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
-            <div className="relative aspect-square overflow-hidden bg-muted">
-              <Image src={product.image} alt={`${product.name} marble slab in the Wow White collection`} fill priority className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" />
+            <div className="relative aspect-[3/2] overflow-hidden bg-muted">
+              <Image src={product.landscapeImage} alt={`${product.name} marble slab in the Wow White collection`} fill priority className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" />
             </div>
 
             <div className="lg:pt-8">
@@ -40,14 +40,6 @@ export function WowWhiteProductDetail({ product }: { product: WhiteProduct }) {
                 <a href="tel:+919950085300" className="inline-flex items-center justify-center gap-2 border border-border px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-foreground transition-colors hover:border-[var(--gold)] hover:text-[var(--gold)]"><Phone className="h-4 w-4" />Speak to a specialist</a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-border/60 bg-card px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="relative aspect-[3/2] overflow-hidden bg-muted">
-            <Image src={product.landscapeImage} alt={`${product.name} 3:2 landscape stone texture`} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1200px" />
           </div>
         </div>
       </section>
