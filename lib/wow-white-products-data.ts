@@ -32,6 +32,21 @@ const heroImages: Record<string, string> = {
   "michel-angelo": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Michel%20Angelo_cropped-KWcGQ9gAOvxIj32eJf3Rhi4K9NMzJA.jpg",
 }
 
+const landscapeImages: Record<string, string> = {
+  "greek-statuario": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Greek%20Statuario_cropped-AD4bglauZwBzSNKwKK1UyDPQcQ0nkh.jpg",
+  statuario: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Statuario_cropped-idiu1sMm79XhtgwyjWdv9CxJHx5g0y.jpg",
+  "michel-angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Michel%20Angelo%20White_cropped-Oe7mmnUwZNLLtVqdSyl4NZfd8XEtMo.jpg",
+  "cararra-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Carrara%20White_cropped-Prc2ffEy1azn3Tso1kgj0bB0m2Gxok.jpg",
+  "volakas-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Volkas%20White_cropped-TEgYRHVGtfQGpGmnXeSu2fuTFgd3nD.jpg",
+  "panda-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Panda%20White_cropped-Sr76cwlVXkpSUZDzMW2X8ZT5RevzaR.jpg",
+  "calacutta-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Calacutta%20White_cropped-Qc0VI8wqCczdVfV297ZVtABajncQJG.jpg",
+  "swarovski-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Swarovski%20White_cropped-2bSqeamx2CQAnK0BgLh7zeVDlpDIAE.jpg",
+  "golden-spider-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20Spider%20White_cropped-2YxG29HSmgnyjALuJN02ujNbSEp2A5.jpg",
+  "calacutta-gold": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Calacutta%20Gold_cropped-c5zLaDLmHm53TiWiIEIhkWRZpziad4.jpg",
+  "angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Angelo%20White_cropped-bQD47LAsPCTaZ0giIRwSnSFDxyEbVf.jpg",
+  "lasa-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lasa%20White_cropped-PxQqKKuWe2UGrKVqKtqvBvNgtJMm0k.jpg",
+}
+
 const photos: Record<string, string> = {
   "greek-statuario": "/images/wow-white/original/greek-statuario.jpg",
   statuario: "/images/wow-white/original/statuario.jpg",
@@ -53,7 +68,7 @@ export const whiteProducts: WhiteProduct[] = Object.entries(photos).map(([slug, 
   return {
     slug, name, collection: "wow-white",
     image: heroImages[slug] ?? `/images/wow-white/square/${slug}.jpg`,
-    landscapeImage: `/images/wow-white/landscape/${slug}.jpg`, originalImage: photo,
+    landscapeImage: landscapeImages[slug] ?? `/images/wow-white/landscape/${slug}.jpg`, originalImage: photo,
     origin: "Imported selection", finish: "Polished",
     shortDescription: "A luminous white marble with refined natural movement.",
     description: `Hand-selected ${name} white marble for elegant flooring, feature walls, and tailored architectural interiors.`,
