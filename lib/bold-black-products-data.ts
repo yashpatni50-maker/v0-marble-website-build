@@ -16,11 +16,8 @@ export interface BoldBlackProduct {
 }
 
 const warehouseImages: Record<string, string> = {
-  "black-markino": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Black%20Markino-asRAt6OLX5tHSQHQEXs9dOqzEwSjdY.jpg",
-  "mexican-black": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mexican%20Black-TKgH1qd58nEVWlFmq8fjI9CS4Xebli.jpg",
-  "golden-portoro": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20Portoro-2ma9zc6FfV11OgqTCQX8N1bMwehx9l.jpg",
-  "metal-black": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Metal%20Black-pyQaREeoAeVIIYwLSWJkQbxZ820pKd.jpg",
-  "nero-markino": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nero%20-%20Marquino-zDZimtybi2YrVudFUCqtyg5Z1iltOW.jpg",
+  "silver-portoro": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Silver%20Portoro-lSI7g4oQ0Z8RAJ0p6LvL160ZNnjg6K.jpg",
+  "morocco-gold": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Morroco%20Gold-uZ11wzIfArYBtyK5fQ196MEyyhlcwr.jpg",
 }
 
 const uploaded: Record<string, string> = {
