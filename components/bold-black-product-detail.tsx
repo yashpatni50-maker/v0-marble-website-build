@@ -1,0 +1,9 @@
+"use client"
+import Image from "next/image"
+import Link from "next/link"
+import { ArrowLeft } from "lucide-react"
+import type { BoldBlackProduct } from "@/lib/bold-black-products-data"
+
+export function BoldBlackProductDetail({ product }: { product: BoldBlackProduct }) {
+  return <main className="min-h-screen bg-background"><section className="px-4 pb-20 pt-36 sm:px-6 lg:px-8 lg:pt-44"><div className="mx-auto max-w-7xl"><Link href="/products/collections/bold-black" className="mb-10 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted-foreground hover:text-[var(--gold)]"><ArrowLeft className="h-4 w-4" />Back to Bold Black</Link><div className="grid items-start gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20"><div className="relative aspect-[3/2] overflow-hidden bg-muted"><Image src={product.landscapeImage} alt={`${product.name} black marble landscape`} fill priority className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" /></div><div className="lg:pt-8"><p className="text-overline text-[var(--gold)]">Bold Black Collection</p><h1 className="mt-4 font-serif text-5xl font-bold leading-[1.05] text-foreground sm:text-6xl">{product.name}</h1><p className="mt-6 text-lg leading-relaxed text-foreground/70">{product.shortDescription}</p><p className="mt-8 text-base leading-relaxed text-foreground/70">{product.description}</p></div></div></div></section><section className="border-t border-border/60 px-4 py-16 sm:px-6 lg:px-8"><div className="mx-auto max-w-7xl"><p className="mb-6 text-overline text-[var(--gold)]">See the full lot rhythm</p><div className="relative aspect-[3/2] overflow-hidden bg-muted"><Image src={product.originalImage} alt={`${product.name} full lot in warehouse`} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 1200px" /></div></div></section></main>
+}

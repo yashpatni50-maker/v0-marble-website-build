@@ -5,6 +5,8 @@ import { CollectionHero } from "@/components/collection-hero"
 import { BeigeProductGrid } from "@/components/beige-product-grid"
 import { GorgeousGreyProductGrid } from "@/components/gorgeous-grey-product-grid"
 import { WowWhiteProductGrid } from "@/components/wow-white-product-grid"
+import { BoldBlackProductGrid } from "@/components/bold-black-product-grid"
+import { boldBlackProducts } from "@/lib/bold-black-products-data"
 import { EmptyCollectionProducts } from "@/components/empty-collection-products"
 import { CollectionCTA } from "@/components/collection-cta"
 import { getCollectionBySlug, getAllCollectionSlugs } from "@/lib/marble-collections-data"
@@ -62,6 +64,8 @@ export default async function CollectionPage({ params }: Props) {
         <GorgeousGreyProductGrid products={greyProducts} />
       ) : collection.id === "wow-white" ? (
         <WowWhiteProductGrid products={whiteProducts} />
+      ) : collection.id === "bold-black" ? (
+        <BoldBlackProductGrid products={boldBlackProducts} />
       ) : (
         <EmptyCollectionProducts collectionName={collection.name} />
       )}

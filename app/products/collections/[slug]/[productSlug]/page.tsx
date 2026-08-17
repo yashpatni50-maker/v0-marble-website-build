@@ -6,6 +6,8 @@ import { FloatingButtons } from "@/components/floating-buttons"
 import { BeigeProductDetail } from "@/components/beige-product-detail"
 import { GorgeousGreyProductDetail } from "@/components/gorgeous-grey-product-detail"
 import { WowWhiteProductDetail } from "@/components/wow-white-product-detail"
+import { BoldBlackProductDetail } from "@/components/bold-black-product-detail"
+import { getAllBoldBlackProductSlugs, getBoldBlackProductBySlug } from "@/lib/bold-black-products-data"
 import { getAllBeigeProductSlugs, getBeigeProductBySlug } from "@/lib/beige-products-data"
 import { getAllGreyProductSlugs, getGreyProductBySlug } from "@/lib/gorgeous-grey-products-data"
 import { getAllWhiteProductSlugs, getWhiteProductBySlug } from "@/lib/wow-white-products-data"
@@ -22,12 +24,13 @@ export function generateStaticParams() {
     ...getAllBeigeProductSlugs().map((productSlug) => ({ slug: "beautiful-beige", productSlug })),
     ...getAllGreyProductSlugs().map((productSlug) => ({ slug: "gorgeous-grey", productSlug })),
     ...getAllWhiteProductSlugs().map((productSlug) => ({ slug: "wow-white", productSlug })),
+    ...getAllBoldBlackProductSlugs().map((productSlug) => ({ slug: "bold-black", productSlug })),
   ]
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, productSlug } = await params
-  const product = slug === "gorgeous-grey" ? getGreyProductBySlug(productSlug) : slug === "wow-white" ? getWhiteProductBySlug(productSlug) : getBeigeProductBySlug(productSlug)
+  const product = slug === "gorgeous-grey" ? getGreyProductBySlug(productSlug) : slug === "wow-white" ? getWhiteProductBySlug(productSlug) : slug === "bold-black" ? getBoldBlackProductBySlug(productSlug) : getBeigeProductBySlug(productSlug)
 
   if (!product) {
     return {
@@ -50,22 +53,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ProductPage({ params }: Props) {
   const { slug, productSlug } = await params
 
-  if (slug !== "beautiful-beige" && slug !== "gorgeous-grey" && slug !== "wow-white") {
+  if (slug !== "beautiful-beige" && slug !== "gorgeous-grey" && slug !== "wow-white" && slug !== "bold-black") {
     notFound()
   }
 
   const beigeProduct = slug === "beautiful-beige" ? getBeigeProductBySlug(productSlug) : null
   const greyProduct = slug === "gorgeous-grey" ? getGreyProductBySlug(productSlug) : null
   const whiteProduct = slug === "wow-white" ? getWhiteProductBySlug(productSlug) : null
+  const blackProduct = slug === "bold-black" ? getBoldBlackProductBySlug(productSlug) : null
 
-  if (!beigeProduct && !greyProduct && !whiteProduct) {
+  if (!beigeProduct && !greyProduct && !whiteProduct && !blackProduct) {
     notFound()
   }
 
   return (
     <>
       <Header />
-      {beigeProduct ? <BeigeProductDetail product={beigeProduct} /> : greyProduct ? <GorgeousGreyProductDetail product={greyProduct} /> : <WowWhiteProductDetail product={whiteProduct!} />}
+      {beigeProduct ? <BeigeProductDetail product={beigeProduct} /> : greyProduct ? <GorgeousGreyProductDetail product={greyProduct} /> : whiteProduct ? <WowWhiteProductDetail product={whiteProduct} /> : <BoldBlackProductDetail product={blackProduct!} />}
       <Footer />
       <FloatingButtons />
     </>
