@@ -31,11 +31,27 @@ const images: Record<string, string> = {
   "turkish-dark-emperador": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Turkish%20Dark%20Emperador_cropped-II4OXyDSswPasEcCP6dikmWt4l1L4T.jpg",
 }
 
+const landscapeImages: Record<string, string> = {
+  "versale-brown": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Versale%20Brown_cropped-uKPfektXnxTBfJdt9bKyFW7lfzXEfm.jpg",
+  "french-chiffon": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/French%20Chiffon_cropped-2M0cLBJPGtxb6eHBpUbeofoCI8iAeJ.jpg",
+  "dark-emperador": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dark%20Emperador_cropped-1wW3Z3YPkDsRaQ8tkK4aB1GrO6vNQj.jpg",
+  "silk-brown": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SIlk%20Brown_cropped-Efuxs7PijdHyxZmiuh1MJTS7ocadhj.jpg",
+  "bronze-armani": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bronze%20Armani_cropped-ASFU1la25Do1YLCHh7mVRxKHBjiErQ.jpg",
+  "french-brown": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/French%20Brown_cropped-rZdlM9DYrLLdYV5JX4vpLXXAG2LHsq.jpg",
+  "opera-gold": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Opera%20Gold_cropped-Vv4UGGVmIqwNikDQ4GFk3LNJV58Xmv.jpg",
+  "spanish-dark-emperador": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Spanish%20Dark%20Emperador_cropped-y6r2ZryW2qwvwBgvJLoYbYSDjokkDm.jpg",
+  "metallic-brown": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Metallic%20Brown_cropped-Jzw6CQvYxs18kmSqzA7gsTxrltN2b6.jpg",
+  "meta-rust": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Meta%20Rust_cropped-ke4MUaieEcOWpccQRoXKGtEsOjcMzp.jpg",
+  "grigio-armani": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Grigio%20Armani-UBo8mUOJArWs7HBtsXIEJ6m1XhfE8Z.jpg",
+  "spanish-armani-brown": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Spanish%20Armani%20Brown_cropped-PM7SSTyZV7FF52ZicwNJ2nGBiHtdFT.jpg",
+  "turkish-dark-emperador": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Turkish%20Dark%20Emperador_cropped-UY8bM5SRORxMPdVMxzMWzP6CR2zE3R.jpg",
+}
+
 const names: Record<string, string> = {
   "versale-brown": "Versale Brown", "french-chiffon": "French Chiffon", "dark-emperador": "Dark Emperador", "silk-brown": "Silk Brown", "bronze-armani": "Bronze Armani", "french-brown": "French Brown", "opera-gold": "Opera Gold", "spanish-dark-emperador": "Spanish Dark Emperador", "metallic-brown": "Metallic Brown", "meta-rust": "Meta Rust", "grigio-armani": "Grigio Armani", "spanish-armani-brown": "Spanish Armani Brown", "turkish-dark-emperador": "Turkish Dark Emperador",
 }
 
-export const aestheticBrownProducts: AestheticBrownProduct[] = Object.entries(images).map(([slug, image]) => ({ slug, name: names[slug], collection: "aesthetic-brown", image, landscapeImage: image, originalImage: image, origin: "Imported selection", finish: "Polished", shortDescription: "A refined brown marble with distinctive natural movement.", description: `Hand-selected ${names[slug]} marble for warm, sophisticated architectural interiors.`, bestFor: ["Flooring", "Feature walls", "Luxury interiors"], seoTitle: `${names[slug]} Marble | Chandak Marble`, seoDescription: `${names[slug]} marble for refined interiors.`, keywords: [names[slug], "brown marble", "luxury marble"] }))
+export const aestheticBrownProducts: AestheticBrownProduct[] = Object.entries(images).map(([slug, image]) => ({ slug, name: names[slug], collection: "aesthetic-brown", image, landscapeImage: landscapeImages[slug], originalImage: "", origin: "Imported selection", finish: "Polished", shortDescription: "A refined brown marble with distinctive natural movement.", description: `Hand-selected ${names[slug]} marble for warm, sophisticated architectural interiors.`, bestFor: ["Flooring", "Feature walls", "Luxury interiors"], seoTitle: `${names[slug]} Marble | Chandak Marble`, seoDescription: `${names[slug]} marble for refined interiors.`, keywords: [names[slug], "brown marble", "luxury marble"] }))
 
 export function getAllAestheticBrownProductSlugs() { return aestheticBrownProducts.map((product) => product.slug) }
 export function getAestheticBrownProductBySlug(slug: string) { return aestheticBrownProducts.find((product) => product.slug === slug) }
