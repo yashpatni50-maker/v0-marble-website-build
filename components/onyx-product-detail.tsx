@@ -35,7 +35,7 @@ export function OnyxProductDetail({ product }: Props) {
           </div>
         </div>
       </section>
-      <section className="border-y border-border/60 bg-card px-4 py-16 sm:px-6 lg:px-8"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-center"><div><p className="text-overline text-[var(--gold)]">Material study</p><h2 className="mt-3 font-serif text-3xl text-foreground sm:text-4xl">See the stone in its full rhythm</h2></div><div className="flex aspect-[3/2] items-center justify-center border border-dashed border-border bg-background px-6 text-center"><p className="max-w-sm text-sm leading-relaxed text-muted-foreground">Full stone rhythm image coming soon.</p></div></div></section>
+      <section className="border-y border-border/60 bg-card px-4 py-16 sm:px-6 lg:px-8"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-center"><div><p className="text-overline text-[var(--gold)]">Material study</p><h2 className="mt-3 font-serif text-3xl text-foreground sm:text-4xl">See the stone in its full rhythm</h2></div><div className="relative aspect-[3/2] overflow-hidden bg-muted"><Image src={product.originalImage} alt={`${product.name} full warehouse lot view`} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 900px" /></div></div></section>
     </main>
   )
 }

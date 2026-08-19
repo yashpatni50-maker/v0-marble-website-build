@@ -14,6 +14,22 @@ export interface OnyxProduct {
   keywords: string[]
 }
 
+const onyxWarehouseImages: Record<string, string> = {
+  "classic-white-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Classic%20White%20Onyx-Xr5GYNNAE7kUgR4ScUhQA2ENipipFQ.jpg",
+  "crystal-white-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Crystal%20White%20Onyx-254iX9BvbeC2UWTipoaJVtCWYOyDFA.jpg",
+  "honey-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Honey%20Onyx-Zsbb1F8947v7ii9GBGYgknVmx0HISu.jpg",
+  "champagne-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Champagne%20Onyx-N5dd5aUBhsUM6qhBzz99gkSOrfA2dz.jpg",
+  "emerald-green-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emerald%20Green-e9IKbRHiItXEQqwlFitQgKobkaK5pb.jpg",
+  "copper-dune-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Copper%20Dune%20Onyx-da9619jyxmGG90gZtgDg2lwt1Vpljv.jpg",
+  "fire-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Fire%20Onyx-HAc5rZk6I7xzkWPyltsW8NKxQeo5UC.jpg",
+  "sunrise-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sunrise%20Onyx-SnTpmAyUX2h7xwcclqRL3QUQxt4vNH.jpg",
+  "golden-ivory-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20Ivory%20Onyx-OyZj94mCLdFOd7Ju9whlZxfnxBQev4.jpg",
+  "mango-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mango%20Onyx-xZnTAkpu7AgX0v6Lb0n2ut5yPZNg23.jpg",
+  "honey-crystal-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Honey%20Crystal%20Onyx-uoTtWPqXEQKE5S0JlHP1NfRe4qdslN.jpg",
+  "smoky-wave-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Smoky%20Wave%20Onyx-tEgMzvd6oCAssEmbuEsOO5GhmrfaAq.jpg",
+  "yellow-sapphire-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Yellow%20Saphire%20Onyx-msgpszQL4COyR4eanocqZuG6qimnTc.jpg",
+}
+
 const onyxLandscapeImages: Record<string, string> = {
   "classic-white-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Classic%20White%20Onyx_cropped-MtDpkPZOVJ3ql2zubmjZxoUE4Uy2Fk.jpg",
   "crystal-white-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Crystal%20White%20Onyx_cropped-iJIpkn0HINIcxQiICQBHVLtLpRYQur.jpg",
@@ -50,7 +66,7 @@ export const onyxProducts: OnyxProduct[] = [
   description: "Selected for its layered movement and soft light response, this onyx brings a refined, architectural presence to interiors.",
   bestFor: ["Feature walls", "Backlit panels", "Vanities"],
   landscapeImage: onyxLandscapeImages[product.slug],
-  originalImage: "",
+  originalImage: onyxWarehouseImages[product.slug],
   seoTitle: `${product.name} | Chandak Marble`,
   seoDescription: `Explore ${product.name} with a luminous layered surface for refined interiors.`,
   keywords: ["onyx marble", product.name.toLowerCase()],
