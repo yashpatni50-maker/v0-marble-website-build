@@ -9,6 +9,8 @@ import { BoldBlackProductGrid } from "@/components/bold-black-product-grid"
 import { boldBlackProducts } from "@/lib/bold-black-products-data"
 import { AestheticBrownProductGrid } from "@/components/aesthetic-brown-product-grid"
 import { aestheticBrownProducts } from "@/lib/aesthetic-brown-products-data"
+import { OnyxProductGrid } from "@/components/onyx-product-grid"
+import { onyxProducts } from "@/lib/onyx-products-data"
 import { EmptyCollectionProducts } from "@/components/empty-collection-products"
 import { CollectionCTA } from "@/components/collection-cta"
 import { getCollectionBySlug, getAllCollectionSlugs } from "@/lib/marble-collections-data"
@@ -70,6 +72,8 @@ export default async function CollectionPage({ params }: Props) {
         <BoldBlackProductGrid products={boldBlackProducts} />
       ) : collection.id === "aesthetic-brown" ? (
         <AestheticBrownProductGrid products={aestheticBrownProducts} />
+      ) : collection.id === "onyx-marble" ? (
+        <OnyxProductGrid products={onyxProducts} />
       ) : (
         <EmptyCollectionProducts collectionName={collection.name} />
       )}
