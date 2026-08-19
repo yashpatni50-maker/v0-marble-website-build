@@ -4,6 +4,30 @@ export interface OnyxProduct {
   image: string
   origin: string
   finish: string
+  shortDescription: string
+  description: string
+  bestFor: string[]
+  landscapeImage: string
+  originalImage: string
+  seoTitle: string
+  seoDescription: string
+  keywords: string[]
+}
+
+const onyxLandscapeImages: Record<string, string> = {
+  "classic-white-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Classic%20White%20Onyx_cropped-MtDpkPZOVJ3ql2zubmjZxoUE4Uy2Fk.jpg",
+  "crystal-white-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Crystal%20White%20Onyx_cropped-iJIpkn0HINIcxQiICQBHVLtLpRYQur.jpg",
+  "honey-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Honey%20Onyx_cropped-5mAS9VC7zlhQMwUwFP6d93Tl1D5rdB.jpg",
+  "champagne-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Champagne%20Onyx_cropped-172BK2ywwRJAKnvrALTuVHIPucbsQ8.jpg",
+  "emerald-green-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Emerald%20Green_cropped-tMQTrkFXowzRpBTPLDhLh09Yr0VmhW.jpg",
+  "copper-dune-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Copper%20Dune%20Onyx_cropped-fhBHdXfkxnrP1d3ZrMtExPIeMHZhYg.jpg",
+  "fire-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Fire%20Onyx_cropped-6OPKzvkYYsk6I6tT43Jhj7tyG5Ebrx.jpg",
+  "sunrise-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Sunrise%20Onyx_cropped-R9apLLKaJ73rZhwK5OtTESS50SdFJg.jpg",
+  "golden-ivory-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20Ivory%20Onyx_cropped-Bav5xVGpJOyJc0nfFt6JRtxli3ZfuN.jpg",
+  "mango-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mango%20Onyx_cropped-Z6BLc1WnsGibHTPXlrDau8ZS7jowu3.jpg",
+  "honey-crystal-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Honey%20Crystal%20Onyx_cropped-TWAbDBcoSnheKCo8nHOy8LyoDnO9NE.jpg",
+  "smoky-wave-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Smoky%20Wave%20Onyx_cropped-noseMoflEBSpoeCRuOVISTBkBScaLr.jpg",
+  "yellow-sapphire-onyx": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Yellow%20Saphire%20Onyx_cropped-kB4fHjhitU3UqmSkSLVUbmy467gcYX.jpg",
 }
 
 export const onyxProducts: OnyxProduct[] = [
@@ -20,4 +44,22 @@ export const onyxProducts: OnyxProduct[] = [
   { slug: "honey-crystal-onyx", name: "Honey Crystal Onyx", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Honey%20Crystal%20Onyx_cropped-F2v8mwfNLSBrO4BWtDFdAvjHR8EWMg.jpg", origin: "Imported selection", finish: "Polished" },
   { slug: "smoky-wave-onyx", name: "Smoky Wave Onyx", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Smoky%20Wave%20Onyx_cropped-hSWqej3uhjH9se3Iku1F20zcOFAgvq.jpg", origin: "Imported selection", finish: "Polished" },
   { slug: "yellow-sapphire-onyx", name: "Yellow Sapphire Onyx", image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Yellow%20Saphire%20Onyx_cropped-H5twSC8RBeoyaBFpNqfmfrKHe9QmMz.jpg", origin: "Imported selection", finish: "Polished" },
-]
+].map((product) => ({
+  ...product,
+  shortDescription: "A luminous natural surface with depth, translucency, and a distinctive mineral rhythm.",
+  description: "Selected for its layered movement and soft light response, this onyx brings a refined, architectural presence to interiors.",
+  bestFor: ["Feature walls", "Backlit panels", "Vanities"],
+  landscapeImage: onyxLandscapeImages[product.slug],
+  originalImage: "",
+  seoTitle: `${product.name} | Chandak Marble`,
+  seoDescription: `Explore ${product.name} with a luminous layered surface for refined interiors.`,
+  keywords: ["onyx marble", product.name.toLowerCase()],
+}))
+
+export function getOnyxProductBySlug(slug: string) {
+  return onyxProducts.find((product) => product.slug === slug)
+}
+
+export function getAllOnyxProductSlugs() {
+  return onyxProducts.map((product) => product.slug)
+}
