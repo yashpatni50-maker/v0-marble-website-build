@@ -35,13 +35,13 @@ const uploaded: Record<string, string> = {
   "nero-markino": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nero%20Markino-QAMmVe1WNvnwdoa3mKAc4udmuRCROc.png",
   "morocco-gold": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Morrocow%20Gold-vqCdIjqFRkdR4k85L5t91G6J1vcI0x.png",
   "silver-portoro": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Silver%20Portoro-C6ODFZFWqrgsTgjR66zCwRCgfDH2SP.png",
-  "black-markino": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Black%20Markino_cropped-vON8yjaiNkGuac0I2iU35xvIglo00j.jpg",
+  "black-markino": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Black%20Markino-vDr9JgOJDMXatG6jHDehZuFUGsayVs.jpeg",
   "nero-saint-laurent": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Ner%20Saint%20Laurent.-T3ibPnhSSFz2T76PRKRq7YKR4AIEKr.jpeg",
 }
 
 export const boldBlackProducts: BoldBlackProduct[] = Object.entries(uploaded).map(([slug, image], index) => {
   const name = slug.split("-").map((part) => part[0].toUpperCase() + part.slice(1)).join(" ")
-  return { slug, name, collection: "bold-black", image, landscapeImage: image, originalImage: warehouseImages[slug] ?? image, origin: "Imported selection", finish: "Polished", shortDescription: "A dramatic black marble with distinctive natural veining.", description: `Hand-selected ${name} black marble for bold flooring, feature walls, and architectural interiors.`, bestFor: ["Flooring", "Feature walls", "Luxury interiors"], seoTitle: `${name} Black Marble | Chandak Marble`, seoDescription: `${name} black marble for luxury flooring, walls, and interiors.`, keywords: [name, "black marble", "luxury marble"] }
+  return { slug, name, collection: "bold-black", image, landscapeImage: slug === "black-markino" ? "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Black%20Markino-vDr9JgOJDMXatG6jHDehZuFUGsayVs.jpeg" : image, originalImage: warehouseImages[slug] ?? image, origin: "Imported selection", finish: "Polished", shortDescription: "A dramatic black marble with distinctive natural veining.", description: `Hand-selected ${name} black marble for bold flooring, feature walls, and architectural interiors.`, bestFor: ["Flooring", "Feature walls", "Luxury interiors"], seoTitle: `${name} Black Marble | Chandak Marble`, seoDescription: `${name} black marble for luxury flooring, walls, and interiors.`, keywords: [name, "black marble", "luxury marble"] }
 })
 
 export function getBoldBlackProductBySlug(slug: string) { return boldBlackProducts.find((product) => product.slug === slug) ?? null }
