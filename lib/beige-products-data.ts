@@ -214,7 +214,7 @@ const products: BeigeProduct[] = [
     collection: "beautiful-beige",
     image: "/images/beige/square/brescia-verde.jpg",
     landscapeImage: "/images/beige/square/brescia-verde.jpg",
-    originalImage: "/images/beige/square/brescia-verde.jpg",
+    originalImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Brescia%20Verde-eN2eD1iheQWldwoCfat28TAHzwCmmK.jpg",
     origin: "Imported selection",
     finish: "Polished",
     bestFor: ["Contemporary flooring", "Feature panels", "Office interiors"],

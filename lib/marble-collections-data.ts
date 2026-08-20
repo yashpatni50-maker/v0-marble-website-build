@@ -72,7 +72,7 @@ export const marbleCollections: Record<string, MarbleCollection> = {
     color: 'White',
     varieties: [
       { name: 'Greek Statuario', image: '' },
-      { name: 'Statuario', image: '' },
+      { name: 'Statuario Grey', image: '' },
       { name: 'Michel Angelo White', image: '' },
       { name: 'Cararra White', image: '' },
       { name: 'Volakas White', image: '' },

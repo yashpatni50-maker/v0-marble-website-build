@@ -18,7 +18,7 @@ export interface WhiteProduct {
 const heroImages: Record<string, string> = {
   "greek-statuario": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Greek%20Statuario_cropped-jQKARTAQU28G16NRdXuJF4j00JQWJa.jpg",
   statuario: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Statuario_cropped-lD9JmznAsV3BgI3wHrCcfxBM46DJef.jpg",
-  "michel-angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Michel%20Angelo%20White_cropped-U2VG7DhT8kkxskpBk9cNpNtWuSoYOc.jpg",
+  "michel-angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Michel%20Angelo%20White-HEylnSPQ9umCoxOSeu0k5Fjhy0XTRz.png",
   "cararra-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Carrara%20White_cropped-aiQxvxgKEUQE4MF44r7RsNm9MZVlCP.jpg",
   "volakas-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Volkas%20White_cropped-fp9TK9ij3OJUX73LHDNJaMlHuCqs9l.jpg",
   "panda-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Panda%20White_cropped-0zEtYhWMe4m4sUu3nmNlPz3I413vC5.jpg",
@@ -27,7 +27,7 @@ const heroImages: Record<string, string> = {
   "golden-spider-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20Spider%20White_cropped-59KqtR8Ea7JJunGQPQWD0AXsLljmbZ.jpg",
   "calacutta-gold": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Calacutta%20Gold_cropped-P0dDtx14Ci2V6U7KszC1Z5lgsZIIMe.jpg",
   "angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Angelo%20White_cropped-kECT5xosyelVsnTXKXSCwyzFJF08Ox.jpg",
-  "statuario-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Statuario%20White_cropped-5fgTXpZLuqtgJ0D1pssJiBERYzvcxy.jpg",
+  "statuario-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Statuario%20White-NprpNobXTEzzI1PON4k0fYOxfuhaKh.png",
   "lasa-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lasa%20White_cropped-OcNAfsPDT4SdXbryRo5XpuVLP3iorQ.jpg",
   "michel-angelo": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Michel%20Angelo_cropped-KWcGQ9gAOvxIj32eJf3Rhi4K9NMzJA.jpg",
 }
@@ -35,7 +35,7 @@ const heroImages: Record<string, string> = {
 const landscapeImages: Record<string, string> = {
   "greek-statuario": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Greek%20Statuario_cropped-AD4bglauZwBzSNKwKK1UyDPQcQ0nkh.jpg",
   statuario: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Statuario_cropped-idiu1sMm79XhtgwyjWdv9CxJHx5g0y.jpg",
-  "michel-angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Michel%20Angelo%20White_cropped-Oe7mmnUwZNLLtVqdSyl4NZfd8XEtMo.jpg",
+  "michel-angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Michel%20Angelo%20White-Pci4hvN14z8RkneCD9b53pitEWiTf0.png",
   "cararra-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Carrara%20White_cropped-Prc2ffEy1azn3Tso1kgj0bB0m2Gxok.jpg",
   "volakas-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Volkas%20White_cropped-TEgYRHVGtfQGpGmnXeSu2fuTFgd3nD.jpg",
   "panda-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Panda%20White_cropped-Sr76cwlVXkpSUZDzMW2X8ZT5RevzaR.jpg",
@@ -44,13 +44,14 @@ const landscapeImages: Record<string, string> = {
   "golden-spider-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20Spider%20White_cropped-2YxG29HSmgnyjALuJN02ujNbSEp2A5.jpg",
   "calacutta-gold": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Calacutta%20Gold_cropped-c5zLaDLmHm53TiWiIEIhkWRZpziad4.jpg",
   "angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Angelo%20White_cropped-bQD47LAsPCTaZ0giIRwSnSFDxyEbVf.jpg",
+  "statuario-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Statuario%20White-TF6s5RvMC8amvDqL7mWcM9GWWSV8a5.png",
   "lasa-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lasa%20White_cropped-PxQqKKuWe2UGrKVqKtqvBvNgtJMm0k.jpg",
 }
 
 const photos: Record<string, string> = {
   "greek-statuario": "/images/wow-white/original/greek-statuario.jpg",
   statuario: "/images/wow-white/original/statuario.jpg",
-  "michel-angelo-white": "/images/wow-white/original/michel-angelo-white.jpg",
+  "michel-angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Michel%20Angelo%20White.-ZGCrzxjGXN6Sn5wcP7cFrmg9hUwCCe.png",
   "cararra-white": "/images/wow-white/original/cararra-white.jpg",
   "volakas-white": "/images/wow-white/original/volakas-white.jpg",
   "panda-white": "/images/wow-white/original/panda-white.jpg",
@@ -59,12 +60,13 @@ const photos: Record<string, string> = {
   "golden-spider-white": "/images/wow-white/original/golden-spider-white.jpg",
   "calacutta-gold": "/images/wow-white/original/calacutta-gold.jpg",
   "angelo-white": "/images/wow-white/original/angelo-white.jpg",
-  "statuario-white": "/images/wow-white/original/statuario-white.jpg",
+  "statuario-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Statuario%20White.-Wfdfhm2Q7rP6C9RRefhPbMhLeVse0Z.png",
   "lasa-white": "/images/wow-white/original/lasa-white.jpg",
 }
 
 export const whiteProducts: WhiteProduct[] = Object.entries(photos).map(([slug, photo]) => {
-  const name = slug.split("-").map((part) => part[0].toUpperCase() + part.slice(1)).join(" ")
+  const customNames: Record<string, string> = { statuario: "Statuario Grey" }
+  const name = customNames[slug] ?? slug.split("-").map((part) => part[0].toUpperCase() + part.slice(1)).join(" ")
   return {
     slug, name, collection: "wow-white",
     image: heroImages[slug] ?? `/images/wow-white/square/${slug}.jpg`,
