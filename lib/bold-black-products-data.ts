@@ -28,8 +28,7 @@ const uploaded: Record<string, string> = {
   "nero-markino": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nero%20Markino-QAMmVe1WNvnwdoa3mKAc4udmuRCROc.png",
   "morocco-gold": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Morrocow%20Gold-vqCdIjqFRkdR4k85L5t91G6J1vcI0x.png",
   "silver-portoro": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Silver%20Portoro-C6ODFZFWqrgsTgjR66zCwRCgfDH2SP.png",
-  "nsl": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/NSL-QpYigy2AJ140qhQM1aKW5A3XZcil1G.png",
-  "golden-galaxy-black": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20Galaxy%20Black-AYHwkfnaPgp6Algsl5WlxPOpLqwwet.png",
+  "black-markino": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20Galaxy%20Black-AYHwkfnaPgp6Algsl5WlxPOpLqwwet.png",
   "nero-saint-laurent": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mexican%20Black-7W1VtRP3nrlcGg8ccfVDCCVf8x8XBV.jpg",
 }
 
