@@ -32,7 +32,7 @@ const categories = [
     description: "Pure, pristine, and eternally elegant. Our white marble selection ranges from subtle veining to bold dramatic patterns.",
     image: "/images/category-wow-white.png",
     link: "/products/collections/wow-white",
-    varieties: ["Statuario White", "Calacatta Borghini", "Bianco Supremo", "Pure White", "Alpine White"],
+    varieties: ["Statuario Grey", "Calacatta Borghini", "Bianco Supremo", "Pure White", "Alpine White"],
     origin: "Premium Selection"
   },
   {

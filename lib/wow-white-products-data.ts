@@ -64,7 +64,8 @@ const photos: Record<string, string> = {
 }
 
 export const whiteProducts: WhiteProduct[] = Object.entries(photos).map(([slug, photo]) => {
-  const name = slug.split("-").map((part) => part[0].toUpperCase() + part.slice(1)).join(" ")
+  const customNames: Record<string, string> = { statuario: "Statuario Grey" }
+  const name = customNames[slug] ?? slug.split("-").map((part) => part[0].toUpperCase() + part.slice(1)).join(" ")
   return {
     slug, name, collection: "wow-white",
     image: heroImages[slug] ?? `/images/wow-white/square/${slug}.jpg`,
