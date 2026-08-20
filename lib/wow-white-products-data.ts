@@ -50,7 +50,7 @@ const landscapeImages: Record<string, string> = {
 const photos: Record<string, string> = {
   "greek-statuario": "/images/wow-white/original/greek-statuario.jpg",
   statuario: "/images/wow-white/original/statuario.jpg",
-  "michel-angelo-white": "/images/wow-white/original/michel-angelo-white.jpg",
+  "michel-angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Michel%20Angelo%20White.-ZGCrzxjGXN6Sn5wcP7cFrmg9hUwCCe.png",
   "cararra-white": "/images/wow-white/original/cararra-white.jpg",
   "volakas-white": "/images/wow-white/original/volakas-white.jpg",
   "panda-white": "/images/wow-white/original/panda-white.jpg",
@@ -59,7 +59,7 @@ const photos: Record<string, string> = {
   "golden-spider-white": "/images/wow-white/original/golden-spider-white.jpg",
   "calacutta-gold": "/images/wow-white/original/calacutta-gold.jpg",
   "angelo-white": "/images/wow-white/original/angelo-white.jpg",
-  "statuario-white": "/images/wow-white/original/statuario-white.jpg",
+  "statuario-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Statuario%20White.-Wfdfhm2Q7rP6C9RRefhPbMhLeVse0Z.png",
   "lasa-white": "/images/wow-white/original/lasa-white.jpg",
 }
 
