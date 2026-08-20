@@ -16,8 +16,15 @@ export interface BoldBlackProduct {
 }
 
 const warehouseImages: Record<string, string> = {
-  "silver-portoro": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Silver%20Portoro-lSI7g4oQ0Z8RAJ0p6LvL160ZNnjg6K.jpg",
-  "morocco-gold": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Morroco%20Gold-uZ11wzIfArYBtyK5fQ196MEyyhlcwr.jpg",
+  "golden-galaxy": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20Glaxy-aOLp8Zp2mCqEKTfKaEPc3LXiLwhNCB.jpg",
+  "mexican-black": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mexican%20Black-B7SjtYLeDkj77W5gHlhSb95hxq4FcO.jpg",
+  "golden-portoro": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20Portoro.-LAOBOWYZcnkrJ3sRzDIV7vrrGxNKOe.png",
+  "metal-black": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Metal%20Black-KQBNDSULvJs6oT35OGJvdc9xwTmjHS.jpg",
+  "nero-markino": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nero%20-%20Marquino-RUoB0YXalFJCkS0jUEiW8rZKbkgAqB.jpg",
+  "morocco-gold": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Morroco%20Gold-EVmxll0wQjccplQ6EiMF6iDyhQoEzY.jpg",
+  "silver-portoro": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Silver%20Portoro-01HRNy67Cr3mPNLAtx1evnQfEvwnRy.jpg",
+  "black-markino": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Markino%20Black-qAjeVsPxLdxG4y8CU9v6Ev26phhW5V.jpg",
+  "nero-saint-laurent": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Nero%20Saint%20Laurent.png-wBiqjnws5my2U3BSR55VeWE7KFQqhA.jpeg",
 }
 
 const uploaded: Record<string, string> = {
