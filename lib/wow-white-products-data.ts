@@ -35,7 +35,7 @@ const heroImages: Record<string, string> = {
 const landscapeImages: Record<string, string> = {
   "greek-statuario": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Greek%20Statuario_cropped-AD4bglauZwBzSNKwKK1UyDPQcQ0nkh.jpg",
   statuario: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Statuario_cropped-idiu1sMm79XhtgwyjWdv9CxJHx5g0y.jpg",
-  "michel-angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Michel%20Angelo%20White_cropped-Oe7mmnUwZNLLtVqdSyl4NZfd8XEtMo.jpg",
+  "michel-angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Michel%20Angelo%20White-Pci4hvN14z8RkneCD9b53pitEWiTf0.png",
   "cararra-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Carrara%20White_cropped-Prc2ffEy1azn3Tso1kgj0bB0m2Gxok.jpg",
   "volakas-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Volkas%20White_cropped-TEgYRHVGtfQGpGmnXeSu2fuTFgd3nD.jpg",
   "panda-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Panda%20White_cropped-Sr76cwlVXkpSUZDzMW2X8ZT5RevzaR.jpg",
@@ -44,6 +44,7 @@ const landscapeImages: Record<string, string> = {
   "golden-spider-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20Spider%20White_cropped-2YxG29HSmgnyjALuJN02ujNbSEp2A5.jpg",
   "calacutta-gold": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Calacutta%20Gold_cropped-c5zLaDLmHm53TiWiIEIhkWRZpziad4.jpg",
   "angelo-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Angelo%20White_cropped-bQD47LAsPCTaZ0giIRwSnSFDxyEbVf.jpg",
+  "statuario-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Statuario%20White-TF6s5RvMC8amvDqL7mWcM9GWWSV8a5.png",
   "lasa-white": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lasa%20White_cropped-PxQqKKuWe2UGrKVqKtqvBvNgtJMm0k.jpg",
 }
 
