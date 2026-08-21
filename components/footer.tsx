@@ -3,14 +3,13 @@ import Image from "next/image"
 import { Facebook, Instagram, Youtube, Phone, Mail, MapPin } from "lucide-react"
 
 const products = [
-  { name: "Italian Marble",   href: "/products" },
-  { name: "Turkish Marble",   href: "/products" },
   { name: "Gorgeous Grey",    href: "/products/collections/gorgeous-grey" },
   { name: "Beautiful Beige",  href: "/products/collections/beautiful-beige" },
   { name: "Wow White",        href: "/products/collections/wow-white" },
   { name: "Bold Black",       href: "/products/collections/bold-black" },
   { name: "Aesthetic Brown",  href: "/products/collections/aesthetic-brown" },
   { name: "Onyx Marble",      href: "/products/collections/onyx-marble" },
+  { name: "Exotic",           href: "/products/collections/exotic" },
   { name: "All Collections",  href: "/products" },
 ]
 
