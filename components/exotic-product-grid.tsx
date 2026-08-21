@@ -36,8 +36,8 @@ export function ExoticProductGrid({ products }: Props) {
           <div className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {products.map((product) => (
               <Link key={product.slug} href={`/products/collections/exotic/${product.slug}`} className="group block">
-                <div className="relative aspect-square overflow-hidden bg-muted">
-                  <Image src={product.image} alt={`${product.name} exotic marble slab`} fill className="object-contain transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
+                <div className="relative aspect-square w-full overflow-hidden bg-muted">
+                  <Image src={product.image} alt={`${product.name} exotic marble slab`} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-90" />
                   <span className="absolute bottom-4 right-4 flex h-9 w-9 items-center justify-center border border-white/50 text-white transition-all duration-300 group-hover:border-[var(--gold)] group-hover:bg-[var(--gold)] group-hover:text-background" aria-hidden="true">
                     <ArrowUpRight className="h-4 w-4" />
