@@ -130,6 +130,15 @@ export const marbleCollections: Record<string, MarbleCollection> = {
       { name: 'Metal Bronze', image: '/images/variety-metal-bronze.png' },
     ],
   },
+  'exotic': {
+    id: 'exotic',
+    name: 'Exotic',
+    tagline: 'The Feeling of a Unique Space',
+    description: 'Exotic marble brings rare character, expressive movement, and naturally distinctive texture to luxury interiors. Explore a curated collection of uncommon stones for statement walls, sculptural details, and spaces designed to feel truly one of a kind.',
+    feeling: 'Unique',
+    color: 'Natural',
+    varieties: [],
+  },
   'onyx-marble': {
     id: 'onyx-marble',
     name: 'Onyx Marble',
