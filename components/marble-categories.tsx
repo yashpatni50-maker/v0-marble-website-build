@@ -54,6 +54,15 @@ const categories = [
     origin: "Premium Selection"
   },
   {
+    id: "exotic",
+    name: "Exotic",
+    description: "Rare, expressive stones with distinctive movement and character for spaces that feel truly one of a kind.",
+    image: "/images/category-gorgeous-grey.png",
+    link: "/products/collections/exotic",
+    varieties: ["Rare stones", "Statement marble", "Natural textures", "Unique veining"],
+    origin: "Premium Selection"
+  },
+  {
     id: "onyx-marble",
     name: "Onyx Marble",
     description: "Translucent beauty that creates breathtaking backlit features. Our Onyx collection brings dramatic elegance to any luxury space.",
