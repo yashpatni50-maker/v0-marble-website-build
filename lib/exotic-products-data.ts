@@ -5,6 +5,7 @@ export interface ExoticProduct {
   image: string
   landscapeImage: string
   originalImage: string
+  warehouseImage: string
   origin: string
   finish: string
   bestFor: string[]
@@ -38,6 +39,28 @@ const productImages = {
   "silver-lilac": `${imageBase}Silver%20Lilac_cropped-3IuTHs2JnfENrjOuEePx8CiSjgZMVJ.jpg`,
 } as const
 
+const warehouseImages = {
+  "french-kiss": `${imageBase}French%20Kiss-h0AsXrfZeWIaavhEw2Heil3e3rHFOn.jpg`,
+  "albino-gold": `${imageBase}Albino%20Gold-2msjepWFFle4sYGkVMZunhapaxgRJ9.jpg`,
+  "rosso-alicante": `${imageBase}Rosso%20Alicante-M1mzcOO3kAODYrBi50NGWrmUzvFcx5.jpg`,
+  "golden-river": `${imageBase}Golden%20River-DYUKVMZUbJ8tGY5nmmLRfTZ3fEibaQ.jpg`,
+  "foir-di-pesco": `${imageBase}Foir%20Di%20Pesco-1kVBu80CIcVyeMvqh0sqBrX46Bid3P.jpg`,
+  "opera-green": `${imageBase}Opera%20Green-CH2MF4dosRLRbvHfm2SNw4NQqh5yRE.jpg`,
+  "blue-wave": `${imageBase}Blue%20Wave-LATOS3jRRiOPslYLMTCJiAg6gB7fdN.jpg`,
+  "golden-valencia": `${imageBase}Golden%20Valencia-XhTuJXBX32hd0QK1BTzg4Wf4zOkW6b.jpg`,
+  "turtle-green": `${imageBase}Turtule%20Green-hdXoYfH9IRuiutb19AC22gZGhi5tV6.jpg`,
+  "blue-river": `${imageBase}Blue%20River-u0FDAl2EVez5eUPFxRuW9O4wjMSNKr.jpg`,
+  "brazillian-blue": `${imageBase}Brazillian%20Blue-hMQqfVeAcAHQK7avdW19xHC36RrrUl.jpg`,
+  "bianco-nero": `${imageBase}Bianco%20Nero-QfCsgJlv22qK8okvU0mP9G3ComMAFI.jpg`,
+  flamingo: `${imageBase}Flamingo-6WxCRuJYLCPxsVNEJqUJT2Rew69uMZ.jpg`,
+  morellato: `${imageBase}Morellato-XCfqwmTQ0PN0zqeyGqWv65HIVTyngs.jpg`,
+  "light-brown-emperador": `${imageBase}Light%20Brown%20Emperador-1PO5rIz5UMlYfiuCUZu84xzBCyHCXi.jpg`,
+  "blue-roma": `${imageBase}Blue%20Roma-c4cJ7t6fCpBrTqixAb2K0wpcRFSgTV.jpg`,
+  "brescia-aurora": `${imageBase}Brescia%20Aurora-FpbjuvhraU5Yhrm0QXgXnU8Xc5hkkC.jpg`,
+  "silver-lilac": `${imageBase}Silver%20Lilac-kvNYLHcFALDM3lawbcvKyMO3ucntyp.jpg`,
+  "ocean-green": `${imageBase}Ocean%20Green-3Ka8t4sFwcKw2JIE1BjlV5v8R7a5Jz.jpg`,
+} as const
+
 const products: ExoticProduct[] = Object.entries(productImages).map(([slug, image]) => {
   const name = slug.split("-").map((part) => part[0].toUpperCase() + part.slice(1)).join(" ")
   return {
@@ -47,6 +70,7 @@ const products: ExoticProduct[] = Object.entries(productImages).map(([slug, imag
     image,
     landscapeImage: image,
     originalImage: image,
+    warehouseImage: warehouseImages[slug as keyof typeof warehouseImages] || image,
     origin: "Exotic Collection",
     finish: "Polished",
     bestFor: ["Feature walls", "Statement interiors", "Luxury surfaces"],

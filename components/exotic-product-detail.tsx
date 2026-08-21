@@ -27,7 +27,7 @@ export function ExoticProductDetail({ product }: { product: ExoticProduct }) {
           </div>
         </div>
       </section>
-      <section className="border-b border-border/60 bg-card px-4 py-16 sm:px-6 lg:px-8"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-center"><div><p className="text-overline text-[var(--gold)]">Material study</p><h2 className="mt-3 font-serif text-3xl text-foreground sm:text-4xl">See the stone in its full rhythm</h2></div><div className="min-h-32 border border-dashed border-border/60" aria-label="Full rhythm image pending" /></div></section>
+      <section className="border-b border-border/60 bg-card px-4 py-16 sm:px-6 lg:px-8"><div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-center"><div><p className="text-overline text-[var(--gold)]">Material study</p><h2 className="mt-3 font-serif text-3xl text-foreground sm:text-4xl">See the stone in its full rhythm</h2></div><div className="relative aspect-[3/2] w-full overflow-hidden bg-muted"><Image src={product.warehouseImage} alt={`${product.name} marble full warehouse display`} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 60vw" /></div></div></section>
     </main>
   )
 }
