@@ -49,6 +49,13 @@ const collections = [
     href: "/products/collections/onyx-marble",
     span: "col-span-1 row-span-1",
   },
+  {
+    name: "Exotic",
+    tagline: "Unique & Distinctive",
+    image: "/images/exotic-collection-background.png",
+    href: "/products/collections/exotic",
+    span: "col-span-1 row-span-1",
+  },
 ]
 
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1]
