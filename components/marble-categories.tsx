@@ -57,7 +57,7 @@ const categories = [
     id: "exotic",
     name: "Exotic",
     description: "Rare, expressive stones with distinctive movement and character for spaces that feel truly one of a kind.",
-    image: "/images/category-gorgeous-grey.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%2023%2C%202026%2C%2002_40_02%20PM-cQu2fxSxSBK3Dwqwk8wFP5eLgvEf5P.png",
     link: "/products/collections/exotic",
     varieties: ["Rare stones", "Statement marble", "Natural textures", "Unique veining"],
     origin: "Premium Selection"

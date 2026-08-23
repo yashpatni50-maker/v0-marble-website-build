@@ -52,7 +52,7 @@ const collections = [
   {
     name: "Exotic",
     tagline: "Unique & Distinctive",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/French%20Kiss_cropped-BiWnS7VwxBbI3gWc2svtEShaeehWDV.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Aug%2023%2C%202026%2C%2002_40_02%20PM-cQu2fxSxSBK3Dwqwk8wFP5eLgvEf5P.png",
     href: "/products/collections/exotic",
     span: "col-span-1 row-span-1",
   },
