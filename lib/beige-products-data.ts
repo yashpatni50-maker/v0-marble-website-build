@@ -132,7 +132,7 @@ const products: BeigeProduct[] = [
     slug: "exposed-concrete",
     name: "Exposed Concrete",
     collection: "beautiful-beige",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20260820_154358266-TUn9qdgjLzgNd2qQinMWgV8Khnebim.jpg",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20260820_154409325-OBoqXyZVa1H8xYMqlLUI45uRj7TdX2.jpg",
     landscapeImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20260820_154358266-TUn9qdgjLzgNd2qQinMWgV8Khnebim.jpg",
     originalImage: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_20260820_154447553-fY82G6uKb12QJpVew3ryL63sRZEnEQ.jpg",
     origin: "Imported selection",
