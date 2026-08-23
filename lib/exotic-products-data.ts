@@ -43,7 +43,7 @@ const warehouseImages = {
   "french-kiss": `${imageBase}French%20Kiss-h0AsXrfZeWIaavhEw2Heil3e3rHFOn.jpg`,
   "albino-gold": `${imageBase}Albino%20Gold-2msjepWFFle4sYGkVMZunhapaxgRJ9.jpg`,
   "rosso-alicante": `${imageBase}Rosso%20Alicante-M1mzcOO3kAODYrBi50NGWrmUzvFcx5.jpg`,
-  "golden-river": `${imageBase}Golden%20River-DYUKVMZUbJ8tGY5nmmLRfTZ3fEibaQ.jpg`,
+  "golden-river": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Golden%20River-lmlPR89GAvQkKtG5BPSZhyy7Ix7I59.jpg",
   "foir-di-pesco": `${imageBase}Foir%20Di%20Pesco-1kVBu80CIcVyeMvqh0sqBrX46Bid3P.jpg`,
   "opera-green": `${imageBase}Opera%20Green-CH2MF4dosRLRbvHfm2SNw4NQqh5yRE.jpg`,
   "blue-wave": `${imageBase}Blue%20Wave-LATOS3jRRiOPslYLMTCJiAg6gB7fdN.jpg`,
