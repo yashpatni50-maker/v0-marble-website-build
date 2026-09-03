@@ -3,8 +3,19 @@
 import Link from "next/link"
 import { MessageCircle, Phone } from "lucide-react"
 import { motion } from "framer-motion"
+import { useFacebookPixel } from "@/hooks/useFacebookPixel"
 
 export function FloatingButtons() {
+  const { trackEvent } = useFacebookPixel()
+
+  const handleWhatsAppClick = () => {
+    trackEvent('Contact')
+  }
+
+  const handlePhoneClick = () => {
+    trackEvent('Contact')
+  }
+
   return (
     <>
       {/* WhatsApp Button */}
@@ -15,9 +26,10 @@ export function FloatingButtons() {
         className="fixed bottom-6 right-6 z-50"
       >
         <Link
-          href="https://wa.me/919950085300?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection.%20Please%20share%20more%20details."
+          href="https://wa.me/919950085300?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection%20Please%20share%20more%20details."
           target="_blank"
           rel="noopener noreferrer"
+          onClick={handleWhatsAppClick}
           className="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform hover:shadow-xl"
           aria-label="Chat on WhatsApp"
         >
@@ -37,6 +49,7 @@ export function FloatingButtons() {
       >
         <Link
           href="tel:+919950085300"
+          onClick={handlePhoneClick}
           className="w-14 h-14 bg-[#c9a227] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform hover:shadow-xl"
           aria-label="Call Now"
         >
@@ -58,6 +71,7 @@ export function FloatingButtons() {
           <div className="flex items-center gap-4">
             <Link
               href="tel:+919950085300"
+              onClick={handlePhoneClick}
               className="flex items-center gap-2 text-white hover:text-[#c9a227] transition-colors"
             >
               <Phone className="h-4 w-4" />
@@ -67,6 +81,7 @@ export function FloatingButtons() {
               href="https://wa.me/919950085300?text=Hi%20Chandak%20Marble%2C%20I%20am%20interested%20in%20your%20marble%20collection."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={handleWhatsAppClick}
               className="flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#1fb855] transition-colors"
             >
               <MessageCircle className="h-4 w-4" />

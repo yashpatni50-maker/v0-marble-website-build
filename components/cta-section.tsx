@@ -4,10 +4,25 @@ import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { MessageCircle, Phone, Download, MapPin } from "lucide-react"
+import { useFacebookPixel } from "@/hooks/useFacebookPixel"
 
 const ease: [number, number, number, number] = [0.22, 1, 0.36, 1]
 
 export function CTASection() {
+  const { trackEvent } = useFacebookPixel()
+
+  const handleWhatsAppClick = () => {
+    trackEvent('Contact')
+  }
+
+  const handlePhoneClick = () => {
+    trackEvent('Contact')
+  }
+
+  const handleCatalogueClick = () => {
+    trackEvent('CatalogueDownload')
+  }
+
   return (
     <section
       className="relative py-24 lg:py-36 overflow-hidden"
@@ -69,6 +84,7 @@ export function CTASection() {
             href="https://wa.me/919950085300?text=Hello%2C%20I%20am%20interested%20in%20imported%20marble.%20Please%20share%20catalogue%20and%20pricing."
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleWhatsAppClick}
             className="inline-flex items-center gap-3 px-7 py-3.5 bg-[var(--gold)] text-background text-xs font-semibold tracking-widest uppercase btn-luxury"
           >
             <MessageCircle className="h-4 w-4" />
@@ -76,6 +92,7 @@ export function CTASection() {
           </Link>
           <Link
             href="tel:+919950085300"
+            onClick={handlePhoneClick}
             className="inline-flex items-center gap-3 px-7 py-3.5 border border-white/30 text-white text-xs font-semibold tracking-widest uppercase btn-luxury hover:border-white/60 transition-colors"
           >
             <Phone className="h-4 w-4" />
@@ -85,6 +102,7 @@ export function CTASection() {
             href="https://blobs.vusercontent.net/blob/Chandak%20Marble%20Colours%20of%20Your%20Imagination-SMMix9Zr6lGqmaC0vHA5zOluJ1Bw26.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleCatalogueClick}
             className="inline-flex items-center gap-3 px-7 py-3.5 border border-white/20 text-white/70 text-xs font-semibold tracking-widest uppercase btn-luxury hover:border-white/40 hover:text-white transition-colors"
           >
             <Download className="h-4 w-4" />
@@ -130,6 +148,7 @@ export function CTASection() {
               </p>
               <Link
                 href={`tel:${loc.tel}`}
+                onClick={handlePhoneClick}
                 className="text-white/70 text-sm font-medium hover:text-[var(--gold)] transition-colors duration-300"
               >
                 {loc.phone}
