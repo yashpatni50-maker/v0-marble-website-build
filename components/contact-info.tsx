@@ -4,6 +4,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useFacebookPixel } from "@/hooks/useFacebookPixel"
 
 const contactMethods = [
   {
@@ -55,6 +56,12 @@ const locations = [
 ]
 
 export function ContactInfo() {
+  const { trackEvent } = useFacebookPixel()
+
+  const handleContactClick = () => {
+    trackEvent('Contact')
+  }
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -78,7 +85,7 @@ export function ContactInfo() {
                 ))}
               </div>
               <Button asChild className="bg-[#c9a227] hover:bg-[#b8922a] text-white">
-                <a href={method.action.href} target={method.title === "WhatsApp" ? "_blank" : undefined} rel="noopener noreferrer">
+                <a href={method.action.href} target={method.title === "WhatsApp" ? "_blank" : undefined} rel="noopener noreferrer" onClick={handleContactClick}>
                   {method.action.label}
                 </a>
               </Button>
@@ -129,6 +136,7 @@ export function ContactInfo() {
                   <Phone className="h-5 w-5 text-[#c9a227]" />
                   <a 
                     href={location.phoneHref}
+                    onClick={handleContactClick}
                     className="text-sm font-medium text-foreground hover:text-[#c9a227] transition-colors"
                   >
                     {location.phone}
